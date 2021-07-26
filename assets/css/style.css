@@ -18,3 +18,20 @@ header {
   display: flex; 
   height: 20vh; 
 }
+
+/* title logo */
+
+#title-container {
+  border: 2px solid yellow; 
+  width: 80%; 
+}
+
+#title-container > div {
+  border: 2px solid blue; 
+  text-align: center; 
+}
+
+#navbar-container {
+  border: 2px solid red; 
+  width: 20%; 
+}
