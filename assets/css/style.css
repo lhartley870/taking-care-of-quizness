@@ -41,7 +41,28 @@ h1, h2, h3 {
   text-transform: uppercase; 
 }
 
+/* navigation bar */
+
 #navbar-container {
   border: 2px solid red; 
   width: 20%; 
 }
+
+#header-links {
+  list-style: none;
+}
+
+nav {
+  border: 2px solid purple;  
+  text-align: center; 
+  width: 100%; 
+}
+
+#header-links a {
+  color: #E6FEFF; 
+  font-family: 'Rock Salt', cursive; 
+  font-size: 0.7em; 
+  font-weight: 400; 
+}
+
+
