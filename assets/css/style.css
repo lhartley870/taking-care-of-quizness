@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&family=Slackey&display=swap');
+
 * {
   border: none; 
   margin: 0; 
@@ -8,7 +10,7 @@
 /* header */
 
 header {
-  background-color: green;
+  background-color: #1C797D;
   display: flex; 
   height: 20vh; 
 }
@@ -29,6 +31,14 @@ header {
 #title-container > div {
   border: 2px solid blue; 
   text-align: center; 
+}
+
+h1, h2, h3 {
+  color: #E6FEFF; 
+  font-family: 'Slackey', cursive;
+  font-size: 1.5em; 
+  font-weight: 400;  
+  text-transform: uppercase; 
 }
 
 #navbar-container {
