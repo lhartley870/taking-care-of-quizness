@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -49,19 +50,23 @@
       </div>
       <!-- quiz rules interactive button -->
       <div id="rules-container">
-        <button>Rules</button>
+        <button class="home-page-button">Rules</button>
       </div>
       <!-- create username interactive button -->
       <div id="username-container">
-        <button>Create Username</button>
+        <button class="home-page-button">Create Username</button>
       </div>
       <!-- button to start quiz 1 -->
       <div id="quiz1-button-container">
-        <button>Start Quiz 1</button>
+        <form action="/quiz-one.html" method="GET">
+          <button type="submit" class="home-page-button">Start Quiz 1</button>
+        </form>
       </div>
       <!-- button to start quiz 2 -->
       <div id="quiz2-button-container">
-        <button>Start Quiz 2</button>
+        <form action="/quiz-two.html" method="GET">
+          <button type="submit" class="home-page-button">Start Quiz 2</button>
+        </form>
       </div>  
   </div>
   </section>
