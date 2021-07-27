@@ -90,4 +90,31 @@ section h2 {
   padding: 2.5% 0; 
 }
 
+#home-content-container {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto); 
+  margin: 0 auto; 
+  width: 90%; 
+}
+
+#question-mark-container {
+  grid-area: question-mark; 
+}
+
+#rules-container {
+  grid-area: rules; 
+}
+
+#username-container {
+  grid-area: username; 
+}
+
+#quiz1-button-container {
+  grid-area: quiz1; 
+}
+
+#quiz2-button-container {
+  grid-area: quiz2; 
+}
 
