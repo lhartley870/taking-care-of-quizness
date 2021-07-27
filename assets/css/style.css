@@ -7,6 +7,12 @@
   text-decoration: none; 
 }
 
+body {
+  background-color: #E6FEFF;
+  color: #007d9e; 
+  font-family: 'Raleway', sans-serif;
+}
+
 /* header */
 
 header {
@@ -101,6 +107,7 @@ section h2 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, auto); 
   margin: 0 auto; 
+  row-gap: 15px; 
   width: 90%; 
 }
 
@@ -133,4 +140,14 @@ section h2 {
   border-radius: 50%; 
   height: 70vw; 
   width: 70vw; 
+}
+
+.home-page-button {
+  background-color: #B74E74; 
+  border-radius: 15px; 
+  color: #E6FEFF;
+  font-family: 'Slackey', cursive;
+  font-size: 1em; 
+  font-weight: 400; 
+  padding: 10px; 
 }
