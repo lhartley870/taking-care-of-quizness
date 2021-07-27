@@ -92,8 +92,14 @@ section h2 {
 
 #home-content-container {
   display: grid; 
+  grid-template-areas: 
+    "question-mark question-mark question-mark question-mark"
+    "rules rules rules rules"
+    "username username username username"
+    "quiz1 quiz1 quiz1 quiz1"
+    "quiz2 quiz2 quiz2 quiz2";
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, auto); 
+  grid-template-rows: repeat(5, auto); 
   margin: 0 auto; 
   width: 90%; 
 }
