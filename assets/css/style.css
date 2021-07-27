@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Rock+Salt&family=Slackey&display=swap');
 
 * {
   border: none; 
@@ -150,4 +150,33 @@ section h2 {
   font-size: 1em; 
   font-weight: 400; 
   padding: 10px; 
+}
+
+ol {
+  padding: 5% 5% 0 10%; 
+} 
+
+li ~ li {
+  margin-top: 5%; 
+}
+
+th {
+  border-bottom: 2px solid #007d9e; 
+}
+
+td {
+  padding: 5px; 
+  text-align: left; 
+}
+
+.low-score {
+  color: #E00000; 
+}
+
+.medium-score {
+  color: #0000FF; 
+}
+
+.high-score {
+  color: #008500; 
 }
