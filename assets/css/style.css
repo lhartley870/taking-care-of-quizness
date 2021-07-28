@@ -113,27 +113,22 @@ section h2 {
 }
 
 #question-mark-container {
-  border: 2px solid red; 
   grid-area: question-mark; 
 }
 
 #rules-container {
-  border: 2px solid red; 
   grid-area: rules; 
 }
 
-#username-container {
-  border: 2px solid red; 
+#username-container { 
   grid-area: username; 
 }
 
-#quiz1-button-container {
-  border: 2px solid red; 
+#quiz1-button-container { 
   grid-area: quiz1; 
 }
 
 #quiz2-button-container {
-  border: 2px solid red; 
   grid-area: quiz2; 
 }
 
