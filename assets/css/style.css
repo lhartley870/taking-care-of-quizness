@@ -11,6 +11,7 @@ body {
   background-color: #E6FEFF;
   color: #007d9e; 
   font-family: 'Raleway', sans-serif;
+  font-size: 1em; 
 }
 
 /* header */
@@ -138,8 +139,21 @@ section h2 {
 
 #question-mark { 
   border-radius: 50%; 
+  box-shadow: 0 0 20px 10px #B74E74; 
   height: 70vw; 
+  margin: 5%; 
   width: 70vw; 
+
+  animation: rotation 10s linear 1s 2 alternate; 
+}
+  
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(359deg); 
+  }
 }
 
 .home-page-button {
