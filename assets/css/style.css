@@ -144,9 +144,12 @@ section h2 {
   margin: 5%; 
   width: 70vw; 
 
+  /* question mark rotation animation adapted from https://flaviocopes.com/rotate-image/
+  using W3 Schools CSS Animation tutorial https://www.w3schools.com/css/css3_animations.asp */
   animation: rotation 10s linear 1s 2 alternate; 
 }
-  
+
+/* sets the question mark to a full rotation */
 @keyframes rotation {
   from {
     transform: rotate(0deg); 
