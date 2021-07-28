@@ -153,11 +153,15 @@ section h2 {
 }
 
 ol {
-  padding: 5% 5% 0 10%; 
+  margin: 5% 5% 0 10%; 
 } 
 
 li ~ li {
   margin-top: 5%; 
+}
+
+table {
+  margin: 0 auto; 
 }
 
 th {
@@ -179,4 +183,14 @@ td {
 
 .high-score {
   color: #008500; 
+}
+
+#username {
+  background: #E6FEFF; 
+  border-radius: 5px; 
+  border: 2px solid #007d9e;
+  color: #007d9e; 
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em; 
+  margin: 5% 0; 
 }
