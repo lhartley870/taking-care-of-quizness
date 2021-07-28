@@ -132,6 +132,8 @@ section h2 {
   grid-area: quiz2; 
 }
 
+/* rotating question mark image */
+
 #question-mark { 
   border-radius: 50%; 
   box-shadow: 0 0 20px 10px #b74e74; 
@@ -154,6 +156,8 @@ section h2 {
   }
 }
 
+/* home page buttons */
+
 .home-page-button {
   background-color: #b74e74; 
   border-radius: 15px; 
@@ -163,6 +167,8 @@ section h2 {
   font-weight: 400; 
   padding: 10px; 
 }
+
+/* rules */
 
 ol {
   margin: 5% 5% 0 10%; 
@@ -196,6 +202,8 @@ td {
 .high-score {
   color: #008500; 
 }
+
+/* username form */
 
 #username {
   background: #e6feff; 
