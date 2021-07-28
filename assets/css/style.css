@@ -107,7 +107,7 @@ section h2 {
     "quiz2 quiz2 quiz2 quiz2";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, auto); 
-  margin: 0 auto; 
+  margin: 0 auto 5% auto; 
   row-gap: 15px; 
   width: 90%; 
 }
@@ -225,4 +225,11 @@ footer {
 
 footer ul {
   list-style: none; 
+}
+
+footer a {
+  color: #e6feff; 
+  font-family: 'Rock Salt', cursive; 
+  font-size: 0.8em; 
+  font-weight: 400; 
 }
