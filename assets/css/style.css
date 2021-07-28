@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #E6FEFF;
+  background-color: #e6feff;
   color: #007d9e; 
   font-family: 'Raleway', sans-serif;
   font-size: 1em; 
@@ -17,7 +17,7 @@ body {
 /* header */
 
 header {
-  background-color: #1C797D;
+  background-color: #1c797d;
   display: flex; 
   height: 20vh; 
 }
@@ -50,7 +50,7 @@ h1 {
 }
 
 h2, h3 {
-  color: #B74E74; 
+  color: #b74e74; 
   font-family: 'Rock Salt', cursive; 
   font-weight: 400; 
 }
@@ -71,7 +71,7 @@ nav {
 }
 
 #header-links a {
-  color: #E6FEFF; 
+  color: #e6feff; 
   font-family: 'Rock Salt', cursive; 
   font-size: 0.7em; 
   font-weight: 400; 
@@ -79,12 +79,12 @@ nav {
 
 .links a:hover, 
 .links a:focus {
-  border-bottom: 2px solid #E6FEFF; 
+  border-bottom: 2px solid #e6feff; 
 }
 
 /* styling active page with a coloured underline taken from Code Institute Love Running project */
 .active {
-  border-bottom: 2px solid #B74E74; 
+  border-bottom: 2px solid #b74e74; 
 }
 
 /* main home page section image and interactive buttons */
@@ -139,7 +139,7 @@ section h2 {
 
 #question-mark { 
   border-radius: 50%; 
-  box-shadow: 0 0 20px 10px #B74E74; 
+  box-shadow: 0 0 20px 10px #b74e74; 
   height: 70vw; 
   margin: 5%; 
   width: 70vw; 
@@ -157,9 +157,9 @@ section h2 {
 }
 
 .home-page-button {
-  background-color: #B74E74; 
+  background-color: #b74e74; 
   border-radius: 15px; 
-  color: #E6FEFF;
+  color: #e6feff;
   font-family: 'Slackey', cursive;
   font-size: 1em; 
   font-weight: 400; 
@@ -188,11 +188,11 @@ td {
 }
 
 .low-score {
-  color: #E00000; 
+  color: #e00000; 
 }
 
 .medium-score {
-  color: #0000FF; 
+  color: #0000ff; 
 }
 
 .high-score {
@@ -200,7 +200,7 @@ td {
 }
 
 #username {
-  background: #E6FEFF; 
+  background: #e6feff; 
   border-radius: 5px; 
   border: 2px solid #007d9e;
   color: #007d9e; 
