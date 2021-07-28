@@ -211,3 +211,18 @@ td {
   font-size: 1em; 
   margin: 5% 0; 
 }
+
+/* footer */
+
+footer {
+  align-items: center;
+  background-color: #955B92; 
+  display: flex; 
+  height: 15vh; 
+  justify-content: center;
+  text-align: center; 
+}
+
+footer ul {
+  list-style: none; 
+}
