@@ -215,6 +215,20 @@ td {
   margin: 5% 0; 
 }
 
+#username-submit-button {
+  background-color: #007d9e; 
+  border-radius: 15px; 
+  color: #e6feff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em; 
+  font-weight: 400; 
+  padding: 5px; 
+}
+
+#username-container > p {
+  margin-top: 5%; 
+}
+
 /* footer */
 
 footer {
