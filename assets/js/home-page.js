@@ -64,5 +64,22 @@ function showAndHideRules() {
 }
 
 function showAndHideUsernameForm() {
-  console.log('show and hide username');
+  let usernameInnerContainer = document.getElementById('username-container').children[1]; 
+  let usernameForm = `
+    <p>Create an optional username for the quiz!</p>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="user" required>
+      <button type="submit" id="username-submit-button">Submit Username</button>
+    </form>
+  `;
+  let usernameOuterContainer = document.getElementById('username-container');
+
+  if (usernameInnerContainer.innerHTML === ' ') {
+    usernameInnerContainer.innerHTML = usernameForm; 
+    usernameOuterContainer.classList.add('show-hide-content-container');
+  } else {
+    usernameInnerContainer.innerHTML = ' ';
+    usernameOuterContainer.classList.remove('show-hide-content-container'); 
+  }
 }
