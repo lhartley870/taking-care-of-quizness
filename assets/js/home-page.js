@@ -8,10 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       if (this.parentNode.getAttribute('id') === 'username-container') {
         showAndHideUsernameForm();
-        amendHomePgFormatting();  
       } else {
         showAndHideRules(); 
-        amendHomePgFormatting(); 
       }
     })
   } 
@@ -54,18 +52,17 @@ function showAndHideRules() {
       <li>Once you have completed one quiz, come back and try the other one!</li>
     </ol>
   `; 
+  let rulesOuterContainer = document.getElementById('rules-container'); 
 
-  if (rulesInnerContainer.innerHTML === " ") {
+  if (rulesInnerContainer.innerHTML === ' ') {
     rulesInnerContainer.innerHTML = rules; 
+    rulesOuterContainer.classList.add('show-hide-content-container');
   } else {
-    rulesInnerContainer.innerHTML = " "; 
+    rulesInnerContainer.innerHTML = ' '; 
+    rulesOuterContainer.classList.remove('show-hide-content-container'); 
   }
 }
 
 function showAndHideUsernameForm() {
   console.log('show and hide username');
-}
-
-function amendHomePgFormatting() {
-  console.log('amend formatting'); 
 }
