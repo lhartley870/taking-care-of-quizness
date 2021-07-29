@@ -107,8 +107,8 @@ section h2 {
     "quiz2 quiz2 quiz2 quiz2";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, auto); 
-  margin: 0 auto 5% auto; 
-  row-gap: 15px; 
+  margin: 0 auto 8% auto; 
+  row-gap: 20px; 
   width: 90%; 
 }
 
@@ -227,6 +227,12 @@ td {
 
 #username-container > p {
   margin-top: 5%; 
+}
+
+/* styling for Rules and Create Username form containers when they are visible */
+.show-hide-content-container {
+  box-shadow: 0 0 8px 2px #007d9e; 
+  padding: 2%;
 }
 
 /* footer */
