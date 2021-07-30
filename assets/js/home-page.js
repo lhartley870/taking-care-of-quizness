@@ -72,20 +72,35 @@ function showAndHideRules() {
  * allowing the user to click the 'Create Username' button to display the username form
  * content (surrounded by a shadow border) and click the button again to hide the form 
  * content (and the shadow border)
+ * Content shown will depend on whether or not the Create Username form has been submitted 
+ * by the user 
  */
 function showAndHideUsernameForm() {
   let usernameForm = document.getElementsByTagName('form')[0]; 
-  let formHtml = `
+  
+  let formHtmlPreSubmit = `
     <p>Create an optional username for the quiz!</p>
     <label for="username">Username:</label>
     <input type="text" id="username" name="user" required>
     <button type="submit" class="username-submit-button">Submit Username</button>
   `;
+
+  let formHtmlPostSubmit = `
+    <p>Create an optional username for the quiz!</p>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="user" required disabled>
+    <button type="submit" class="username-submit-button submitted-button" disabled>Submitted!</button>
+  `; 
+
   let usernameOuterContainer = document.getElementById('username-container');
 
   if (usernameForm.innerHTML === '') {
-    usernameForm.innerHTML = formHtml; 
     usernameOuterContainer.classList.add('show-hide-content-container');
+    if (usernameForm.hasAttribute('data-submitted')) {
+      usernameForm.innerHTML = formHtmlPostSubmit;  
+    } else {
+      usernameForm.innerHTML = formHtmlPreSubmit; 
+    } 
   } else {
     usernameForm.innerHTML = '';
     usernameOuterContainer.classList.remove('show-hide-content-container'); 
