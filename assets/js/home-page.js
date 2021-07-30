@@ -97,4 +97,12 @@ function handleSubmit(event) {
 
   let usernameValue = document.getElementById('username').value;
   sessionStorage.setItem("username", usernameValue);  
+
+  let usernameInput = document.getElementById('username'); 
+  usernameInput.value = ''; 
+  usernameInput.disabled = true;  
+
+  let submitButton = document.getElementsByClassName('username-submit-button')[0];   
+  submitButton.classList.add('submitted-button');  
+  submitButton.disabled = true; 
 }
