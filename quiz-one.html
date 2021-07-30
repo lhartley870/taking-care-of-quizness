@@ -8,10 +8,59 @@
   <meta name="keywords" content="taking care of quizness, quiz, multiple choice, general knowledge">
   <meta name="author" content="Lianne Hartley">
 
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/0c7d1d07bc.js" crossorigin="anonymous"></script>
+
+  <!-- link for favicon to display in deployed project taken from Code Institute Love Maths project -->
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
   <link href="assets/css/style.css" rel="stylesheet">
 
   <title>Taking Care of Quizness</title>
 </head>
 <body> 
+  <header>
+    <!-- title logo -->
+    <div id="title-container" class="header-container">
+      <div>
+        <a href="index.html">
+          <h1>Taking Care of Quizness</h1>
+        </a>
+      </div>
+    </div>
+    <!-- navigation bar -->
+    <div id="navbar-container" class="header-container">
+      <nav>
+        <ul id="header-links" class="links">
+          <li>
+            <!-- styling active page with a coloured underline taken from Code Institute Love Running project -->
+            <a href="index.html" aria-label="Go to the Home page (does not open in a new tab)">Home</a>
+          </li>
+          <li>
+            <a href="quiz-one.html" aria-label="You are on the Quiz One page" class="active">Quiz 1</a>
+          </li>
+          <li>
+            <a href="quiz-two.html" aria-label="Go to the Quiz Two page (does not open in a new tab)">Quiz 2</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section></section>
+  <!-- footer structure adapted from Code Institute Love Running project -->
+  <footer>
+    <ul class="links">
+      <li> 
+        <a href="https://myquiz.org/" target="_blank" rel="noopener" aria-label="Visit Myquiz's page (opens in a new tab)"><i class="fas fa-pen"></i> Write a Quiz</a>
+      </li>
+      <li>
+        <a href="https://www.courselounge.com/how-to-improve-your-general-knowledge/" target="_blank" rel="noopener" aria-label="Visit CourseLounge's page on how to improve your general knowledge (opens in a new tab)"><i class="fas fa-book-open"></i> Improve Your Knowledge</a>
+      </li>
+    </ul>
+  </footer>
+  <script src="assets/js/quiz-one.js" type="text/javascript"></script>
+  <noscript>
+    Your browser does not support JavaScript!
+  </noscript>
 </body>
 </html>
