@@ -79,7 +79,7 @@ function showAndHideUsernameForm() {
     <p>Create an optional username for the quiz!</p>
     <label for="username">Username:</label>
     <input type="text" id="username" name="user" required>
-    <button type="submit" id="username-submit-button">Submit Username</button>
+    <button type="submit" class="username-submit-button">Submit Username</button>
   `;
   let usernameOuterContainer = document.getElementById('username-container');
 
@@ -92,6 +92,9 @@ function showAndHideUsernameForm() {
   }
 }
 
-function handleSubmit() {
-  console.log('handle'); 
+function handleSubmit(event) {
+  event.preventDefault(); 
+
+  let usernameValue = document.getElementById('username').value;
+  sessionStorage.setItem("username", usernameValue);  
 }
