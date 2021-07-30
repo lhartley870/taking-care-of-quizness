@@ -104,5 +104,9 @@ function handleSubmit(event) {
 
   let submitButton = document.getElementsByClassName('username-submit-button')[0];   
   submitButton.classList.add('submitted-button');  
+  submitButton.innerHTML = 'Submitted!'; 
   submitButton.disabled = true; 
+
+  let usernameForm = document.getElementsByTagName('form')[0];
+  usernameForm.setAttribute('data-submitted', '');
 }
