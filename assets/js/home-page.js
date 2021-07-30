@@ -1,5 +1,5 @@
 // Wait for the DOM to finish loading before adding button interactivity
-// Get the Rules and Create Username show/hide buttons and add event listeners to them
+// Get the Rules and Create Username buttons and add event listeners to them
 // Get the Create Username form and add event listener to it
 // Structure for this first event listener function largely adapted from Code Institute Love Maths project
 document.addEventListener('DOMContentLoaded', function() {
@@ -20,9 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 /**
- * The function called on the 'Rules' button when the script is first loaded
- * allowing the user to click the 'Rules' button to display the quiz rules (surrounded
- * by a shadow border) and click the button again to hide them (and the shadow border)
+ * The function called when the user clicks the 'Rules' button allowing the user to 
+ * show and hide the quiz rules (surrounded by a shadow border) 
  */
 function showAndHideRules() {
   let rulesInnerContainer = document.getElementById('rules-container').children[1]; 
@@ -68,10 +67,8 @@ function showAndHideRules() {
 }
 
 /**
- * The function called on the 'Create Username' button when the script is first loaded
- * allowing the user to click the 'Create Username' button to display the username form
- * content (surrounded by a shadow border) and click the button again to hide the form 
- * content (and the shadow border)
+ * The function called when the user clicks the 'Create Username' button allowing the user 
+ * to show and hide the content of the form for creating a username (surrounded by a shadow border) 
  * Content shown will depend on whether or not the Create Username form has been submitted 
  * by the user 
  */
@@ -107,6 +104,15 @@ function showAndHideUsernameForm() {
   }
 }
 
+/**
+ * The function called when the user submits the form to create a username 
+ * preventing the default submit behaviour, saving the username value to be used
+ * to personalise the results page, changing the submit button appearance, clearing
+ * the username value from the form, disabling the username input field and the
+ * submit button and adding an attribute to the form element so that the 
+ * showAndHideUsernameForm function can identify whether or not the form has been
+ * submitted
+ */
 function handleSubmit(event) {
   event.preventDefault(); 
 
