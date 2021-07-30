@@ -54,11 +54,11 @@ function showAndHideRules() {
   `; 
   let rulesOuterContainer = document.getElementById('rules-container'); 
 
-  if (rulesInnerContainer.innerHTML === ' ') {
+  if (rulesInnerContainer.innerHTML === '') {
     rulesInnerContainer.innerHTML = rulesHtml; 
     rulesOuterContainer.classList.add('show-hide-content-container');
   } else {
-    rulesInnerContainer.innerHTML = ' '; 
+    rulesInnerContainer.innerHTML = ''; 
     rulesOuterContainer.classList.remove('show-hide-content-container'); 
   }
 }
@@ -79,11 +79,11 @@ function showAndHideUsernameForm() {
   `;
   let usernameOuterContainer = document.getElementById('username-container');
 
-  if (usernameForm.innerHTML === ' ') {
+  if (usernameForm.innerHTML === '') {
     usernameForm.innerHTML = formHtml; 
     usernameOuterContainer.classList.add('show-hide-content-container');
   } else {
-    usernameForm.innerHTML = ' ';
+    usernameForm.innerHTML = '';
     usernameOuterContainer.classList.remove('show-hide-content-container'); 
   }
 }
