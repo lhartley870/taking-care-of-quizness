@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /**
  * The function called on the 'Rules' button when the script is first loaded
- * allowing the user to click the 'Rules' button to display the quiz rules
- * and click the button again to hide them
+ * allowing the user to click the 'Rules' button to display the quiz rules (surrounded
+ * by a shadow border) and click the button again to hide them (and the shadow border)
  */
 function showAndHideRules() {
   let rulesInnerContainer = document.getElementById('rules-container').children[1]; 
-  let rules = `
+  let rulesHtml = `
     <ol>
       <li>Click on either 'Start Quiz 1' or 'Start Quiz 2' to begin</li>
       <li>There are 5 rounds per quiz and 3 questions in a round</li>
@@ -55,7 +55,7 @@ function showAndHideRules() {
   let rulesOuterContainer = document.getElementById('rules-container'); 
 
   if (rulesInnerContainer.innerHTML === ' ') {
-    rulesInnerContainer.innerHTML = rules; 
+    rulesInnerContainer.innerHTML = rulesHtml; 
     rulesOuterContainer.classList.add('show-hide-content-container');
   } else {
     rulesInnerContainer.innerHTML = ' '; 
@@ -63,23 +63,27 @@ function showAndHideRules() {
   }
 }
 
+/**
+ * The function called on the 'Create Username' button when the script is first loaded
+ * allowing the user to click the 'Create Username' button to display the username form
+ * content (surrounded by a shadow border) and click the button again to hide the form 
+ * content (and the shadow border)
+ */
 function showAndHideUsernameForm() {
-  let usernameInnerContainer = document.getElementById('username-container').children[1]; 
-  let usernameForm = `
+  let usernameForm = document.getElementsByTagName('form')[0]; 
+  let formHtml = `
     <p>Create an optional username for the quiz!</p>
-    <form>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="user" required>
-      <button type="submit" id="username-submit-button">Submit Username</button>
-    </form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="user" required>
+    <button type="submit" id="username-submit-button">Submit Username</button>
   `;
   let usernameOuterContainer = document.getElementById('username-container');
 
-  if (usernameInnerContainer.innerHTML === ' ') {
-    usernameInnerContainer.innerHTML = usernameForm; 
+  if (usernameForm.innerHTML === ' ') {
+    usernameForm.innerHTML = formHtml; 
     usernameOuterContainer.classList.add('show-hide-content-container');
   } else {
-    usernameInnerContainer.innerHTML = ' ';
+    usernameForm.innerHTML = ' ';
     usernameOuterContainer.classList.remove('show-hide-content-container'); 
   }
 }
