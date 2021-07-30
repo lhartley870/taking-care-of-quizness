@@ -215,7 +215,7 @@ td {
   margin: 5% 0; 
 }
 
-#username-submit-button {
+.username-submit-button {
   background-color: #007d9e; 
   border-radius: 15px; 
   color: #e6feff;
@@ -229,10 +229,16 @@ td {
   margin-top: 5%; 
 }
 
-/* styling for Rules and Create Username form containers when they are visible */
+/* styling for Rules and Create Username form containers when contents are visible */
 .show-hide-content-container {
   box-shadow: 0 0 8px 2px #007d9e; 
   padding: 2%;
+}
+
+/* styling for submit buttons once form submitted */
+.submitted-button {
+  background-color: #95b0b1;
+  color: #283d3e;
 }
 
 /* footer */
