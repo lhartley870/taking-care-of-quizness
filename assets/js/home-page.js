@@ -1,9 +1,11 @@
 // Wait for the DOM to finish loading before adding button interactivity
 // Get the Rules and Create Username show/hide buttons and add event listeners to them
-// Structure for this first event listener largely adapted from Code Institute Love Maths project
+// Get the Create Username form and add event listener to it
+// Structure for this first event listener function largely adapted from Code Institute Love Maths project
 document.addEventListener('DOMContentLoaded', function() {
   let buttons = [document.getElementsByClassName('home-page-button')[0], document.getElementsByClassName('home-page-button')[1]];
-  
+  let usernameForm = document.getElementsByTagName('form')[0]; 
+
   for (let button of buttons) {
     button.addEventListener('click', function() {
       if (this.parentNode.getAttribute('id') === 'username-container') {
@@ -13,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     })
   } 
+
+  usernameForm.addEventListener('submit', handleSubmit); 
 })
 
 /**
@@ -86,4 +90,8 @@ function showAndHideUsernameForm() {
     usernameForm.innerHTML = '';
     usernameOuterContainer.classList.remove('show-hide-content-container'); 
   }
+}
+
+function handleSubmit() {
+  console.log('handle'); 
 }
