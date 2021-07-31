@@ -262,3 +262,28 @@ footer a {
   font-size: 0.8em; 
   font-weight: 400; 
 }
+
+/* quiz page */
+
+#round1-q1-container {
+  border: 2px red solid; 
+} 
+
+.quiz-photo-container {
+  border: 2px solid blue; 
+  width: 80%; 
+}
+
+.quiz-photo-container > img {
+  object-fit: cover; 
+  height: 100%; 
+  width: 100%;
+  object-fit: cover; 
+  vertical-align: bottom; 
+}
+
+.quiz-question-container {
+  border: 2px solid green; 
+}
+
+
