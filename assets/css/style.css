@@ -266,6 +266,7 @@ footer a {
 /* quiz page */
 
 #round1-q1-container {
+  background-color: #007d9e;
   border: 2px red solid; 
 } 
 
@@ -284,6 +285,23 @@ footer a {
 
 .quiz-question-container {
   border: 2px solid green; 
+  color: #e6feff;  
 }
 
+.quiz-answer {
+  background-color: #e6feff; 
+  border-radius: 15px; 
+  color: #007d9e;
+  font-size: 1em; 
+  font-weight: 400;
+  margin: 2% auto; 
+  padding: 3%; 
+  position: relative; 
+  width: 80%; 
+}
 
+.quiz-answer > input {
+  opacity: 0; 
+  position: absolute;
+  width: 0;  
+} 
