@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
   for (let button of buttons) {
     button.addEventListener('click', function() {
       if (this.parentNode.getAttribute('id') === 'username-container') {
-        showAndHideUsernameForm();
+        showHideUsernameForm();
       } else {
-        showAndHideRules(); 
+        showHideRules(); 
       }
     })
   } 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
  * The function called when the user clicks the 'Rules' button allowing the user to 
  * show and hide the quiz rules (surrounded by a shadow border) 
  */
-function showAndHideRules() {
+function showHideRules() {
   let rulesInnerContainer = document.getElementById('rules-container').children[1]; 
   let rulesHtml = `
     <ol>
@@ -72,23 +72,20 @@ function showAndHideRules() {
  * Content shown will depend on whether or not the Create Username form has been submitted 
  * by the user 
  */
-function showAndHideUsernameForm() {
+function showHideUsernameForm() {
   let usernameForm = document.getElementsByTagName('form')[0]; 
-  
   let formHtmlPreSubmit = `
     <p>Create an optional username for the quiz!</p>
     <label for="username">Username:</label>
     <input type="text" id="username" name="user" required>
     <button type="submit" class="username-submit-button">Submit Username</button>
   `;
-
   let formHtmlPostSubmit = `
     <p>Create an optional username for the quiz!</p>
     <label for="username">Username:</label>
     <input type="text" id="username" name="user" required disabled>
     <button type="submit" class="username-submit-button submitted-button" disabled>Submitted!</button>
   `; 
-
   let usernameOuterContainer = document.getElementById('username-container');
 
   if (usernameForm.innerHTML === '') {
@@ -110,7 +107,7 @@ function showAndHideUsernameForm() {
  * to personalise the results page, changing the submit button appearance, clearing
  * the username value from the form, disabling the username input field and the
  * submit button and adding an attribute to the form element so that the 
- * showAndHideUsernameForm function can identify whether or not the form has been
+ * showHideUsernameForm function can identify whether or not the form has been
  * submitted
  */
 function handleSubmit(event) {
