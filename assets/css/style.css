@@ -277,7 +277,10 @@ footer a {
   display: grid; 
   grid-template-areas: 
     "round1-heading round1-heading round1-heading"
-    "round1-q1 round1-q1 round1-q1";
+    "round1-q1 round1-q1 round1-q1"
+    "round1-q2 round1-q2 round1-q2"
+    "round1-q3 round1-q3 round1-q3"
+    "round1-submit round1-submit round1-submit";
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto); 
   margin: 0 auto 8% auto; 
@@ -290,10 +293,26 @@ footer a {
 }
 
 #round1-q1-container {
-  background-color: #007d9e;
   border: 2px red solid; 
   grid-area: round1-q1; 
 } 
+
+#round1-q2-container {
+  grid-area: round1-q2; 
+}
+
+#round1-q3-container {
+  grid-area: round1-q3; 
+}
+
+#round1-submit-container {
+  border: 2px solid pink; 
+  grid-area: round1-submit;   
+}
+
+.round-question-container {
+   background-color: #007d9e;
+}
 
 .quiz-photo-container {
   border: 2px solid blue; 
