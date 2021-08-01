@@ -38,7 +38,7 @@ header {
   text-align: center; 
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-size: 1.5em; 
   font-weight: 400;  
 }
@@ -49,10 +49,18 @@ h1 {
   text-transform: uppercase;
 }
 
-h2, h3 {
+h2 {
   color: #b74e74; 
   font-family: 'Rock Salt', cursive; 
-  font-weight: 400; 
+   
+}
+
+h3 {
+  color: #955B92; 
+  font-family: 'Slackey', cursive;
+  font-size: 1.1em; 
+  font-weight: 400;
+  padding-bottom: 2%; 
 }
 
 /* navigation bar */
@@ -265,9 +273,26 @@ footer a {
 
 /* quiz page */
 
+#round1-container {
+  display: grid; 
+  grid-template-areas: 
+    "round1-heading round1-heading round1-heading"
+    "round1-q1 round1-q1 round1-q1";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto); 
+  margin: 0 auto 8% auto; 
+  width: 90%; 
+}
+
+#round1-heading-container {
+  grid-area: round1-heading; 
+  text-align: left; 
+}
+
 #round1-q1-container {
   background-color: #007d9e;
   border: 2px red solid; 
+  grid-area: round1-q1; 
 } 
 
 .quiz-photo-container {
