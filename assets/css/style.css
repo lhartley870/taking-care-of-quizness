@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Rock+Salt&family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Rock+Salt&family=Slackey&display=swap');
 
 * {
   border: none; 
@@ -12,6 +12,7 @@ body {
   color: #007d9e; 
   font-family: 'Raleway', sans-serif;
   font-size: 1em; 
+  font-weight: 500; 
 }
 
 /* header */
@@ -332,6 +333,10 @@ footer a {
 
 .quiz-question {
   margin-bottom: 5%;  
+}
+
+.quiz-quote {
+  font-style: italic; 
 }
 
 .quiz-answer {
