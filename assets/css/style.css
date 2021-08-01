@@ -59,8 +59,8 @@ h3 {
   color: #955B92; 
   font-family: 'Slackey', cursive;
   font-size: 1.1em; 
-  font-weight: 400;
-  padding-bottom: 2%; 
+  font-weight: 400; 
+  margin-bottom: -10px; 
 }
 
 /* navigation bar */
@@ -284,6 +284,7 @@ footer a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto); 
   margin: 0 auto 8% auto; 
+  row-gap: 20px; 
   width: 90%; 
 }
 
@@ -312,6 +313,7 @@ footer a {
 
 .round-question-container {
    background-color: #007d9e;
+   box-shadow: 0 0 8px 2px #b74e74;
 }
 
 .quiz-photo-container {
