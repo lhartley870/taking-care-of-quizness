@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
   for (let answerButton of answerButtons) {
       answerButton.addEventListener('click', radioSelect); 
   }
+
+  let roundForms = document.getElementsByTagName('form'); 
+
+  for (let roundForm of roundForms) {
+    roundForm.addEventListener('submit', handleSubmit); 
+  }
 })
 
 /**
@@ -19,5 +25,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
   radioButton.click(); 
 }
+
+function handleSubmit(event) {
+  disableSubmit(event); 
+  checkUserAnswer(event);
+  provideFeedback(event);
+}
+
+function disableSubmit(event) {
+  event.preventDefault(); 
+}
+
+function checkUserAnswer(event) {
+}
+
+function provideFeedback(event) { 
+}
+
+
 
 
