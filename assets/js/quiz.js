@@ -1,3 +1,14 @@
+const quiz1 = [
+  {
+    questionOneCorrect: 'Field of Dreams',
+    questionTwoCorrect: 'Terminator 2: Judgment Day',
+    questionThreeCorrect: 'The Notebook', 
+  }
+]; 
+
+
+
+
 // Wait for the DOM to finish loading before adding quiz interactivity
 document.addEventListener('DOMContentLoaded', function() {
   let answerButtons = document.getElementsByClassName('quiz-answer'); 
@@ -112,11 +123,38 @@ function getUserAnswers(event, formSubmitted) {
       userQu3AnswerHtml = qu3AnswerLabel.innerHTML; 
     }
   } 
+
+  let userRoundAnswers = [userQu1AnswerHtml, userQu2AnswerHtml, userQu3AnswerHtml]; 
+  
+  checkUserAnswers(event, formSubmitted, userRoundAnswers);
+}
+
+function checkUserAnswers(event, formSubmitted, userRoundAnswers) {
+  let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
+
+  let userQu1Score; 
+  let userQu2Score; 
+  let userQu3Score; 
+  
+  if (userRoundAnswers[0] === quiz1[roundNumber-1].questionOneCorrect) {
+    userQu1Score = 1;
+  } else {
+    userQu1Score = 0; 
+  }
+  if (userRoundAnswers[1] === quiz1[roundNumber-1].questionTwoCorrect) {
+    userQu2Score = 1;
+  } else {
+    userQu2Score = 0; 
+  }
+  if (userRoundAnswers[2] === quiz1[roundNumber-1].questionThreeCorrect) {
+    userQu3Score = 1;
+  } else {
+    userQu3Score = 0; 
+  }
+
+  let userRoundScores = ['Round' + roundNumber, userQu1Score, userQu2Score, userQu3Score]; 
+
 }
 
 function provideFeedback(event) { 
 }
-
-
-
-
