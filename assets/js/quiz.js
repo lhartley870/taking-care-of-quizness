@@ -70,6 +70,48 @@ function getUserAnswers(event, formSubmitted) {
       userQu1AnswerHtml = qu1AnswerLabel.innerHTML; 
     }
   } 
+
+  // question 2 answers
+  let qu2Answers = formSubmitted.getElementsByClassName('q2-answer');  
+  let qu2AnswerLabels = formSubmitted.getElementsByClassName('q2-answer-label'); 
+
+  let userQu2Answer; 
+
+  for (let qu2Answer of qu2Answers) {
+    if (qu2Answer.checked) {
+      userQu2Answer = qu2Answer; 
+    }
+  }
+
+  let userQu2Id = userQu2Answer.id; 
+  let userQu2AnswerHtml; 
+  
+  for (let qu2AnswerLabel of qu2AnswerLabels) {
+    if (qu2AnswerLabel.getAttribute('for') === userQu2Id) {
+      userQu2AnswerHtml = qu2AnswerLabel.innerHTML; 
+    }
+  }  
+
+  // question 3 answers
+  let qu3Answers = formSubmitted.getElementsByClassName('q3-answer');  
+  let qu3AnswerLabels = formSubmitted.getElementsByClassName('q3-answer-label'); 
+
+  let userQu3Answer; 
+
+  for (let qu3Answer of qu3Answers) {
+    if (qu3Answer.checked) {
+      userQu3Answer = qu3Answer; 
+    }
+  }
+
+  let userQu3Id = userQu3Answer.id; 
+  let userQu3AnswerHtml; 
+  
+  for (let qu3AnswerLabel of qu3AnswerLabels) {
+    if (qu3AnswerLabel.getAttribute('for') === userQu3Id) {
+      userQu3AnswerHtml = qu3AnswerLabel.innerHTML; 
+    }
+  } 
 }
 
 function provideFeedback(event) { 
