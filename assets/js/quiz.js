@@ -30,7 +30,7 @@ function handleSubmit(event) {
   let formSubmitted = this; 
 
   disableSubmit(event, formSubmitted); 
-  checkUserAnswer(event, formSubmitted);
+  getUserAnswers(event, formSubmitted);
   provideFeedback(event, formSubmitted);
 }
 
@@ -49,7 +49,27 @@ function disableSubmit(event, formSubmitted) {
   }
 }
 
-function checkUserAnswer(event) {
+function getUserAnswers(event, formSubmitted) { 
+  // question 1 answers
+  let qu1Answers = formSubmitted.getElementsByClassName('q1-answer');  
+  let qu1AnswerLabels = formSubmitted.getElementsByClassName('q1-answer-label'); 
+
+  let userQu1Answer; 
+
+  for (let qu1Answer of qu1Answers) {
+    if (qu1Answer.checked) {
+      userQu1Answer = qu1Answer; 
+    }
+  }
+
+  let userQu1Id = userQu1Answer.id; 
+  let userQu1AnswerHtml; 
+  
+  for (let qu1AnswerLabel of qu1AnswerLabels) {
+    if (qu1AnswerLabel.getAttribute('for') === userQu1Id) {
+      userQu1AnswerHtml = qu1AnswerLabel.innerHTML; 
+    }
+  } 
 }
 
 function provideFeedback(event) { 
