@@ -27,13 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 function handleSubmit(event) {
-  disableSubmit(event); 
-  checkUserAnswer(event);
-  provideFeedback(event);
+  let formSubmitted = this; 
+
+  disableSubmit(event, formSubmitted); 
+  checkUserAnswer(event, formSubmitted);
+  provideFeedback(event, formSubmitted);
 }
 
-function disableSubmit(event) {
+function disableSubmit(event, formSubmitted) {
   event.preventDefault(); 
+
+  let submitButton = formSubmitted.getElementsByTagName('button')[0];
+  submitButton.classList.add('submitted-button');  
+  submitButton.innerHTML = 'Submitted!'; 
+  submitButton.disabled = true;    
+
+  let roundAnswers =  formSubmitted.getElementsByTagName('input');
+
+  for (let answer in roundAnswers) {
+    roundAnswers[answer].disabled = true; 
+  }
 }
 
 function checkUserAnswer(event) {
