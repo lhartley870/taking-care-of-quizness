@@ -153,8 +153,22 @@ function checkUserAnswers(event, formSubmitted, userRoundAnswers) {
   }
 
   let userRoundScores = ['Round' + roundNumber, userQu1Score, userQu2Score, userQu3Score]; 
-
 }
+
+function provideFeedback(event, formSubmitted) {
+  // feedback for question 1 answers
+  let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
+  let qu1AnswerLabels = formSubmitted.getElementsByClassName('q1-answer-label'); 
+  let q1Feedback = formSubmitted.getElementsByClassName('q1-feedback'); 
+
+  for (let i = 0; i < qu1AnswerLabels.length; i++) {
+    if (qu1AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionOneCorrect) {
+      q1Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
+    } else {
+      q1Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
+    } 
+  }  
+} 
 
 function provideFeedback(event) { 
 }
