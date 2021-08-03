@@ -373,3 +373,18 @@ the .submitted-button styling will take precedence */
   background-color: #95b0b1;
   color: #283d3e;
 } 
+
+/* styling for the tick and cross icons added by javascript
+to indicate whether quiz answers are right or wrong when each quiz 
+round is submitted by the user */
+.quiz-answer p {
+  font-size: 2em; 
+}
+
+.right-answer {
+  color: #008500; 
+}
+
+.wrong-answer {
+  color: #e00000; 
+}
