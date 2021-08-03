@@ -154,13 +154,14 @@ function checkUserAnswers(event, formSubmitted, userRoundAnswers) {
 
   let userRoundScores = ['Round' + roundNumber, userQu1Score, userQu2Score, userQu3Score]; 
 
+  provideQuResult(event, userRoundScores, formSubmitted);  
   compileUserScores(event, userRoundScores); 
 }
 
-function provideFeedback(event, formSubmitted) {
-  console.log(formSubmitted); 
-  // feedback for question 1 answers
+function provideFeedback(event, formSubmitted) { 
   let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
+  
+  // feedback for question 1 answers
   let qu1AnswerLabels = formSubmitted.getElementsByClassName('q1-answer-label'); 
   let q1Feedback = formSubmitted.getElementsByClassName('q1-feedback'); 
 
@@ -196,6 +197,26 @@ function provideFeedback(event, formSubmitted) {
     } 
   }  
 } 
+
+function provideQuResult(event, userRoundScores, formSubmitted) {
+  let q1Result = formSubmitted.getElementsByClassName('q1-result')[0];
+  let q2Result = formSubmitted.getElementsByClassName('q2-result')[0];
+  let q3Result = formSubmitted.getElementsByClassName('q3-result')[0];
+
+  let roundResults = [q1Result, q2Result, q3Result]; 
+  userRoundScores.shift(); 
+  console.log(userRoundScores); 
+  
+  for (let i = 0; i < userRoundScores.length; i++) {
+    if (userRoundScores[i] === 1) {
+      roundResults[i].innerHTML = 'Correct!'; 
+      roundResults[i].classList.add('correct-answer');
+    } else {
+      roundResults[i].innerHTML = 'Incorrect!'; 
+      roundResults[i].classList.add('incorrect-answer');
+    }
+  }
+}
 
 function compileUserScores(event, userRoundScores) { 
 }
