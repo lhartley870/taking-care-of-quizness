@@ -311,6 +311,7 @@ footer a {
 }
 
 .quiz-photo-container { 
+  font-size: 2.5em; 
   margin: 10% auto 5% auto; 
   width: 80%; 
 }
@@ -365,18 +366,22 @@ input[type=radio]:checked+label {
 }
 
 /* styling for submit buttons once form submitted */
-/* this has to remain below the classes for styling the
+/* 
+this has to remain below the classes for styling the
 username submit button on the home page and the round
 submit buttons in the quiz so that when applied by javascript
-the .submitted-button styling will take precedence */
+the .submitted-button styling will take precedence 
+*/
 .submitted-button {
   background-color: #95b0b1;
   color: #283d3e;
 } 
 
-/* styling for the tick and cross icons added by javascript
-to indicate whether quiz answers are right or wrong when each quiz 
-round is submitted by the user */
+/* 
+styling for the tick and cross icons added by javascript
+to indicate whether each quiz answer is right or wrong when each quiz 
+round is submitted by the user 
+*/
 .quiz-answer p {
   font-size: 2em; 
 }
@@ -387,4 +392,26 @@ round is submitted by the user */
 
 .wrong-answer {
   color: #e00000; 
+}
+
+/* 
+styling for the 'Correct!' and 'Incorrect!' wording added by javascript
+to indicate whether a user got a quiz question right or wrong when each
+quiz round is submitted by the user 
+/*
+/* 
+can't just use the .right-answer and .wrong-answer classes above because the
+background colour needs to be changed for 'Correct!' and 'Incorrect!' to provide 
+sufficient contrast for accessibility purposes - font colours are therefore repeated
+in .correct-answer and .incorrect-answer classes to avoid having to add two classes to 
+the paragraph element (one for font colour and one for background colour) 
+*/
+.correct-answer {
+  background: #e6feff; 
+  color: #008500; 
+}
+
+.incorrect-answer {
+  background: #e6feff; 
+  color: #e00000;  
 }
