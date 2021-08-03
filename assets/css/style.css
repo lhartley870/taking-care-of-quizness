@@ -244,12 +244,6 @@ td {
   padding: 2%;
 }
 
-/* styling for submit buttons once form submitted */
-.submitted-button {
-  background-color: #95b0b1;
-  color: #283d3e;
-}
-
 /* footer */
 
 footer {
@@ -352,18 +346,6 @@ footer a {
 }
 
 /* 
-code to hide radio buttons without the hidden radio taking
-up space whilst still allowing focus on the radio label taken
-from an answer given by Gerben Versluis on Stack Overflow - 
-https://stackoverflow.com/questions/18078871/hide-check-radio-button-with-css 
-*/
-.quiz-answer > input {
-  opacity: 0; 
-  position: absolute;
-  width: 0;  
-} 
-
-/* 
 code to change label styling for checked radio button taken from an 
 answer given by Gerben Versluis on Stack Overflow - 
 https://stackoverflow.com/questions/18078871/hide-check-radio-button-with-css 
@@ -381,3 +363,13 @@ input[type=radio]:checked+label {
   font-weight: 400; 
   padding: 15px; 
 }
+
+/* styling for submit buttons once form submitted */
+/* this has to remain below the classes for styling the
+username submit button on the home page and the round
+submit buttons in the quiz so that when applied by javascript
+the .submitted-button styling will take precedence */
+.submitted-button {
+  background-color: #95b0b1;
+  color: #283d3e;
+} 
