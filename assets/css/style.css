@@ -268,19 +268,31 @@ footer a {
 
 /* quiz page */
 
-#round1-container {
+.round-container {
   display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto); 
+  margin: 0 auto 8% auto; 
+  row-gap: 20px; 
+  width: 90%; 
+}
+
+#round1-container {
   grid-template-areas: 
     "round1-heading round1-heading round1-heading"
     "round1-q1 round1-q1 round1-q1"
     "round1-q2 round1-q2 round1-q2"
     "round1-q3 round1-q3 round1-q3"
     "round1-submit round1-submit round1-submit";
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, auto); 
-  margin: 0 auto 8% auto; 
-  row-gap: 20px; 
-  width: 90%; 
+}
+
+#round2-container {
+  grid-template-areas: 
+    "round2-heading round2-heading round2-heading"
+    "round2-q1 round2-q1 round2-q1"
+    "round2-q2 round2-q2 round2-q2"
+    "round2-q3 round2-q3 round2-q3"
+    "round2-submit round2-submit round2-submit";  
 }
 
 #round1-heading-container {
@@ -302,6 +314,27 @@ footer a {
 
 #round1-submit-container {
   grid-area: round1-submit;   
+}
+
+#round2-heading-container {
+  grid-area: round2-heading; 
+  text-align: left; 
+}
+
+#round2-q1-container {
+  grid-area: round2-q1; 
+} 
+
+#round2-q2-container {
+  grid-area: round2-q2; 
+}
+
+#round2-q3-container {
+  grid-area: round2-q3; 
+}
+
+#round2-submit-container {
+  grid-area: round2-submit;   
 }
 
 .round-question-container {
