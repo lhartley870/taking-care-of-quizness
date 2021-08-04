@@ -126,6 +126,7 @@ function provideQuResult(event, userRoundScores, formSubmitted) {
 }
 
 function checkUserAnswers(event, formSubmitted, userRoundAnswers) {
+  let userRoundAnswers = getUserAnswers(event, formSubmitted); 
   let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
 
   let userQu1Score; 
@@ -150,8 +151,7 @@ function checkUserAnswers(event, formSubmitted, userRoundAnswers) {
 
   let userRoundScores = ['Round' + roundNumber, userQu1Score, userQu2Score, userQu3Score]; 
 
-  provideQuResult(event, userRoundScores, formSubmitted);  
-  compileUserScores(event, userRoundScores); 
+  return userRoundScores;  
 }
 
 function getUserAnswers(event, formSubmitted) { 
