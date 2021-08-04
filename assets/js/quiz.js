@@ -8,6 +8,21 @@ const quiz1 = [
     questionOneCorrect: 'A murder',
     questionTwoCorrect: '98%',
     questionThreeCorrect: '3',
+  },
+  {
+    questionOneCorrect: 'The Breakfast Club',
+    questionTwoCorrect: 'Backstreet Boys',
+    questionThreeCorrect: 'Back in the Saddle by Aerosmith',
+  },
+  {
+    questionOneCorrect: 'True',
+    questionTwoCorrect: 'False',
+    questionThreeCorrect: 'True',
+  },
+  {
+    questionOneCorrect: 'Fish',
+    questionTwoCorrect: 'Not a Fish',
+    questionThreeCorrect: 'Not a Fish',
   }
 ]; 
 
