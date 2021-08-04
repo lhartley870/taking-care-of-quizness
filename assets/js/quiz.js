@@ -40,34 +40,32 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 function handleSubmit(event) {
-  let formSubmitted = this; 
-
-  disableSubmit(event, formSubmitted); 
-  provideFeedback(event, formSubmitted);
-  compileUserScores(event, formSubmitted); 
+  disableSubmit(event); 
+  provideFeedback(event);
+  compileUserScores(event); 
 }
 
-function disableSubmit(event, formSubmitted) {
+function disableSubmit(event) {
   event.preventDefault(); 
 
-  let submitButton = formSubmitted.getElementsByTagName('button')[0];
+  let submitButton = event.target.getElementsByTagName('button')[0];
   submitButton.classList.add('submitted-button');  
   submitButton.innerHTML = 'Submitted!'; 
   submitButton.disabled = true;    
 
-  let roundAnswers =  formSubmitted.getElementsByTagName('input');
+  let roundAnswers =  event.target.getElementsByTagName('input');
 
   for (let answer in roundAnswers) {
     roundAnswers[answer].disabled = true; 
   }
 }
 
-function provideFeedback(event, formSubmitted) { 
-  let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
+function provideFeedback(event) { 
+  let roundNumber = event.target.getElementsByClassName('round-number')[0].innerHTML[6];
   
   // feedback for question 1 answers
-  let qu1AnswerLabels = formSubmitted.getElementsByClassName('q1-answer-label'); 
-  let q1Feedback = formSubmitted.getElementsByClassName('q1-feedback'); 
+  let qu1AnswerLabels = event.target.getElementsByClassName('q1-answer-label'); 
+  let q1Feedback = event.target.getElementsByClassName('q1-feedback'); 
 
   for (let i = 0; i < qu1AnswerLabels.length; i++) {
     if (qu1AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionOneCorrect) {
@@ -78,8 +76,8 @@ function provideFeedback(event, formSubmitted) {
   }   
  
   // feedback for question 2 answers
-  let qu2AnswerLabels = formSubmitted.getElementsByClassName('q2-answer-label'); 
-  let q2Feedback = formSubmitted.getElementsByClassName('q2-feedback'); 
+  let qu2AnswerLabels = event.target.getElementsByClassName('q2-answer-label'); 
+  let q2Feedback = event.target.getElementsByClassName('q2-feedback'); 
  
   for (let i = 0; i < qu2AnswerLabels.length; i++) {
     if (qu2AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionTwoCorrect) {
@@ -90,8 +88,8 @@ function provideFeedback(event, formSubmitted) {
   }  
 
   // feedback for question 3 answers
-  let qu3AnswerLabels = formSubmitted.getElementsByClassName('q3-answer-label'); 
-  let q3Feedback = formSubmitted.getElementsByClassName('q3-feedback'); 
+  let qu3AnswerLabels = event.target.getElementsByClassName('q3-answer-label'); 
+  let q3Feedback = event.target.getElementsByClassName('q3-feedback'); 
 
   for (let i = 0; i < qu3AnswerLabels.length; i++) {
     if (qu3AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionThreeCorrect) {
@@ -102,20 +100,20 @@ function provideFeedback(event, formSubmitted) {
   }  
 } 
 
-function compileUserScores(event, formSubmitted) { 
-  let overallRoundScore = provideQuResult(event, formSubmitted)
+function compileUserScores(event) { 
+  let overallRoundScore = provideQuResult(event); 
+  console.log(overallRoundScore); 
 }
 
-function provideQuResult(event, formSubmitted) {
-  let userRoundScores = checkUserAnswers(event, formSubmitted); 
+function provideQuResult(event) {
+  let userRoundScores = checkUserAnswers(event); 
 
-  let q1Result = formSubmitted.getElementsByClassName('q1-result')[0];
-  let q2Result = formSubmitted.getElementsByClassName('q2-result')[0];
-  let q3Result = formSubmitted.getElementsByClassName('q3-result')[0];
+  let q1Result = event.target.getElementsByClassName('q1-result')[0];
+  let q2Result = event.target.getElementsByClassName('q2-result')[0];
+  let q3Result = event.target.getElementsByClassName('q3-result')[0];
 
   let roundResults = [q1Result, q2Result, q3Result]; 
   userRoundScores.shift(); 
-  console.log(userRoundScores); 
   
   for (let i = 0; i < userRoundScores.length; i++) {
     if (userRoundScores[i] === 1) {
@@ -132,9 +130,9 @@ function provideQuResult(event, formSubmitted) {
   return overallRoundScore; 
 }
 
-function checkUserAnswers(event, formSubmitted) {
-  let userRoundAnswers = getUserAnswers(event, formSubmitted); 
-  let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
+function checkUserAnswers(event) {
+  let userRoundAnswers = getUserAnswers(event); 
+  let roundNumber = event.target.getElementsByClassName('round-number')[0].innerHTML[6];
 
   let userQu1Score; 
   let userQu2Score; 
@@ -161,10 +159,10 @@ function checkUserAnswers(event, formSubmitted) {
   return userRoundScores;  
 }
 
-function getUserAnswers(event, formSubmitted) { 
+function getUserAnswers(event) { 
   // question 1 answers
-  let qu1Answers = formSubmitted.getElementsByClassName('q1-answer');  
-  let qu1AnswerLabels = formSubmitted.getElementsByClassName('q1-answer-label'); 
+  let qu1Answers = event.target.getElementsByClassName('q1-answer');  
+  let qu1AnswerLabels = event.target.getElementsByClassName('q1-answer-label'); 
 
   let userQu1Answer; 
 
@@ -184,8 +182,8 @@ function getUserAnswers(event, formSubmitted) {
   } 
 
   // question 2 answers
-  let qu2Answers = formSubmitted.getElementsByClassName('q2-answer');  
-  let qu2AnswerLabels = formSubmitted.getElementsByClassName('q2-answer-label'); 
+  let qu2Answers = event.target.getElementsByClassName('q2-answer');  
+  let qu2AnswerLabels = event.target.getElementsByClassName('q2-answer-label'); 
 
   let userQu2Answer; 
 
@@ -205,8 +203,8 @@ function getUserAnswers(event, formSubmitted) {
   }  
 
   // question 3 answers
-  let qu3Answers = formSubmitted.getElementsByClassName('q3-answer');  
-  let qu3AnswerLabels = formSubmitted.getElementsByClassName('q3-answer-label'); 
+  let qu3Answers = event.target.getElementsByClassName('q3-answer');  
+  let qu3AnswerLabels = event.target.getElementsByClassName('q3-answer-label'); 
 
   let userQu3Answer; 
 
