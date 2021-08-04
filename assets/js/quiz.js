@@ -232,3 +232,15 @@ function getUserAnswers(event) {
   
   return userRoundAnswers; 
 }
+
+function handleResults(event) {
+  event.preventDefault();
+
+  if (allRoundScores.length === 5) {
+    allRoundScores.sort(); 
+    sessionStorage.setItem('allRoundScores', allRoundScores); 
+    event.target.submit();  
+  } else {
+    alert('Please submit all 5 rounds to get your results'); 
+  }
+}
