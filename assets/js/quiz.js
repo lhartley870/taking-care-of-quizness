@@ -11,6 +11,8 @@ const quiz1 = [
   }
 ]; 
 
+const allRoundScores = []; 
+
 // Wait for the DOM to finish loading before adding quiz interactivity
 document.addEventListener('DOMContentLoaded', function() {
   let answerButtons = document.getElementsByClassName('quiz-answer'); 
@@ -102,6 +104,8 @@ function provideFeedback(event) {
 
 function compileUserScores(event) { 
   let overallRoundScore = provideQuResult(event); 
+
+  allRoundScores.push(overallRoundScore);  
 }
 
 function provideQuResult(event) {
