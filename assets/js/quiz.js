@@ -106,6 +106,8 @@ function compileUserScores(event, userRoundScores) {
 }
 
 function provideQuResult(event, userRoundScores, formSubmitted) {
+  let userRoundScores = checkUserAnswers(event, formSubmitted); 
+
   let q1Result = formSubmitted.getElementsByClassName('q1-result')[0];
   let q2Result = formSubmitted.getElementsByClassName('q2-result')[0];
   let q3Result = formSubmitted.getElementsByClassName('q3-result')[0];
@@ -123,9 +125,13 @@ function provideQuResult(event, userRoundScores, formSubmitted) {
       roundResults[i].classList.add('incorrect-answer');
     }
   }
+
+  let overallRoundScore = [userRoundScores[0], (userRoundScores[1] + userRoundScores[2] + userRoundScores[3])];
+
+  return overallRoundScore; 
 }
 
-function checkUserAnswers(event, formSubmitted, userRoundAnswers) {
+function checkUserAnswers(event, formSubmitted) {
   let userRoundAnswers = getUserAnswers(event, formSubmitted); 
   let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
 
