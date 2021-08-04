@@ -102,10 +102,11 @@ function provideFeedback(event, formSubmitted) {
   }  
 } 
 
-function compileUserScores(event, userRoundScores) { 
+function compileUserScores(event, formSubmitted) { 
+  let overallRoundScore = provideQuResult(event, formSubmitted)
 }
 
-function provideQuResult(event, userRoundScores, formSubmitted) {
+function provideQuResult(event, formSubmitted) {
   let userRoundScores = checkUserAnswers(event, formSubmitted); 
 
   let q1Result = formSubmitted.getElementsByClassName('q1-result')[0];
