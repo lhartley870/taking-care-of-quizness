@@ -43,8 +43,8 @@ function handleSubmit(event) {
   let formSubmitted = this; 
 
   disableSubmit(event, formSubmitted); 
-  getUserAnswers(event, formSubmitted);
   provideFeedback(event, formSubmitted);
+  compileUserScores(event, formSubmitted); 
 }
 
 function disableSubmit(event, formSubmitted) {
@@ -220,5 +220,5 @@ function getUserAnswers(event, formSubmitted) {
 
   let userRoundAnswers = [userQu1AnswerHtml, userQu2AnswerHtml, userQu3AnswerHtml]; 
   
-  checkUserAnswers(event, formSubmitted, userRoundAnswers);
+  return userRoundAnswers; 
 }
