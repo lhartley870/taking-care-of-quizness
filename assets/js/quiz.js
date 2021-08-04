@@ -102,7 +102,6 @@ function provideFeedback(event) {
 
 function compileUserScores(event) { 
   let overallRoundScore = provideQuResult(event); 
-  console.log(overallRoundScore); 
 }
 
 function provideQuResult(event) {
@@ -113,10 +112,10 @@ function provideQuResult(event) {
   let q3Result = event.target.getElementsByClassName('q3-result')[0];
 
   let roundResults = [q1Result, q2Result, q3Result]; 
-  userRoundScores.shift(); 
+  let roundScores = [userRoundScores[1], userRoundScores[2], userRoundScores[3]];
   
-  for (let i = 0; i < userRoundScores.length; i++) {
-    if (userRoundScores[i] === 1) {
+  for (let i = 0; i < roundScores.length; i++) {
+    if (roundScores[i] === 1) {
       roundResults[i].innerHTML = 'Correct!'; 
       roundResults[i].classList.add('correct-answer');
     } else {
