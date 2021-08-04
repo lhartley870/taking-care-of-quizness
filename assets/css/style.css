@@ -295,6 +295,42 @@ footer a {
     "round2-submit round2-submit round2-submit";  
 }
 
+#round3-container {
+  grid-template-areas: 
+    "round3-heading round3-heading round3-heading"
+    "round3-q1 round3-q1 round3-q1"
+    "round3-q2 round3-q2 round3-q2"
+    "round3-q3 round3-q3 round3-q3 "
+    "round3-submit round3-submit round3-submit";  
+}
+
+#round4-container {
+  grid-template-areas: 
+    "round4-heading round4-heading round4-heading"
+    "round4-q1 round4-q1 round4-q1"
+    "round4-q2 round4-q2 round4-q2"
+    "round4-q3 round4-q3 round4-q3"
+    "round4-submit round4-submit round4-submit";  
+}
+
+#round5-container {
+  grid-template-areas: 
+    "round5-heading round5-heading round5-heading"
+    "round5-q1 round5-q1 round5-q1"
+    "round5-q2 round5-q2 round5-q2"
+    "round5-q3 round5-q3 round5-q3"
+    "round5-submit round5-submit round5-submit";  
+}
+
+#results-form-container {
+  display: grid; 
+  grid-template-areas: "results-button";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1, auto; 
+  margin: 0 auto 8% auto; 
+  width: 90%; 
+}
+
 #round1-heading-container {
   grid-area: round1-heading; 
   text-align: left; 
@@ -335,6 +371,73 @@ footer a {
 
 #round2-submit-container {
   grid-area: round2-submit;   
+}
+
+#round3-heading-container {
+  grid-area: round3-heading; 
+  text-align: left; 
+}
+
+#round3-q1-container {
+  grid-area: round3-q1; 
+} 
+
+#round3-q2-container {
+  grid-area: round3-q2; 
+}
+
+#round3-q3-container {
+  grid-area: round3-q3; 
+}
+
+#round3-submit-container {
+  grid-area: round3-submit;   
+}
+
+#round4-heading-container {
+  grid-area: round4-heading; 
+  text-align: left; 
+}
+
+#round4-q1-container {
+  grid-area: round4-q1; 
+} 
+
+#round4-q2-container {
+  grid-area: round4-q2; 
+}
+
+#round4-q3-container {
+  grid-area: round4-q3; 
+}
+
+#round4-submit-container {
+  grid-area: round4-submit;   
+}
+
+#round5-heading-container {
+  grid-area: round5-heading; 
+  text-align: left; 
+}
+
+#round5-q1-container {
+  grid-area: round5-q1; 
+} 
+
+#round5-q2-container {
+  grid-area: round5-q2; 
+}
+
+#round5-q3-container {
+  grid-area: round5-q3; 
+}
+
+#round5-submit-container {
+  grid-area: round5-submit;   
+}
+
+#results-button{
+  grid-area: results-button; 
 }
 
 .round-question-container {
