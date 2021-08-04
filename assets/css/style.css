@@ -448,3 +448,14 @@ the paragraph element (one for font colour and one for background colour)
   background: #e6feff; 
   color: #e00000;  
 }
+
+.page-link-button {
+  border: 4px solid #FFA8A8 ; 
+  background-color: #b74e74;  
+  border-radius: 15px; 
+  color: #e6feff;
+  font-family: 'Slackey', cursive;
+  font-size: 1.5em; 
+  font-weight: 400; 
+  padding: 15px; 
+}
