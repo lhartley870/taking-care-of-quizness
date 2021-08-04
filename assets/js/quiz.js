@@ -62,6 +62,98 @@ function disableSubmit(event, formSubmitted) {
   }
 }
 
+function provideFeedback(event, formSubmitted) { 
+  let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
+  
+  // feedback for question 1 answers
+  let qu1AnswerLabels = formSubmitted.getElementsByClassName('q1-answer-label'); 
+  let q1Feedback = formSubmitted.getElementsByClassName('q1-feedback'); 
+
+  for (let i = 0; i < qu1AnswerLabels.length; i++) {
+    if (qu1AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionOneCorrect) {
+      q1Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
+    } else {
+      q1Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
+    }
+  }   
+ 
+  // feedback for question 2 answers
+  let qu2AnswerLabels = formSubmitted.getElementsByClassName('q2-answer-label'); 
+  let q2Feedback = formSubmitted.getElementsByClassName('q2-feedback'); 
+ 
+  for (let i = 0; i < qu2AnswerLabels.length; i++) {
+    if (qu2AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionTwoCorrect) {
+      q2Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
+    } else {
+      q2Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
+    } 
+  }  
+
+  // feedback for question 3 answers
+  let qu3AnswerLabels = formSubmitted.getElementsByClassName('q3-answer-label'); 
+  let q3Feedback = formSubmitted.getElementsByClassName('q3-feedback'); 
+
+  for (let i = 0; i < qu3AnswerLabels.length; i++) {
+    if (qu3AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionThreeCorrect) {
+      q3Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
+    } else {
+      q3Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
+    } 
+  }  
+} 
+
+function compileUserScores(event, userRoundScores) { 
+}
+
+function provideQuResult(event, userRoundScores, formSubmitted) {
+  let q1Result = formSubmitted.getElementsByClassName('q1-result')[0];
+  let q2Result = formSubmitted.getElementsByClassName('q2-result')[0];
+  let q3Result = formSubmitted.getElementsByClassName('q3-result')[0];
+
+  let roundResults = [q1Result, q2Result, q3Result]; 
+  userRoundScores.shift(); 
+  console.log(userRoundScores); 
+  
+  for (let i = 0; i < userRoundScores.length; i++) {
+    if (userRoundScores[i] === 1) {
+      roundResults[i].innerHTML = 'Correct!'; 
+      roundResults[i].classList.add('correct-answer');
+    } else {
+      roundResults[i].innerHTML = 'Incorrect!'; 
+      roundResults[i].classList.add('incorrect-answer');
+    }
+  }
+}
+
+function checkUserAnswers(event, formSubmitted, userRoundAnswers) {
+  let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
+
+  let userQu1Score; 
+  let userQu2Score; 
+  let userQu3Score; 
+  
+  if (userRoundAnswers[0] === quiz1[roundNumber-1].questionOneCorrect) {
+    userQu1Score = 1;
+  } else {
+    userQu1Score = 0; 
+  }
+  if (userRoundAnswers[1] === quiz1[roundNumber-1].questionTwoCorrect) {
+    userQu2Score = 1;
+  } else {
+    userQu2Score = 0; 
+  }
+  if (userRoundAnswers[2] === quiz1[roundNumber-1].questionThreeCorrect) {
+    userQu3Score = 1;
+  } else {
+    userQu3Score = 0; 
+  }
+
+  let userRoundScores = ['Round' + roundNumber, userQu1Score, userQu2Score, userQu3Score]; 
+
+  provideQuResult(event, userRoundScores, formSubmitted);  
+  compileUserScores(event, userRoundScores); 
+}
+
 function getUserAnswers(event, formSubmitted) { 
   // question 1 answers
   let qu1Answers = formSubmitted.getElementsByClassName('q1-answer');  
@@ -129,96 +221,4 @@ function getUserAnswers(event, formSubmitted) {
   let userRoundAnswers = [userQu1AnswerHtml, userQu2AnswerHtml, userQu3AnswerHtml]; 
   
   checkUserAnswers(event, formSubmitted, userRoundAnswers);
-}
-
-function checkUserAnswers(event, formSubmitted, userRoundAnswers) {
-  let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
-
-  let userQu1Score; 
-  let userQu2Score; 
-  let userQu3Score; 
-  
-  if (userRoundAnswers[0] === quiz1[roundNumber-1].questionOneCorrect) {
-    userQu1Score = 1;
-  } else {
-    userQu1Score = 0; 
-  }
-  if (userRoundAnswers[1] === quiz1[roundNumber-1].questionTwoCorrect) {
-    userQu2Score = 1;
-  } else {
-    userQu2Score = 0; 
-  }
-  if (userRoundAnswers[2] === quiz1[roundNumber-1].questionThreeCorrect) {
-    userQu3Score = 1;
-  } else {
-    userQu3Score = 0; 
-  }
-
-  let userRoundScores = ['Round' + roundNumber, userQu1Score, userQu2Score, userQu3Score]; 
-
-  provideQuResult(event, userRoundScores, formSubmitted);  
-  compileUserScores(event, userRoundScores); 
-}
-
-function provideFeedback(event, formSubmitted) { 
-  let roundNumber = formSubmitted.getElementsByClassName('round-number')[0].innerHTML[6];
-  
-  // feedback for question 1 answers
-  let qu1AnswerLabels = formSubmitted.getElementsByClassName('q1-answer-label'); 
-  let q1Feedback = formSubmitted.getElementsByClassName('q1-feedback'); 
-
-  for (let i = 0; i < qu1AnswerLabels.length; i++) {
-    if (qu1AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionOneCorrect) {
-      q1Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
-    } else {
-      q1Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
-    }
-  }   
- 
-  // feedback for question 2 answers
-  let qu2AnswerLabels = formSubmitted.getElementsByClassName('q2-answer-label'); 
-  let q2Feedback = formSubmitted.getElementsByClassName('q2-feedback'); 
- 
-  for (let i = 0; i < qu2AnswerLabels.length; i++) {
-    if (qu2AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionTwoCorrect) {
-      q2Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
-    } else {
-      q2Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
-    } 
-  }  
-
-  // feedback for question 3 answers
-  let qu3AnswerLabels = formSubmitted.getElementsByClassName('q3-answer-label'); 
-  let q3Feedback = formSubmitted.getElementsByClassName('q3-feedback'); 
-
-  for (let i = 0; i < qu3AnswerLabels.length; i++) {
-    if (qu3AnswerLabels[i].innerHTML === quiz1[roundNumber-1].questionThreeCorrect) {
-      q3Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
-    } else {
-      q3Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
-    } 
-  }  
-} 
-
-function provideQuResult(event, userRoundScores, formSubmitted) {
-  let q1Result = formSubmitted.getElementsByClassName('q1-result')[0];
-  let q2Result = formSubmitted.getElementsByClassName('q2-result')[0];
-  let q3Result = formSubmitted.getElementsByClassName('q3-result')[0];
-
-  let roundResults = [q1Result, q2Result, q3Result]; 
-  userRoundScores.shift(); 
-  console.log(userRoundScores); 
-  
-  for (let i = 0; i < userRoundScores.length; i++) {
-    if (userRoundScores[i] === 1) {
-      roundResults[i].innerHTML = 'Correct!'; 
-      roundResults[i].classList.add('correct-answer');
-    } else {
-      roundResults[i].innerHTML = 'Incorrect!'; 
-      roundResults[i].classList.add('incorrect-answer');
-    }
-  }
-}
-
-function compileUserScores(event, userRoundScores) { 
 }
