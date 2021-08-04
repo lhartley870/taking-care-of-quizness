@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
       answerButton.addEventListener('click', radioSelect); 
   }
 
-  let roundForms = document.getElementsByTagName('form'); 
+  let roundForms = document.getElementsByClassName('round-container'); 
 
   for (let roundForm of roundForms) {
     roundForm.addEventListener('submit', handleSubmit); 
   }
+
+  document.getElementById('results-button').parentNode.addEventListener('submit', handleResults);
 })
 
 /**
