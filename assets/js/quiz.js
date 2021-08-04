@@ -3,11 +3,13 @@ const quiz1 = [
     questionOneCorrect: 'Field of Dreams',
     questionTwoCorrect: 'Terminator 2: Judgment Day',
     questionThreeCorrect: 'The Notebook', 
+  },
+  {
+    questionOneCorrect: 'A murder',
+    questionTwoCorrect: '98%',
+    questionThreeCorrect: '3',
   }
 ]; 
-
-
-
 
 // Wait for the DOM to finish loading before adding quiz interactivity
 document.addEventListener('DOMContentLoaded', function() {
