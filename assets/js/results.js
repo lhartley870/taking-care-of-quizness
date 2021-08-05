@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function displayUsername() {
-  
+  let username = sessionStorage.getItem("username"); 
 }
 
 function calculateTotalScore() {
-  
+  let allRoundScores = JSON.parse(sessionStorage.getItem('allRoundScores'));
 }
 
 function displayRoundStats() {
