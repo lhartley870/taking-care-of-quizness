@@ -612,3 +612,26 @@ the paragraph element (one for font colour and one for background colour)
   margin: 5%; 
   width: 70vw; 
 }
+
+#quiz-result-category > p,
+.quiz-stats-heading {
+  font-weight: 900; 
+} 
+
+#results-container h3 {
+  margin: 3%; 
+}
+
+/* solution for creating space between table columns found at
+https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-table.html */
+#quiz-stats table {
+  border-spacing: 10px 0; 
+}
+
+.quiz-stats-heading th {
+  padding-bottom: .5%; 
+} 
+
+#quiz-stats td {
+  padding: 3%;   
+}
