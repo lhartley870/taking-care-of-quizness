@@ -28,6 +28,15 @@ function capitaliseUsername() {
 
 function calculateTotalScore() {
   let allRoundScores = JSON.parse(sessionStorage.getItem('allRoundScores'));
+
+  let totalScore = 0;  
+
+  for (let i = 0; i < allRoundScores.length; i++) {
+   console.log(i);  
+   totalScore += allRoundScores[i][1];
+  }
+  
+  return totalScore; 
 }
 
 function displayRoundStats() {
