@@ -5,7 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function displayUsername() {
-  let username = sessionStorage.getItem("username"); 
+ 
+}
+
+function capitaliseUsername() {
+  let username = sessionStorage.getItem('username');
+
+  if (username !== null) {
+    let capitalisedFirstLetter = username[0].toUpperCase(); 
+    let restOfUsername = username.slice(1);
+    let capitalisedUsername = capitalisedFirstLetter + restOfUsername; 
+    
+    return capitalisedUsername; 
+  } else {
+    return 'no username'; 
+  }
 }
 
 function calculateTotalScore() {
