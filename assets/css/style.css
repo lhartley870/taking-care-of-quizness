@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Rock+Salt&family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,900;1,500&family=Rock+Salt&family=Slackey&display=swap');
 
 * {
   border: none; 
@@ -11,7 +11,7 @@ body {
   background-color: #e6feff;
   color: #007d9e; 
   font-family: 'Raleway', sans-serif;
-  font-size: 1em; 
+  font-size: 18px; 
   font-weight: 500; 
 }
 
@@ -61,7 +61,6 @@ h3 {
   font-family: 'Slackey', cursive;
   font-size: 1.1em; 
   font-weight: 400; 
-  margin-bottom: -10px; 
 }
 
 /* navigation bar */
@@ -445,6 +444,10 @@ footer a {
   grid-area: results-button; 
 }
 
+.round-number {
+  margin-bottom: -10px; 
+}
+
 .round-question-container {
    background-color: #007d9e;
    border-radius: 15px; 
@@ -569,6 +572,7 @@ the paragraph element (one for font colour and one for background colour)
 }
 
 /* results page */
+
 #results-container {
   grid-template-areas: 
     "checklist checklist checklist checklist"
