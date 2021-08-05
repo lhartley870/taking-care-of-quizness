@@ -253,7 +253,7 @@ function handleResults(event) {
 
   if (allRoundScores.length === 5) {
     allRoundScores.sort(); 
-    sessionStorage.setItem('allRoundScores', allRoundScores); 
+    sessionStorage.setItem('allRoundScores', JSON.stringify(allRoundScores)); 
     event.target.submit();  
   } else {
     alert('Please submit all 5 rounds to get your results'); 
