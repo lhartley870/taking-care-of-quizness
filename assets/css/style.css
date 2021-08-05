@@ -10,8 +10,7 @@
 body {
   background-color: #e6feff;
   color: #007d9e; 
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px; 
+  font-family: 'Raleway', sans-serif; 
   font-weight: 500; 
 }
 
@@ -199,7 +198,7 @@ th {
   border-bottom: 2px solid #007d9e; 
 }
 
-td {
+#rules-container td {
   padding: 5px; 
   text-align: left; 
 }
@@ -605,4 +604,11 @@ the paragraph element (one for font colour and one for background colour)
 #play-again-container {
   border: 2px solid orange;
   grid-area: play-again;  
+}
+
+#checklist {
+  box-shadow: 0 0 20px 10px #007d9e; 
+  height: 70vw; 
+  margin: 5%; 
+  width: 70vw; 
 }
