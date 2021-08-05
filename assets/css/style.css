@@ -111,7 +111,6 @@ page and results page */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, auto); 
   margin: 0 auto 8% auto; 
-  row-gap: 20px; 
   width: 90%; 
 }
 
@@ -122,6 +121,7 @@ page and results page */
     "username username username username"
     "quiz1 quiz1 quiz1 quiz1"
     "quiz2 quiz2 quiz2 quiz2";
+  row-gap: 20px; 
 }
 
 #question-mark-container {
@@ -579,6 +579,7 @@ the paragraph element (one for font colour and one for background colour)
     "quiz-stats quiz-stats quiz-stats quiz-stats"
     "results-message results-message results-message results-message"
     "play-again play-again play-again play-again"; 
+  row-gap: 40px;
 }
 
 #checklist-container {
