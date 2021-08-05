@@ -583,27 +583,22 @@ the paragraph element (one for font colour and one for background colour)
 }
 
 #checklist-container {
-  border: 2px solid yellow; 
   grid-area: checklist; 
 }
 
 #quiz-result-category {
-  border: 2px solid red; 
   grid-area: result-category; 
 }
 
 #quiz-stats {
-  border: 2px solid blue; 
   grid-area: quiz-stats;
 }
 
 #results-message {
-  border: 2px solid green;
-  grid-area: results-message 
+  grid-area: results-message; 
 }
 
 #play-again-container {
-  border: 2px solid orange;
   grid-area: play-again;  
 }
 
