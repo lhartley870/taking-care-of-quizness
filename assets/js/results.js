@@ -71,8 +71,38 @@ function findBestRoundsScores() {
 
 }
 
-function findBestRounds() {
+function findBestRoundsNames() {
 
+}
+
+function findBestRounds() {
+  let allRoundScores = JSON.parse(sessionStorage.getItem('allRoundScores'));
+
+  let roundScores = [
+    { round: 1,
+      score: allRoundScores[0][1]
+    }, 
+    { round: 2,
+      score: allRoundScores[1][1]
+    }, 
+    { round: 3, 
+      score: allRoundScores[2][1]
+    },
+    { round: 4, 
+      score: allRoundScores[3][1]
+    }, 
+    { round: 5, 
+      score: allRoundScores[4][1]
+    }
+  ]
+
+  let scores = roundScores.map(roundScore => roundScore.score);  
+
+  let highestScore = Math.max(scores[0], scores[1], scores[2], scores[3], scores[4]); 
+
+  let highScoreRounds = roundScores.filter(roundScore => roundScore.score === highestScore); 
+
+  return highScoreRounds; 
 }
 
 
