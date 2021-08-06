@@ -64,7 +64,20 @@ function calculateTotalScore() {
 }
 
 function displayRoundStats() {
+  let totalScore = calculateTotalScore(); 
+  let bestRoundNames = findBestRoundNames(); 
 
+  document.getElementById('total-score').innerHTML = totalScore; 
+
+  let bestRoundNameTableData = document.getElementById('best-round-category'); 
+
+  if (bestRoundNames.length > 1) {
+    for (let bestRoundName of bestRoundNames) {
+      bestRoundNameTableData.innerHTML += `<p>${bestRoundName}</p>`; 
+    }
+  } else {
+      bestRoundNameTableData.innerHTML = bestRoundNames[0]; 
+  }  
 }
 
 function findBestRoundScores() {
@@ -96,7 +109,7 @@ function findBestRoundNames() {
     } else if (highestRoundNumber === 2) {
       bestRoundNames.push('Nature <i class="fab fa-canadian-maple-leaf"></i>'); 
     } else if (highestRoundNumber === 3) {
-      highestRoundNames.push('Music <i class="fas fa-music"></i>'); 
+      bestRoundNames.push('Music <i class="fas fa-music"></i>'); 
     } else if (highestRoundNumber === 4) {
       bestRoundNames.push('True or False <i class="fas fa-check-circle"></i><i class="fas fa-times-circle"></i>'); 
     } else if (highestRoundNumber === 5) {
