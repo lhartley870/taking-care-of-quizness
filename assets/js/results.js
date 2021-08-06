@@ -65,10 +65,10 @@ function calculateTotalScore() {
 
 function displayRoundStats() {
   let totalScore = calculateTotalScore(); 
-  let bestRoundNames = findBestRoundNames(); 
-
+  
   document.getElementById('total-score').innerHTML = totalScore; 
 
+  let bestRoundNames = findBestRoundNames(); 
   let bestRoundNameTableData = document.getElementById('best-round-category'); 
 
   if (bestRoundNames.length > 1) {
@@ -77,6 +77,17 @@ function displayRoundStats() {
     }
   } else {
       bestRoundNameTableData.innerHTML = bestRoundNames[0]; 
+  }  
+
+  let bestRoundScores = findBestRoundScores();
+  let bestRoundScoresTableData = document.getElementById('best-round-score'); 
+
+  if (bestRoundScores.length > 1) {
+    for (let bestRoundScore of bestRoundScores) {
+      bestRoundScoresTableData.innerHTML += `<p>${bestRoundScore}/3</p>`; 
+    }
+  } else {
+      bestRoundScoresTableData.innerHTML = bestRoundScores[0] + '/3'; 
   }  
 }
 
