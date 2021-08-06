@@ -88,25 +88,25 @@ function findBestRoundNames() {
     highestRoundNumbers.push(highRounds);  
   }
 
-  let highestRoundNames = []; 
+  let bestRoundNames = []; 
 
   for (highestRoundNumber of highestRoundNumbers) {
     if (highestRoundNumber === 1) {
-      highestRoundNames.push('Movie Quotes <i class="fas fa-film"></i>');
-    } else if (highestRoundNumber=== 2) {
-      highestRoundNames.push('Nature <i class="fab fa-canadian-maple-leaf"></i>'); 
+      bestRoundNames.push('Movie Quotes <i class="fas fa-film"></i>');
+    } else if (highestRoundNumber === 2) {
+      bestRoundNames.push('Nature <i class="fab fa-canadian-maple-leaf"></i>'); 
     } else if (highestRoundNumber === 3) {
       highestRoundNames.push('Music <i class="fas fa-music"></i>'); 
-    } else if (highestRoundNumber=== 4) {
-      highestRoundNames.push('True or False <i class="fas fa-check-circle"></i><i class="fas fa-times-circle"></i>'); 
+    } else if (highestRoundNumber === 4) {
+      bestRoundNames.push('True or False <i class="fas fa-check-circle"></i><i class="fas fa-times-circle"></i>'); 
     } else if (highestRoundNumber === 5) {
-      highestRoundNames.push('Fish or Not a Fish <i class="fas fa-fish"></i>');
+      bestRoundNames.push('Fish or Not a Fish <i class="fas fa-fish"></i>');
     } else {
       alert('Sorry, we cannot calculate your best Round(s) at this time'); 
     }
   }
 
-  return highestRoundNames; 
+  return bestRoundNames; 
 }
 
 function findBestRounds() {
