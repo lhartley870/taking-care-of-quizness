@@ -67,11 +67,19 @@ function displayRoundStats() {
 
 }
 
-function findBestRoundsScores() {
+function findBestRoundScores() {
+  let highScoreRounds = findBestRounds(); 
+  let bestRoundScores = []; 
 
+  for (i = 0; i < highScoreRounds.length; i++) {
+    let highScore = highScoreRounds[i].score;
+    bestRoundScores.push(highScore);  
+  }
+  
+  return bestRoundScores; 
 }
 
-function findBestRoundsNames() {
+function findBestRoundNames() {
   let highScoreRounds = findBestRounds(); 
   let highestRoundNumbers = []; 
 
