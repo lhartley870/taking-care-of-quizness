@@ -1,31 +1,116 @@
 const quiz1 = [
   {
-    questionOneCorrect: 'Field of Dreams',
-    questionTwoCorrect: 'Terminator 2: Judgment Day',
-    questionThreeCorrect: 'The Notebook', 
-  },
+    questions: [
+      'Which movie is this quote from?',
+      'Which movie is this quote from?',
+      'Which movie is this quote from?'
+    ],
+    quotes: [
+      '"If you build it, he will come"', 
+      '"Hasta la vista, baby"',
+      '"If you\'re a bird, I\'m a bird"'
+    ],
+    answers: [
+      ['Gladiator', 'Field of Dreams', 'Titanic', 'Fast and the Furious'],
+      ['The Terminator', 'Terminator 2: Judgment Day', 'Terminator 3: Rise of the Machines', 'Terminator Salvation'],
+      ['Pride and Prejudice', 'Love Actually', 'The Notebook', 'P.S. I Love You']
+    ],
+    images: [
+      'assets/images/quiz-page/round-one-images/central-cinema.jpeg', 
+      'assets/images/quiz-page/round-one-images/clapperboard-popcorn.jpeg',
+      'assets/images/quiz-page/round-one-images/cinemagoers.jpeg'
+    ],     
+    imageAlts: [
+      'Cinema entrance in pink lighting with red neon sign saying Central Cinema', 
+      'Film clapperboard with popcorn between the clapper sticks against a yellow background', 
+      'Male and female cinemagoers watching a movie in a cinema with popcorn and drinks'
+    ],
+    correctAnswers: ['Field of Dreams', 'Terminator 2: Judgment Day', 'The Notebook']
+  }, 
   {
-    questionOneCorrect: 'A murder',
-    questionTwoCorrect: '98%',
-    questionThreeCorrect: '3',
-  },
+    questions: [
+      'What is the collective name for a group of cows?', 
+      'Roughly how much DNA do humans share with chimpanzees?', 
+      'How many hearts does an octopus have?'
+    ],
+    answers: [
+      ['A pack', 'A herd', 'A murder', 'A school'],
+      ['95%', '79%', '50%', '98%'],
+      ['3', '2', '5', '1']
+    ],
+    images: [
+      'assets/images/quiz-page/round-two-images/cows.jpeg',
+      'assets/images/quiz-page/round-two-images/chimpanzee.jpeg',
+      'assets/images/quiz-page/round-two-images/octopus.jpeg'
+    ],  
+    imageAlt: [
+      'Group of cows in a field looking into the camera',
+      'A chimpanzee surrounded by leaves looking into the camera', 
+      'A blue ringed octopus against a black backdrop'
+    ], 
+    correctAnswers: ['A murder', '98%', '3'] 
+  }, 
   {
-    questionOneCorrect: 'The Breakfast Club',
-    questionTwoCorrect: 'Backstreet Boys',
-    questionThreeCorrect: 'Back in the Saddle by Aerosmith',
-  },
+    questions: [
+      'The song "Don\'t You Forget About Me" by Simple Minds features in which of the following films?', 
+      'In terms of sales, who are the best selling boyband of all time?', 
+      'Which of these songs does not feature in the movie Wayne\'s World?'
+    ], 
+    answers: [
+      ['Weird Science', 'The Breakfast Club', 'Sixteen Candles', 'The Sure Thing'], 
+      ['Backstreet Boys', 'One Direction', 'Take That', 'Boyzone'], 
+      ['Bohemian Rhapsody by Queen', 'Dream Weaver by Gary Wright', 'Foxy Lady by Jimi Hendrix', 'Back in the Saddle by Aerosmith']
+    ], 
+    images: [
+      'assets/images/quiz-page/round-three-images/radio.jpeg', 
+      'assets/images/quiz-page/round-three-images/headphones.jpeg', 
+      'assets/images/quiz-page/round-three-images/lead-singer.jpeg'
+    ], 
+    imageAlt: [
+      'Male lying down with his right foot leaning on top of a radio', 
+      'Pair of black headphones against a yellow background', 
+      'Lead singer of a band performing with arm outstretched against a smoky background'
+    ], 
+    correctAnswers: ['The Breakfast Club', 'Backstreet Boys', 'Back in the Saddle by Aerosmith']
+  }, 
   {
-    questionOneCorrect: 'True',
-    questionTwoCorrect: 'False',
-    questionThreeCorrect: 'True',
-  },
+    questions: [
+      'True or False: pirates wore eye patches to have one eye adjusted for the top deck and the other adjusted for the darkness when going below deck', 
+      'True or False: no bird can fly backwards',
+      'True or False: newborns don\'t shed tears'
+    ], 
+    images: [
+      'assets/images/quiz-page/round-four-images/pirate-ship.jpeg',
+      'assets/images/quiz-page/round-four-images/hummingbird.jpeg',
+      'assets/images/quiz-page/round-four-images/baby.jpeg'
+    ], 
+    imageAlt: [
+      'Pirate ship on the sea at sunset', 
+      'Hummingbird in flight against a background of blurred pink flowers',
+      'Newborn baby\'s feet'
+    ], 
+    correctAnswers: ['True', 'False', 'True']
+  }, 
   {
-    questionOneCorrect: 'Fish',
-    questionTwoCorrect: 'Not a Fish',
-    questionThreeCorrect: 'Not a Fish',
+    questions: [
+      'Is a catfish a fish?',
+      'Is a cuttlefish a fish?',
+      'Is a jellyfish a fish?'
+    ], 
+    images: [
+      'assets/images/quiz-page/round-five-images/catfish.jpeg',
+      'assets/images/quiz-page/round-five-images/cuttlefish.jpeg', 
+      'assets/images/quiz-page/round-five-images/jellyfish.jpeg'
+    ], 
+    imageAlt: [
+      'Catfish on the sea bed',
+      'A cuttlefish swimming',
+      'Jellyfish swimming against a blue background'
+    ], 
+    correctAnswers: ['Fish', 'Not a Fish', 'Not a Fish']
   }
 ]; 
-
+    
 const allRoundScores = []; 
 
 // Wait for the DOM to finish loading before adding quiz interactivity
