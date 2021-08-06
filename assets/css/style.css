@@ -629,5 +629,9 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 } 
 
 #quiz-stats td {
-  padding: 3%;   
+  padding: 2%;   
+}
+
+#quiz-stats p {
+  padding-bottom: 25%; 
 }
