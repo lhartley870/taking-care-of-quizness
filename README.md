@@ -184,6 +184,22 @@ With thanks, the photos appearing on the Quiz page were taken by the following p
         * [Radio photo](https://unsplash.com/photos/8e0EHPUx3Mo) by Eric Nopanen
         * [Headphones photo](https://unsplash.com/photos/PDX_a_82obo) by C D-X
         * [Lead singer photo](https://unsplash.com/photos/hgO1wFPXl3I) by Austin Neill
+      * Quiz 2: 
+        * [Rose photo](https://unsplash.com/photos/Y7iHt3LRWGg) by Kelly Sikkema
+        * [Concert photo](https://unsplash.com/photos/NcdG9mK3PBY) by Nainoa Shizuru
+        * [Female listening to music](https://unsplash.com/photos/DBGwy7s3QY0) by Bruce Mars
+      * Quiz 3: 
+        * [Microphone photo](https://unsplash.com/photos/Y20JJ_ddy9M) by Israel Palacio
+        * [Cassette tape photo](https://unsplash.com/photos/mbGxz7pt0jM) by Daniel Schludi
+        * [You are what you listen to neon sign photo](https://unsplash.com/photos/1oKxSKSOowE) by Mohammad Metri
+      * Quiz 4: 
+        * [Guitar on fire photo](https://unsplash.com/photos/JmVaNyemtN8) by Dark Rider
+        * [Mobile phone playing music against turquoise background photo](https://unsplash.com/photos/HU-uL54pfQI) by Juja Han
+        * [Apple music 3d icon photo](https://unsplash.com/photos/qt7S2QuAhJI) by Alexander Shatov
+      * Quiz 5: 
+        * [DJ decks photo](https://unsplash.com/photos/YrtFlrLo2DQ) by Marcela Laskoski
+        * [Vinyl record photo](https://unsplash.com/photos/LUMT0EeNnjE) by Steve Harvey
+        * [Guitars photo](https://unsplash.com/photos/E8M4dlfz0Q4) by Markus Spiske 
     * Round 4 (True or False):
       Quiz 1:
         * [Pirate ship photo](https://unsplash.com/photos/mG_rp41aYqM) by Alonso Reyes
