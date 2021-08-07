@@ -147,6 +147,17 @@ With thanks, the photos appearing on the Quiz page were taken by the following p
         * [Central cinema photo](https://unsplash.com/photos/atsUqIm3wxo) by Myke Simon
         * [Clapperboard and popcorn photo](https://unsplash.com/photos/q8P8YoR6erg) by GR Stocks
         * [Cinemagoers photo](https://unsplash.com/photos/4VDRCoNuvE0) by Felipe Bustillo
+      * Quiz 2:
+        * [Hollywood sign photo](https://unsplash.com/photos/aNrRsB2wLDk) by Ahmet Yalcinkaya
+        * [Popcorn cones photo](https://unsplash.com/photos/Bz-eN8FoVPE) by Maiken Ingvordsen
+      * Quiz 3: 
+        * [Hollywood clapperboard photo](https://unsplash.com/photos/oQNXWjBNSyk) by Thea Hdc
+        * [Beach outdoor cinema photo](https://unsplash.com/photos/XO4A1pWBEbE) by Zhifei Zhou
+        * [Red film reel photo](https://unsplash.com/photos/tV80374iytg) by Denise Jans
+      * Quiz 4:
+        * [Cinema sign crafted into ironwork photo](https://unsplash.com/photos/61LcmrqKMEw) by Nick Fewings
+      * Quiz 5:
+        * [Cinema full of people photo](https://unsplash.com/photos/AtPWnYNDJnM) by Krists Luhaers
     * Round 2 (Nature): 
       * Quiz 1:
         * [Cows photo](https://unsplash.com/photos/HHpRh6rNQMo) by Lomig
@@ -167,6 +178,20 @@ With thanks, the photos appearing on the Quiz page were taken by the following p
         * [Catfish photo](https://unsplash.com/photos/uWLvruHp8kY) by Milos Prelevic
         * [Cuttlefish photo](https://unsplash.com/photos/DcitvRh5n18) by Francis Nie
         * [Jellyfish photo](https://unsplash.com/photos/JtVyK2Sej2I) by Jeffrey Hamilton
+
+* From [Pexels]: 
+  * Round 1 (Movie Quotes):
+    * Quiz 2:
+      * [Colosseum cinema photo](https://www.pexels.com/photo/black-and-red-samsung-galaxy-smartphone-1790556/) by Paul Volkmer 
+    * Quiz 4: 
+      * [Black film reel photo](https://www.pexels.com/photo/abstract-analog-art-camera-390089/) by Skitterphoto
+      * [Netflix photo](https://www.pexels.com/photo/netflix-on-an-imac-5082582/) by Cottonbro
+
+* From Pixabay:
+  * Round 1 (Movie Quotes):
+    * Quiz 5:
+      * [Movie tickets in popcorn photo](https://pixabay.com/photos/popcorn-food-film-ticket-5663525/) by Pablo Jimeno
+      * [Alfred Hitchcock star, Hollywood walk of fame photo](https://pixabay.com/photos/walk-of-fame-los-angeles-hollywood-2163255/) by Tuende Bede 
 
 ### Content
 
