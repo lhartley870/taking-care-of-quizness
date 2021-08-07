@@ -133,7 +133,9 @@ For more information on forking and cloning repositories, see [GitHub Docs](http
 
 #### Illustrations
 
-
+With thanks, the following illustrations appearing on the website are from [Rawpixel](https://www.rawpixel.com/?sort=shuffle&page=1&feed=creative-feed) and were done by the following illustrators:
+* The [question mark illustration](https://www.rawpixel.com/image/2626540/free-illustration-vector-question-mark) appearing on the Home page is by Ning.
+* The [photo of a clipboard illustration](https://www.rawpixel.com/image/402495/free-photo-image-checklist-check-list) appearing on the Results page has no photographer identity but the [illustration appearing in the photo](https://www.rawpixel.com/image/429454/free-illustration-vector-checklist-clipboard-check-list) is by Minty. 
 
 #### Photos
 
