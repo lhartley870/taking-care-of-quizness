@@ -170,7 +170,7 @@ With thanks, the photos appearing on the Quiz page were taken by the following p
       * Quiz 3: 
         * [Human lips photo](https://unsplash.com/photos/UGFkfsj-4z4) by Rafael Rocha
         * [Dream photo](https://unsplash.com/photos/zi1GRsLym3s) by Sharon McCutcheon
-        * [Sloths photo](https://unsplash.com/photos/GTXvpZ2eTdA) by Javier Mazzeo
+        * [Sloth photo](https://unsplash.com/photos/GTXvpZ2eTdA) by Javier Mazzeo
       * Quiz 4:
         * [Volcano photo](https://unsplash.com/photos/tLxGw_ITs7k) by Alain Bonnardeaux
         * [Turkey photo](https://unsplash.com/photos/ELYK2KyiEJ4) by Randy Fath
@@ -195,7 +195,7 @@ With thanks, the photos appearing on the Quiz page were taken by the following p
         * [Cuttlefish photo](https://unsplash.com/photos/DcitvRh5n18) by Francis Nie
         * [Jellyfish photo](https://unsplash.com/photos/JtVyK2Sej2I) by Jeffrey Hamilton
 
-* From [Pexels]: 
+* From [Pexels](https://www.pexels.com/): 
   * Round 1 (Movie Quotes):
     * Quiz 2:
       * [Colosseum cinema photo](https://www.pexels.com/photo/black-and-red-samsung-galaxy-smartphone-1790556/) by Paul Volkmer 
@@ -203,7 +203,7 @@ With thanks, the photos appearing on the Quiz page were taken by the following p
       * [Black film reel photo](https://www.pexels.com/photo/abstract-analog-art-camera-390089/) by Skitterphoto
       * [Netflix photo](https://www.pexels.com/photo/netflix-on-an-imac-5082582/) by Cottonbro
 
-* From Pixabay:
+* From [Pixabay](https://pixabay.com/):
   * Round 1 (Movie Quotes):
     * Quiz 5:
       * [Movie tickets in popcorn photo](https://pixabay.com/photos/popcorn-food-film-ticket-5663525/) by Pablo Jimeno
