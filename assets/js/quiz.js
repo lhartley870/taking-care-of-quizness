@@ -582,6 +582,12 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('results-button').parentNode.addEventListener('submit', handleResults);
 })
 
+function selectQuizNumber() {
+  let quizNumber = Math.floor(Math.random() * 5) +1; 
+
+  return quizNumber; 
+}
+
 /**
  * The function called when the user clicks an answer 'button' 
  * (div containing input and label elements) so that clicking 
