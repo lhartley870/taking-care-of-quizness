@@ -67,7 +67,7 @@ const quiz1 = [
       'assets/images/quiz-page/round-three-images/lead-singer.jpeg'
     ], 
     imageAlt: [
-      'Male lying down with his right foot leaning on top of a radio', 
+      'Female lying down with her right foot leaning on top of a radio', 
       'Pair of black headphones against a yellow background', 
       'Lead singer of a band performing with arm outstretched against a smoky background'
     ], 
@@ -108,6 +108,422 @@ const quiz1 = [
       'Jellyfish swimming against a blue background'
     ], 
     correctAnswers: ['Fish', 'Not a Fish', 'Not a Fish']
+  }
+]; 
+
+const quiz2 = [
+  {
+    questions: [
+      'Which movie is this quote from?',
+      'Which movie is this quote from?',
+      'Which movie is this quote from?'
+    ],
+    quotes: [
+      '"Exercise gives you endorphins. Endorphins make you happy. Happy people just don\'t shoot their husbands, they just don\t."',
+      '"Hope is a good thing, maybe the best of things, and no good thing ever dies."', 
+      '"She doesn\'t even go here."'
+    ],
+    answers: [
+      ['Legally Blonde', 'Girls Trip', 'Bring it On', 'Thelma and Louise'],
+      ['Papillon', 'The Green Mile', 'The Shawshank Redemption', 'Forrest Gump'],
+      ['Never Been Kissed', 'She\'s All That', 'American Pie', 'Mean Girls']
+    ],
+    images: [
+      'assets/images/quiz-page/round-one-images/hollywood.jpeg',
+      'assets/images/quiz-page/round-one-images/popcorn.jpeg',
+      'assets/images/quiz-page/round-one-images/colosseum-cinema.jpeg'
+    ],     
+    imageAlts: [
+      'The Hollywood sign in Los Angeles, California',
+      'Red and white striped cones of popcorn in rows',
+      'A cinema called the Colosseum at night with neon green signage'
+    ],
+    correctAnswers: ['Legally Blonde', 'The Shawshank Redemption', 'Mean Girls']
+  }, 
+  {
+    questions: [
+      'What sea creature is a blue whale\'s favourite meal?',
+      'How many wolves did the largest recorded pack have?',
+      'Which mammal has the most powerful bite in the world?'
+    ],
+    answers: [
+      ['Plankton', 'Krill', 'Fish', 'Shrimp'],
+      ['50', '100', '300', '400'],
+      ['Hippopotamus', 'Rhinoceros', 'Grizzly Bear', 'Gorilla']
+    ],
+    images: [
+      'assets/images/quiz-page/round-two-images/whale-tail.jpeg',
+      'assets/images/quiz-page/round-two-images/wolves.jpeg',
+      'assets/images/quiz-page/round-two-images/lion.jpeg'
+    ],     
+    imageAlts: [
+      'Whale diving into the ocean with only its tail above the water',
+      'A pack of wolves in the snow',
+      'A lion with its mouth wide open'
+    ],
+    correctAnswers: ['Krill', '400', 'Hippopotamus']
+  }, 
+  {
+    questions: [
+      'The song "Kiss from a Rose" by Seal features in which of the following films?',
+      'Katy Perry\'s first big hit "I Kissed a Girl" came out in what year?',
+      'Who disrupted Michael Jackson\'s performance of Earth Song at the 1996 Brit Awards by mooning on stage?'
+    ],
+    answers: [
+      ['Batman', 'Batman Returns', 'Batman Forever', 'The Dark Knight'],
+      ['2008', '2009', '2010', '2011'],
+      ['Liam Gallagher', 'Robbie Williams', 'Jarvis Cocker', 'Damon Albarn']
+    ],
+    images: [
+      'assets/images/quiz-page/round-three-images/rose.jpeg', 
+      'assets/images/quiz-page/round-three-images/music-listening.jpeg',
+      'assets/images/quiz-page/round-three-images/concert.jpeg'
+    ],     
+    imageAlts: [
+      'Single red rose against a white background',
+      'Female listening to music on white headphones against a yellow background',
+      'Music concert with yellow lights and fans with their hands in the air'
+    ],
+    correctAnswers: ['Batman Forever', '2008', 'Jarvis Cocker']
+  }, 
+  {
+    questions: [
+      'True or False: 20% of NBA players are broke within 5 years of retiring from the game',
+      'True or False: every cigarette you smoke reduces your expected lifespan by up to 11 minutes',
+      'True or False: only 2% of the world\'s population has green eyes'
+    ],
+    images: [
+      'assets/images/quiz-page/round-four-images/basketball.jpeg',
+      'assets/images/quiz-page/round-four-images/cigarette.jpeg',
+      'assets/images/quiz-page/round-four-images/gree-eyes.jpeg'
+    ],     
+    imageAlts: [
+      'Basketball coming out of the bottom of a net',
+      'Cigarette burning on a ledge',
+      'Female with green eyes covering her nose and mouth with a scarf'
+    ],
+    correctAnswers: ['False', 'True', 'True']
+  }, 
+  {
+    questions: [
+      'Is a lionfish a fish?',
+      'Are shellfish fish?',
+      'Is a crayfish a fish?'
+    ],
+    images: [
+      'assets/images/quiz-page/round-five-images/lionfish.jpeg',
+      'assets/images/quiz-page/round-five-images/mussels.jpeg',
+      'assets/images/quiz-page/round-five-images/crayfish.jpeg'
+    ],     
+    imageAlts: [
+      'Lionfish swimming in blue water',
+      'A large number of closed mussels',
+      'A single red crayfish in water'
+    ],
+    correctAnswers: ['Fish', 'Not a Fish', 'Not a Fish' ]
+  }
+]; 
+
+const quiz3 = [
+  {
+    questions: [
+    ],
+    quotes: [
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }
+]; 
+
+const quiz4 = [
+  {
+    questions: [
+    ],
+    quotes: [
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }
+]; 
+
+const quiz5 = [
+  {
+    questions: [
+    ],
+    quotes: [
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
+  }, 
+  {
+    questions: [
+      
+    ],
+    quotes: [
+      
+    ],
+    answers: [
+      [],
+      [],
+      []
+    ],
+    images: [
+      
+    ],     
+    imageAlts: [
+     
+    ],
+    correctAnswers: []
   }
 ]; 
     
