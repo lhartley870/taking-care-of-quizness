@@ -658,6 +658,18 @@ function populateQuizHtml() {
       quizHtmlLocations.answers[i][j].innerHTML += selectedQuiz[i].answers[j]; 
     }
   }
+
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 3; j++) {
+      quizHtmlLocations.photos[i][j].setAttribute('src', selectedQuiz[i].images[j]); 
+    }
+  }
+
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 3; j++) {
+      quizHtmlLocations.photos[i][j].setAttribute('alt', selectedQuiz[i].imageAlts[j]); 
+    }
+  }
 }
 
 function selectQuizNumber() {
