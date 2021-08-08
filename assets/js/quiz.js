@@ -227,101 +227,113 @@ const quiz2 = [
 const quiz3 = [
   {
     questions: [
+      'Which movie is this quote from?',
+      'Which movie is this quote from?',
+      'Which movie is this quote from?'
     ],
     quotes: [
+      '"Hey has anyone seen the captain\'s balls? Let me know. They\'re about this big. They\'re like really, really tiny little girl balls, if little girls had balls"',
+      '"Stove, what kind of name is that? That\'s not my name, my name is Steve. Are you an appliance? No I\'m a man."',
+      '"Hello Katerina. Make anyone cry today? Sadly no, but it\'s only 4:30."'
     ],
     answers: [
-      [],
-      [],
-      []
+      ['Hot Pursuit', 'The Heat', 'Bad Boys', 'Lethal Weapon'],
+      ['Men in Black', 'Bridesmaids', 'As Good as it Gets', 'Knocked Up'],
+      ['Clueless', 'Mean Girls', '10 Things I Hate About You', 'Miss Congeniality']
     ],
     images: [
-      
+      'assets/images/quiz-page/round-one-images/outdoor-cinema.jpeg',
+      'assets/images/quiz-page/round-one-images/hollywood-clapperboard.jpeg',
+      'assets/images/quiz-page/round-one-images/red-film-reel.jpeg'
     ],     
     imageAlts: [
-     
+      'Oudoor cinema on a beach with deckchairs',
+      'Black and white film clapperboard with Hollywood written on it',
+      'Film reel with unwound red film'
     ],
-    correctAnswers: []
+    correctAnswers: ['The Heat', 'Bridesmaids', '10 Things I Hate About You']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
+      'A human produces enough saliva per year to fill how many bath tubs?',
+      'What percentage of people dream in black and white?',
+      'What percentage of sloths die when they go to the ground to poop once a week?'
     ],
     answers: [
-      [],
-      [],
-      []
+      ['1/2', '1', '2', '3'],
+      ['1%', '5%', '12%', '20%'],
+      ['20%', '50%', '80%', '90%']
     ],
     images: [
-      
+      'assets/images/quiz-page/round-two-images/lips.jpeg',
+      'assets/images/quiz-page/round-two-images/dream.jpeg',
+      'assets/images/quiz-page/round-two-images/sloth.jpeg' 
     ],     
     imageAlts: [
-     
+      'Female with red lipstick and pink sprinkles on her lips licking her teeth',
+      'Torn piece of white paper with dream handwritten on it amongst purple glitter',
+      'Sloth hanging from the underside of a tree branch'
     ],
-    correctAnswers: []
+    correctAnswers: ['2', '12%', '50%']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
+      'The song "Heathens" by Twenty One Pilots features in which of hte following films?',
+      'Who does Guinness World Records rank as the best-selling female recording artist of all time?',
+      'The 2001 debut album of Alicia Keys was called "Songs in..." what?'
     ],
     answers: [
-      [],
-      [],
-      []
+      ['Birds of Prey', 'Suicide Squad', 'Venom', 'Green Lantern'],
+      ['Madonna', 'Whitney Houston', 'Beyonce', 'Rihanna'],
+      ['B Flat Minor', 'C Minor', 'A Minor', 'D Major']
     ],
     images: [
-      
+      'assets/images/quiz-page/round-three-images/cassette-tape.jpeg',
+      'assets/images/quiz-page/round-three-images/microphone.jpeg',
+      'assets/images/quiz-page/round-three-images/neon-sign.jpeg'
     ],     
     imageAlts: [
-     
+      'White cassette tape with its brown tape unwound against an orange background',
+      'Vintage silver microphone against a blurry background of lights',
+      'Neon sign on a brick wall saying "You are what you listen to"'
     ],
-    correctAnswers: []
+    correctAnswers: ['Suicide Squad', 'Madonna', 'A Minor']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
-    ],
-    answers: [
-      [],
-      [],
-      []
+      'True or False: a platypus does not have a stomach',
+      'True or False: armadillos are not bulletproof',
+      'True or False: sometimes when they are gathering nectar, bees will fall asleep in flowers'
     ],
     images: [
-      
+      'assets/images/quiz-page/round-four-images/platypus.jpeg',
+      'assets/images/quiz-page/round-four-images/armadillo.jpeg',
+      'assets/images/quiz-page/round-four-images/bee.jpeg'
     ],     
     imageAlts: [
-     
+      'Platypus partly above and partly below the waterline in a tank',
+      'Armadillo in the grass',
+      'Bee in a purple flower'
     ],
-    correctAnswers: []
+    correctAnswers: ['True', 'False', 'True']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
-    ],
-    answers: [
-      [],
-      [],
-      []
+      'Is a stonefish a fish?',
+      'Is a manta ray a fish?',
+      'Is a starfish a fish?'
     ],
     images: [
-      
+      'assets/images/quiz-page/round-five-images/stonefish.jpeg',
+      'assets/images/quiz-page/round-five-images/manta-ray.jpeg',
+      'assets/images/quiz-page/round-five-images/starfish.jpeg'
     ],     
     imageAlts: [
-     
+      'Swimming stonefish against a blurry rocky background',
+      'Swimming manta ray against a blue ocean backdrop',
+      'Orange starfish on the sand next to an incoming foam wave'
     ],
-    correctAnswers: []
+    correctAnswers: ['Fish', 'Fish', 'Not a Fish']
   }
 ]; 
 
