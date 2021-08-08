@@ -582,6 +582,65 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('results-button').parentNode.addEventListener('submit', handleResults);
 })
 
+function populateQuizHtml() {
+  let quizNumber = selectQuizNumber();
+
+  let selectedQuiz;
+
+  if (quizNumber === 1) {
+    selectedQuiz = quiz1; 
+  } else if (quizNumber === 2) {
+    selectedQuiz = quiz2; 
+  } else if (quizNumber === 3 ) {
+    selectedQuiz = quiz3; 
+  } else if (quizNumber === 4) {
+    selectedQuiz = quiz4; 
+  } else if (quizNumber === 5) {
+    selectedQuiz = quiz5; 
+  } else {
+    alert('Oops, we have encountered an unknown quiz number, please refresh the page.')
+    throw 'Unknown quiz number, aborting!';
+  }; 
+  
+  let quizQuestions = document.getElementsByClassName('question'); 
+  let quizQuotes = document.getElementsByClassName('quiz-quote'); 
+  let quizAnswers = document.getElementsByTagName('label'); 
+
+  let quizHtmlLocations = {
+    questions: [
+      [quizQuestions[0], quizQuestions[1], quizQuestions[2]],
+      [quizQuestions[3], quizQuestions[4], quizQuestions[5]],
+      [quizQuestions[6], quizQuestions[7], quizQuestions[8]],
+      [quizQuestions[9], quizQuestions[10], quizQuestions[11]],
+      [quizQuestions[12], quizQuestions[13], quizQuestions[14]]
+      ],
+    quotes: [quizQuotes[0], quizQuotes[1], quizQuotes[2]],
+    answers: [
+      [
+        [quizAnswers[0], quizAnswers[1], quizAnswers[2], quizAnswers[3]],
+        [quizAnswers[4], quizAnswers[5], quizAnswers[6], quizAnswers[7]],
+        [quizAnswers[8], quizAnswers[9], quizAnswers[10], quizAnswers[11]]
+      ],
+      [
+        [quizAnswers[12], quizAnswers[13], quizAnswers[14], quizAnswers[15]],
+        [quizAnswers[16], quizAnswers[17], quizAnswers[18], quizAnswers[19]],
+        [quizAnswers[20], quizAnswers[21], quizAnswers[22], quizAnswers[23]]
+      ],
+      [
+        [quizAnswers[24], quizAnswers[25], quizAnswers[26], quizAnswers[27]],
+        [quizAnswers[28], quizAnswers[29], quizAnswers[30], quizAnswers[31]],
+        [quizAnswers[32], quizAnswers[33], quizAnswers[34], quizAnswers[35]]
+      ], 
+    ]
+  };  
+
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 3; j++) {
+      quizHtmlLocations.questions[i][j].innerHTML += selectedQuiz[i].questions[j]; 
+    }
+  }
+}
+
 function selectQuizNumber() {
   let quizNumber = Math.floor(Math.random() * 5) +1; 
 
