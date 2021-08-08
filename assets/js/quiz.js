@@ -6,9 +6,9 @@ const quiz1 = [
       'Which movie is this quote from?'
     ],
     quotes: [
-      '"If you build it, he will come"', 
-      '"Hasta la vista, baby"',
-      '"If you\'re a bird, I\'m a bird"'
+      '"If you build it, he will come."', 
+      '"Hasta la vista, baby."',
+      '"If you\'re a bird, I\'m a bird."'
     ],
     answers: [
       ['Gladiator', 'Field of Dreams', 'Titanic', 'Fast and the Furious'],
@@ -340,101 +340,113 @@ const quiz3 = [
 const quiz4 = [
   {
     questions: [
+      'Which movie is this quote from?',
+      'Which movie is this quote from?',
+      'Which movie is this quote from?'
     ],
     quotes: [
+      '"Call me Kat. Call me Kitty Kat".',
+      '"What we do in life echoes in eternity".',
+      '"Sixty per cent of the time it works every time."'
     ],
     answers: [
-      [],
-      [],
-      []
+      ['The Aristocats', 'Wedding Crashers', 'Cats', 'American Pie'],
+      ['Troy', 'Spartacus', 'Braveheart', 'Gladiator'],
+      ['Anchorman', 'Anchorman 2', 'The Dukes of Hazzard', 'Talladega Nights']
     ],
     images: [
-      
+      'assets/images/quiz-page/round-one-images/cinema-gate.jpeg', 
+      'assets/images/quiz-page/round-one-images/black-film-reel.jpeg',
+      'assets/images/quiz-page/round-one-images/netflix.jpeg'
     ],     
     imageAlts: [
-     
+      'Gold cinema sign crafted into black ironwork with a blurry garden behind',
+      'Unwound black film against a white background',
+      'Computer screen showing the red Netflix sign'
     ],
-    correctAnswers: []
+    correctAnswers: ['Wedding Crashers', 'Gladiator', 'Anchorman']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
+      'How many active volcanoes are there in the world?',
+      'What is a turkey called in Vietnam?',
+      'What is a baby echidna called?'
     ],
     answers: [
-      [],
-      [],
-      []
+      ['200', '500', '1000', '1500'],
+      ['Dutch Chicken', 'Western Chicken', 'India', 'Peru'],
+      ['A puggle', 'A pup', 'A hatchling', 'A cub']
     ],
     images: [
-      
+      'assets/images/quiz-page/round-two-images/volcano.jpeg',
+      'assets/images/quiz-page/round-two-images/turkey.jpeg',
+      'assets/images/quiz-page/round-two-images/echidna.jpeg'
     ],     
     imageAlts: [
-     
+      'A volcano erupting',
+      'A turkey in the grass',
+      'An echidna in the grass'
     ],
-    correctAnswers: []
+    correctAnswers: ['1500', 'Western Chicken', 'A puggle']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
+      'The song "The Power of Love" by Huey Lewis & the News features in which of the following films?',
+      'Keith Richards of the Rolling Stones infamously didn\'t sleep for how many days?',
+      'Maroon 5\'s debut album was called "Songs About..." who?'
     ],
     answers: [
-      [],
-      [],
-      []
+      ['Back to the Future Part 3', 'Mannequin', 'Blue Hawaii', 'Back to the Future'],
+      ['3', '7', '9', '12'],
+      ['Lucy', 'Jane', 'Alice', 'Beth']
     ],
     images: [
-      
+      'assets/images/quiz-page/round-three-images/music-icon.jpeg',
+      'assets/images/quiz-page/round-three-images/guitar-on-fire.jpeg',
+      'assets/images/quiz-page/round-three-images/phone-playing-music.jpeg'
     ],     
     imageAlts: [
-     
+      'Red Apple music icon on a 3D black button',
+      'Guitar engulfed in orange and yellow flames',
+      'White headphones and iPhone playing music amongst a variety of turquoise items'
     ],
-    correctAnswers: []
+    correctAnswers: ['Back to the Future', '9', 'Jane']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
-    ],
-    answers: [
-      [],
-      [],
-      []
+      'True or False: you sleep deeper on a hammock than on a bed.',
+      'True or False: Pablo Escobar, the notorious drug lord, spent roughly $2,500 a month on plastic bands for his money.',
+      'True or False: meditation does not alter the brain\'s structure.'
     ],
     images: [
-      
+      'assets/images/quiz-page/round-four-images/hammock.jpeg',
+      'assets/images/quiz-page/round-four-images/money.jpeg', 
+      'assets/images/quiz-page/round-four-images/meditation.jpeg'
     ],     
     imageAlts: [
-     
+      'Hammock hanging between two trees on a beach against a sunset backdrop',
+      'Rolls of money secured with elastic bands', 
+      'Female meditating sat on grass'
     ],
-    correctAnswers: []
+    correctAnswers: ['True', 'True', 'False']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
-    ],
-    answers: [
-      [],
-      [],
-      []
+      'Is a seahorse a fish?',
+      'Is a sea urchin a fish?', 
+      'Is a sea snake a fish?'
     ],
     images: [
-      
+      'assets/images/quiz-page/round-five-images/seahorse.jpeg', 
+      'assets/images/quiz-page/round-five-images/sea-urchin.jpeg',
+      'assets/images/quiz-page/round-five-images/sea-snake.jpeg'
     ],     
     imageAlts: [
-     
+      'Yellow seahorse against a blue ocean backdrop',
+      'Purple spiky sea urchin on a rock',
+      'Black and white striped sea snake swimming in a turquoise ocean'
     ],
-    correctAnswers: []
+    correctAnswers: ['Fish', 'Not a Fish', 'Not a Fish']
   }
 ]; 
 
