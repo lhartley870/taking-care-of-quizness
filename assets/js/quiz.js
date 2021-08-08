@@ -453,101 +453,113 @@ const quiz4 = [
 const quiz5 = [
   {
     questions: [
+      'Which movie is this quote from?',
+      'Which movie is this quote from?',
+      'Which movie is this quote from?'
     ],
     quotes: [
+      '"It\'s not a man purse. It\'s called a satchel. Indiana Jones wears one."',
+      '"Frankly, my dear, I don\'t give a damn."',
+      '"Spit spot!"'
     ],
     answers: [
-      [],
-      [],
-      []
+      ['The Hangover', 'Road Trip', 'Jumanji', 'Deadpool'],
+      ['Casablanca', 'Gone With the Wind', 'Breakfast at Tiffany\'s', 'Some Like it Hot'],
+      ['The Sound of Music', 'Nanny McPhee', 'The Devil Wears Prada', 'Mary Poppins']
     ],
     images: [
-      
+      'assets/images/quiz-page/round-one-images/full-cinema.jpeg',
+      'assets/images/quiz-page/round-one-images/movie-ticket.jpeg',
+      'assets/images/quiz-page/round-one-images/walk-of-fame.jpeg'
     ],     
     imageAlts: [
-     
+      'People sat in red cinema chairs watching a film',
+      'Two film tickets on top of a bowl of popcorn',
+      'Alfred Hitchcock\'s star on the Hollywood Walk of Fame'
     ],
-    correctAnswers: []
+    correctAnswers: ['The Hangover', 'Gone With the Wind', 'Mary Poppins']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
+      'Research has shown that dogs have individual music preferences. Which music genre is a firm favourite in the canine world?',
+      'What is a group of lemurs called?',
+      'What percentage of lightning stike victims survive?'
     ],
     answers: [
-      [],
-      [],
-      []
+      ['Pop', 'Reggae', 'Rock', 'Country'],
+      ['A pack', 'A colony', 'A conspiracy', 'A gang'],
+      ['1%', '10%', '50%', '90%']
     ],
     images: [
-      
+      'assets/images/quiz-page/round-two-images/dogs.jpeg',
+      'assets/images/quiz-page/round-two-images/lemurs.jpeg',
+      'assets/images/quiz-page/round-two-images/lightning.jpeg'
     ],     
     imageAlts: [
-     
+      'Two dogs wearing brightly coloured jackets, one wearing a big gold chain',
+      'A group of ring-tailed lemurs huddled together on a wooden platform',
+      'A lightning bolt striking a city below at night'
     ],
-    correctAnswers: []
+    correctAnswers: ['Reggae', 'A conspiracy', '90%']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
+      'The song "Kiss Me" by Sixpence None the Richer features in which of the following films?',
+      'Which of the following artists has not sung a Bond theme song?',
+      'How old was Britney Spears when her debut song "Baby One More Time" came out in 1998?'
     ],
     answers: [
-      [],
-      [],
-      []
+      ['Clueless', 'She\'s All That', 'American Pie', '10 Things I Hate About You'],
+      ['Tina Turner', 'Sheryl Crow', 'Whitney Houston', 'Madonna'],
+      ['16', '17', '18', '19']
     ],
     images: [
-      
+      'assets/images/quiz-page/round-three-images/guitars.jpeg',
+      'assets/images/quiz-page/round-three-images/record.jpeg',
+      'assets/images/quiz-page/round-three-images/dj-decks.jpeg'
     ],     
     imageAlts: [
-     
+      'Electric guitars hanging from the ceiling by wires together with neon signs saying "Yeah"',
+      'Black and red vinyl record playing on a record player',
+      'DJ decks with pink neon lights in a dark room'
     ],
-    correctAnswers: []
+    correctAnswers: ['She\'s All That', 'Whitney Houston', '17']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
-    ],
-    answers: [
-      [],
-      [],
-      []
+      'True or False: spicy is a taste.',
+      'True or False: rabbits can smell their dead relatives in the faeces of predators.',
+      'True or False: sharks are older than trees'
     ],
     images: [
-      
+      'assets/images/quiz-page/round-four-images/chilli.jpeg',
+      'assets/images/quiz-page/round-four-images/white-rabbit.jpeg',
+      'assets/images/quiz-page/round-four-images/shark.jpeg'
     ],     
     imageAlts: [
-     
+      'Red chillis, limes and garlic cloves spread around a bowl of orange puree',
+      'White rabbit with grey ears sat in grass',
+      'A great white shark swimming in the ocean'
     ],
-    correctAnswers: []
+    correctAnswers: ['False', 'True', 'True']
   }, 
   {
     questions: [
-      
-    ],
-    quotes: [
-      
-    ],
-    answers: [
-      [],
-      [],
-      []
+      'Is an eel a fish?', 
+      'Is an octopus a fish?', 
+      'Is a whale shark a fish?'
     ],
     images: [
-      
+      'assets/images/quiz-page/round-five-images/moray-eel.jpeg',
+      'assets/images/quiz-page/round-five-images/octopus.jpeg',
+      'assets/images/quiz-page/round-five-images/whale-shark.jpeg'
     ],     
     imageAlts: [
-     
+      'A white and yellow moray eel with black markings in water',
+      'A red octopus in dark water',
+      'A whale shark swimming in the ocean'
     ],
-    correctAnswers: []
+    correctAnswers: ['Fish', 'Not a Fish', 'Fish']
   }
 ]; 
     
