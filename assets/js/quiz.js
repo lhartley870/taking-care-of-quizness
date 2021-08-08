@@ -43,7 +43,7 @@ const quiz1 = [
       'assets/images/quiz-page/round-two-images/chimpanzee.jpeg',
       'assets/images/quiz-page/round-two-images/octopus.jpeg'
     ],  
-    imageAlt: [
+    imageAlts: [
       'Group of cows in a field looking into the camera',
       'A chimpanzee surrounded by leaves looking into the camera', 
       'A blue ringed octopus against a black backdrop'
@@ -66,7 +66,7 @@ const quiz1 = [
       'assets/images/quiz-page/round-three-images/headphones.jpeg', 
       'assets/images/quiz-page/round-three-images/lead-singer.jpeg'
     ], 
-    imageAlt: [
+    imageAlts: [
       'Female lying down with her right foot leaning on top of a radio', 
       'Pair of black headphones against a yellow background', 
       'Lead singer of a band performing with arm outstretched against a smoky background'
@@ -84,7 +84,7 @@ const quiz1 = [
       'assets/images/quiz-page/round-four-images/hummingbird.jpeg',
       'assets/images/quiz-page/round-four-images/baby.jpeg'
     ], 
-    imageAlt: [
+    imageAlts: [
       'Pirate ship on the sea at sunset', 
       'Hummingbird in flight against a background of blurred pink flowers',
       'Newborn baby\'s feet'
@@ -102,7 +102,7 @@ const quiz1 = [
       'assets/images/quiz-page/round-five-images/cuttlefish.jpeg', 
       'assets/images/quiz-page/round-five-images/jellyfish.jpeg'
     ], 
-    imageAlt: [
+    imageAlts: [
       'Catfish on the sea bed',
       'A cuttlefish swimming',
       'Jellyfish swimming against a blue background'
@@ -584,25 +584,39 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function populateQuizHtml() {
-  let quizNumber = selectQuizNumber();
+  let quizHtmlLocations = getQuizHtmlLocations(); 
+  let selectedQuiz = getQuiz();
 
-  let selectedQuiz;
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 3; j++) {
+      quizHtmlLocations.questions[i][j].innerHTML += selectedQuiz[i].questions[j]; 
+    }
+  }
 
-  if (quizNumber === 1) {
-    selectedQuiz = quiz1; 
-  } else if (quizNumber === 2) {
-    selectedQuiz = quiz2; 
-  } else if (quizNumber === 3 ) {
-    selectedQuiz = quiz3; 
-  } else if (quizNumber === 4) {
-    selectedQuiz = quiz4; 
-  } else if (quizNumber === 5) {
-    selectedQuiz = quiz5; 
-  } else {
-    alert('Oops, we have encountered an unknown quiz number, please refresh the page.')
-    throw 'Unknown quiz number, aborting!';
-  }; 
-  
+  for (let i = 0; i < 3; i++) {
+    quizHtmlLocations.quotes[i].innerHTML += selectedQuiz[0].quotes[i]; 
+  }
+
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 12; j++) {
+      quizHtmlLocations.answers[i][j].innerHTML += selectedQuiz[i].answers[j]; 
+    }
+  }
+
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 3; j++) {
+      quizHtmlLocations.photos[i][j].setAttribute('src', selectedQuiz[i].images[j]); 
+    }
+  }
+
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 3; j++) {
+      quizHtmlLocations.photos[i][j].setAttribute('alt', selectedQuiz[i].imageAlts[j]); 
+    }
+  }
+}
+
+function getQuizHtmlLocations() {
   let quizQuestions = document.getElementsByClassName('question'); 
   let quizQuotes = document.getElementsByClassName('quiz-quote'); 
   let quizAnswers = document.getElementsByTagName('label'); 
@@ -643,33 +657,30 @@ function populateQuizHtml() {
     ],
   };  
 
-  for (let i = 0; i < 5; i++) {
-    for (let j = 0; j < 3; j++) {
-      quizHtmlLocations.questions[i][j].innerHTML += selectedQuiz[i].questions[j]; 
-    }
-  }
+  return quizHtmlLocations;
+}
 
-  for (let i = 0; i < 3; i++) {
-    quizHtmlLocations.quotes[i].innerHTML += selectedQuiz[0].quotes[i]; 
-  }
+function getQuiz() {
+  let quizNumber = selectQuizNumber();
 
-  for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 12; j++) {
-      quizHtmlLocations.answers[i][j].innerHTML += selectedQuiz[i].answers[j]; 
-    }
-  }
+  let selectedQuiz;
 
-  for (let i = 0; i < 5; i++) {
-    for (let j = 0; j < 3; j++) {
-      quizHtmlLocations.photos[i][j].setAttribute('src', selectedQuiz[i].images[j]); 
-    }
-  }
+  if (quizNumber === 1) {
+    selectedQuiz = quiz1; 
+  } else if (quizNumber === 2) {
+    selectedQuiz = quiz2; 
+  } else if (quizNumber === 3 ) {
+    selectedQuiz = quiz3; 
+  } else if (quizNumber === 4) {
+    selectedQuiz = quiz4; 
+  } else if (quizNumber === 5) {
+    selectedQuiz = quiz5; 
+  } else {
+    alert('Oops, we have encountered an unknown quiz number, please refresh the page.')
+    throw 'Unknown quiz number, aborting!';
+  }; 
 
-  for (let i = 0; i < 5; i++) {
-    for (let j = 0; j < 3; j++) {
-      quizHtmlLocations.photos[i][j].setAttribute('alt', selectedQuiz[i].imageAlts[j]); 
-    }
-  }
+  return selectedQuiz; 
 }
 
 function selectQuizNumber() {
