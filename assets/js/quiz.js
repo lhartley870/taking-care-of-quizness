@@ -11,9 +11,9 @@ const quiz1 = [
       '"If you\'re a bird, I\'m a bird."'
     ],
     answers: [
-      ['Gladiator', 'Field of Dreams', 'Titanic', 'Fast and the Furious'],
-      ['The Terminator', 'Terminator 2: Judgment Day', 'Terminator 3: Rise of the Machines', 'Terminator Salvation'],
-      ['Pride and Prejudice', 'Love Actually', 'The Notebook', 'P.S. I Love You']
+      'Gladiator', 'Field of Dreams', 'Titanic', 'Fast and the Furious',
+      'The Terminator', 'Terminator 2: Judgment Day', 'Terminator 3: Rise of the Machines', 'Terminator Salvation',
+      'Pride and Prejudice', 'Love Actually', 'The Notebook', 'P.S. I Love You'
     ],
     images: [
       'assets/images/quiz-page/round-one-images/central-cinema.jpeg', 
@@ -34,9 +34,9 @@ const quiz1 = [
       'How many hearts does an octopus have?'
     ],
     answers: [
-      ['A pack', 'A herd', 'A murder', 'A school'],
-      ['95%', '79%', '50%', '98%'],
-      ['3', '2', '5', '1']
+      'A pack', 'A herd', 'A murder', 'A school',
+      '95%', '79%', '50%', '98%',
+      '3', '2', '5', '1'
     ],
     images: [
       'assets/images/quiz-page/round-two-images/cows.jpeg',
@@ -57,9 +57,9 @@ const quiz1 = [
       'Which of these songs does not feature in the movie Wayne\'s World?'
     ], 
     answers: [
-      ['Weird Science', 'The Breakfast Club', 'Sixteen Candles', 'The Sure Thing'], 
-      ['Backstreet Boys', 'One Direction', 'Take That', 'Boyzone'], 
-      ['Bohemian Rhapsody by Queen', 'Dream Weaver by Gary Wright', 'Foxy Lady by Jimi Hendrix', 'Back in the Saddle by Aerosmith']
+      'Weird Science', 'The Breakfast Club', 'Sixteen Candles', 'The Sure Thing', 
+      'Backstreet Boys', 'One Direction', 'Take That', 'Boyzone', 
+      'Bohemian Rhapsody by Queen', 'Dream Weaver by Gary Wright', 'Foxy Lady by Jimi Hendrix', 'Back in the Saddle by Aerosmith'
     ], 
     images: [
       'assets/images/quiz-page/round-three-images/radio.jpeg', 
@@ -124,9 +124,9 @@ const quiz2 = [
       '"She doesn\'t even go here."'
     ],
     answers: [
-      ['Legally Blonde', 'Girls Trip', 'Bring it On', 'Thelma and Louise'],
-      ['Papillon', 'The Green Mile', 'The Shawshank Redemption', 'Forrest Gump'],
-      ['Never Been Kissed', 'She\'s All That', 'American Pie', 'Mean Girls']
+      'Legally Blonde', 'Girls Trip', 'Bring it On', 'Thelma and Louise',
+      'Papillon', 'The Green Mile', 'The Shawshank Redemption', 'Forrest Gump',
+      'Never Been Kissed', 'She\'s All That', 'American Pie', 'Mean Girls'
     ],
     images: [
       'assets/images/quiz-page/round-one-images/hollywood.jpeg',
@@ -147,9 +147,9 @@ const quiz2 = [
       'Which mammal has the most powerful bite in the world?'
     ],
     answers: [
-      ['Plankton', 'Krill', 'Fish', 'Shrimp'],
-      ['50', '100', '300', '400'],
-      ['Hippopotamus', 'Rhinoceros', 'Grizzly Bear', 'Gorilla']
+      'Plankton', 'Krill', 'Fish', 'Shrimp',
+      '50', '100', '300', '400',
+      'Hippopotamus', 'Rhinoceros', 'Grizzly Bear', 'Gorilla'
     ],
     images: [
       'assets/images/quiz-page/round-two-images/whale-tail.jpeg',
@@ -170,9 +170,9 @@ const quiz2 = [
       'Who disrupted Michael Jackson\'s performance of Earth Song at the 1996 Brit Awards by mooning on stage?'
     ],
     answers: [
-      ['Batman', 'Batman Returns', 'Batman Forever', 'The Dark Knight'],
-      ['2008', '2009', '2010', '2011'],
-      ['Liam Gallagher', 'Robbie Williams', 'Jarvis Cocker', 'Damon Albarn']
+      'Batman', 'Batman Returns', 'Batman Forever', 'The Dark Knight',
+      '2008', '2009', '2010', '2011',
+      'Liam Gallagher', 'Robbie Williams', 'Jarvis Cocker', 'Damon Albarn'
     ],
     images: [
       'assets/images/quiz-page/round-three-images/rose.jpeg', 
@@ -237,9 +237,9 @@ const quiz3 = [
       '"Hello Katerina. Make anyone cry today? Sadly no, but it\'s only 4:30."'
     ],
     answers: [
-      ['Hot Pursuit', 'The Heat', 'Bad Boys', 'Lethal Weapon'],
-      ['Men in Black', 'Bridesmaids', 'As Good as it Gets', 'Knocked Up'],
-      ['Clueless', 'Mean Girls', '10 Things I Hate About You', 'Miss Congeniality']
+      'Hot Pursuit', 'The Heat', 'Bad Boys', 'Lethal Weapon',
+      'Men in Black', 'Bridesmaids', 'As Good as it Gets', 'Knocked Up',
+      'Clueless', 'Mean Girls', '10 Things I Hate About You', 'Miss Congeniality'
     ],
     images: [
       'assets/images/quiz-page/round-one-images/outdoor-cinema.jpeg',
@@ -260,9 +260,9 @@ const quiz3 = [
       'What percentage of sloths die when they go to the ground to poop once a week?'
     ],
     answers: [
-      ['1/2', '1', '2', '3'],
-      ['1%', '5%', '12%', '20%'],
-      ['20%', '50%', '80%', '90%']
+      '1/2', '1', '2', '3',
+      '1%', '5%', '12%', '20%',
+      '20%', '50%', '80%', '90%'
     ],
     images: [
       'assets/images/quiz-page/round-two-images/lips.jpeg',
@@ -283,9 +283,9 @@ const quiz3 = [
       'The 2001 debut album of Alicia Keys was called "Songs in..." what?'
     ],
     answers: [
-      ['Birds of Prey', 'Suicide Squad', 'Venom', 'Green Lantern'],
-      ['Madonna', 'Whitney Houston', 'Beyonce', 'Rihanna'],
-      ['B Flat Minor', 'C Minor', 'A Minor', 'D Major']
+      'Birds of Prey', 'Suicide Squad', 'Venom', 'Green Lantern',
+      'Madonna', 'Whitney Houston', 'Beyonce', 'Rihanna',
+      'B Flat Minor', 'C Minor', 'A Minor', 'D Major'
     ],
     images: [
       'assets/images/quiz-page/round-three-images/cassette-tape.jpeg',
@@ -350,9 +350,9 @@ const quiz4 = [
       '"Sixty per cent of the time it works every time."'
     ],
     answers: [
-      ['The Aristocats', 'Wedding Crashers', 'Cats', 'American Pie'],
-      ['Troy', 'Spartacus', 'Braveheart', 'Gladiator'],
-      ['Anchorman', 'Anchorman 2', 'The Dukes of Hazzard', 'Talladega Nights']
+      'The Aristocats', 'Wedding Crashers', 'Cats', 'American Pie',
+      'Troy', 'Spartacus', 'Braveheart', 'Gladiator',
+      'Anchorman', 'Anchorman 2', 'The Dukes of Hazzard', 'Talladega Nights'
     ],
     images: [
       'assets/images/quiz-page/round-one-images/cinema-gate.jpeg', 
@@ -373,9 +373,9 @@ const quiz4 = [
       'What is a baby echidna called?'
     ],
     answers: [
-      ['200', '500', '1000', '1500'],
-      ['Dutch Chicken', 'Western Chicken', 'India', 'Peru'],
-      ['A puggle', 'A pup', 'A hatchling', 'A cub']
+      '200', '500', '1000', '1500',
+      'Dutch Chicken', 'Western Chicken', 'India', 'Peru',
+      'A puggle', 'A pup', 'A hatchling', 'A cub'
     ],
     images: [
       'assets/images/quiz-page/round-two-images/volcano.jpeg',
@@ -396,9 +396,9 @@ const quiz4 = [
       'Maroon 5\'s debut album was called "Songs About..." who?'
     ],
     answers: [
-      ['Back to the Future Part 3', 'Mannequin', 'Blue Hawaii', 'Back to the Future'],
-      ['3', '7', '9', '12'],
-      ['Lucy', 'Jane', 'Alice', 'Beth']
+      'Back to the Future Part 3', 'Mannequin', 'Blue Hawaii', 'Back to the Future',
+      '3', '7', '9', '12',
+      'Lucy', 'Jane', 'Alice', 'Beth'
     ],
     images: [
       'assets/images/quiz-page/round-three-images/music-icon.jpeg',
@@ -463,9 +463,9 @@ const quiz5 = [
       '"Spit spot!"'
     ],
     answers: [
-      ['The Hangover', 'Road Trip', 'Jumanji', 'Deadpool'],
-      ['Casablanca', 'Gone With the Wind', 'Breakfast at Tiffany\'s', 'Some Like it Hot'],
-      ['The Sound of Music', 'Nanny McPhee', 'The Devil Wears Prada', 'Mary Poppins']
+      'The Hangover', 'Road Trip', 'Jumanji', 'Deadpool',
+      'Casablanca', 'Gone With the Wind', 'Breakfast at Tiffany\'s', 'Some Like it Hot',
+      'The Sound of Music', 'Nanny McPhee', 'The Devil Wears Prada', 'Mary Poppins'
     ],
     images: [
       'assets/images/quiz-page/round-one-images/full-cinema.jpeg',
@@ -486,9 +486,9 @@ const quiz5 = [
       'What percentage of lightning stike victims survive?'
     ],
     answers: [
-      ['Pop', 'Reggae', 'Rock', 'Country'],
-      ['A pack', 'A colony', 'A conspiracy', 'A gang'],
-      ['1%', '10%', '50%', '90%']
+      'Pop', 'Reggae', 'Rock', 'Country',
+      'A pack', 'A colony', 'A conspiracy', 'A gang',
+      '1%', '10%', '50%', '90%'
     ],
     images: [
       'assets/images/quiz-page/round-two-images/dogs.jpeg',
@@ -509,9 +509,9 @@ const quiz5 = [
       'How old was Britney Spears when her debut song "Baby One More Time" came out in 1998?'
     ],
     answers: [
-      ['Clueless', 'She\'s All That', 'American Pie', '10 Things I Hate About You'],
-      ['Tina Turner', 'Sheryl Crow', 'Whitney Houston', 'Madonna'],
-      ['16', '17', '18', '19']
+      'Clueless', 'She\'s All That', 'American Pie', '10 Things I Hate About You',
+      'Tina Turner', 'Sheryl Crow', 'Whitney Houston', 'Madonna',
+      '16', '17', '18', '19'
     ],
     images: [
       'assets/images/quiz-page/round-three-images/guitars.jpeg',
@@ -567,6 +567,7 @@ const allRoundScores = [];
 
 // Wait for the DOM to finish loading before adding quiz interactivity
 document.addEventListener('DOMContentLoaded', function() {
+  populateQuizHtml();
   let answerButtons = document.getElementsByClassName('quiz-answer'); 
 
   for (let answerButton of answerButtons) {
@@ -617,19 +618,19 @@ function populateQuizHtml() {
     quotes: [quizQuotes[0], quizQuotes[1], quizQuotes[2]],
     answers: [
       [
-        [quizAnswers[0], quizAnswers[1], quizAnswers[2], quizAnswers[3]],
-        [quizAnswers[4], quizAnswers[5], quizAnswers[6], quizAnswers[7]],
-        [quizAnswers[8], quizAnswers[9], quizAnswers[10], quizAnswers[11]]
+        quizAnswers[0], quizAnswers[1], quizAnswers[2], quizAnswers[3],
+        quizAnswers[4], quizAnswers[5], quizAnswers[6], quizAnswers[7],
+        quizAnswers[8], quizAnswers[9], quizAnswers[10], quizAnswers[11]
       ],
       [
-        [quizAnswers[12], quizAnswers[13], quizAnswers[14], quizAnswers[15]],
-        [quizAnswers[16], quizAnswers[17], quizAnswers[18], quizAnswers[19]],
-        [quizAnswers[20], quizAnswers[21], quizAnswers[22], quizAnswers[23]]
+        quizAnswers[12], quizAnswers[13], quizAnswers[14], quizAnswers[15],
+        quizAnswers[16], quizAnswers[17], quizAnswers[18], quizAnswers[19],
+        quizAnswers[20], quizAnswers[21], quizAnswers[22], quizAnswers[23]
       ],
       [
-        [quizAnswers[24], quizAnswers[25], quizAnswers[26], quizAnswers[27]],
-        [quizAnswers[28], quizAnswers[29], quizAnswers[30], quizAnswers[31]],
-        [quizAnswers[32], quizAnswers[33], quizAnswers[34], quizAnswers[35]]
+        quizAnswers[24], quizAnswers[25], quizAnswers[26], quizAnswers[27],
+        quizAnswers[28], quizAnswers[29], quizAnswers[30], quizAnswers[31],
+        quizAnswers[32], quizAnswers[33], quizAnswers[34], quizAnswers[35]
       ], 
     ]
   };  
@@ -637,6 +638,16 @@ function populateQuizHtml() {
   for (let i = 0; i < 5; i++) {
     for (let j = 0; j < 3; j++) {
       quizHtmlLocations.questions[i][j].innerHTML += selectedQuiz[i].questions[j]; 
+    }
+  }
+
+  for (let i = 0; i < 3; i++) {
+    quizHtmlLocations.quotes[i].innerHTML += selectedQuiz[0].quotes[i]; 
+  }
+
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 12; j++) {
+      quizHtmlLocations.answers[i][j].innerHTML += selectedQuiz[i].answers[j]; 
     }
   }
 }
