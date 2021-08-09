@@ -674,6 +674,10 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   .round-container {
     row-gap: 40px;
   }
+
+  .round-question-container {
+    box-shadow: 0 0 10px 4px #b74e74;
+ }
 }
 
 /* for small to medium screen sizes of 500px and up */
@@ -717,5 +721,29 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   
   body {
     font-size: 22px; 
+  }
+}
+
+/* for small to medium screen sizes of 721px and up */
+@media screen and (min-width: 721px) {
+
+  #title-container {
+    justify-content: center; 
+    width: 80%; 
+  }
+
+  #navbar-container {
+    width: 20%; 
+  } 
+
+  #question-mark,
+  #checklist {
+    height: 50vw;
+    width: 50vw; 
+  }
+
+  .main-content-container,
+  .round-container {
+    width: 70%; 
   }
 }
