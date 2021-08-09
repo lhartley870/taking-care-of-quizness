@@ -567,8 +567,11 @@ const allRoundScores = [];
 
 const chosenQuiz = []; 
 
+const completedQuizzes = []; 
+
 // Wait for the DOM to finish loading before adding quiz interactivity
 document.addEventListener('DOMContentLoaded', function() {
+  updateCompletedQuizzes();
   populateQuizHtml();
   let answerButtons = document.getElementsByClassName('quiz-answer'); 
 
@@ -584,6 +587,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('results-button').parentNode.addEventListener('submit', handleResults);
 })
+
+function updateCompletedQuizzes() {
+ let finishedQuizzes = JSON.parse(sessionStorage.getItem('completedQuizzes'));
+  console.log(finishedQuizzes); 
+  if (finishedQuizzes !== null) {
+    for (let i = 0; i < finishedQuizzes.length; i++) {
+      completedQuizzes.push(finishedQuizzes[i]); 
+    }
+  } 
+}
 
 function populateQuizHtml() {
   let quizHtmlLocations = getQuizHtmlLocations(); 
