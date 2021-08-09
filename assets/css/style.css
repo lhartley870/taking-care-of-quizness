@@ -667,3 +667,33 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     font-size: 18px; 
   }
 }
+
+/* for small to medium screen sizes of 500px and up */
+@media screen and (min-width: 500px) {
+  body {
+    font-size: 20px; 
+  }
+
+  .main-content-container {
+    margin: 0 auto 170px auto; 
+    width: 80%; 
+  }
+
+  #question-mark {
+    height: 60vw;
+    width: 60vw; 
+  }
+
+  footer {
+    height: 120px; 
+  }
+
+  .round-container {
+    width: 80%; 
+  }
+  
+  #checklist {
+    height: 60vw; 
+    width: 60vw;
+  }
+}
