@@ -663,6 +663,7 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 
 /* for larger mobile screen sizes of 376px and up */
 @media screen and (min-width: 376px) {
+
   body {
     font-size: 18px; 
   }
@@ -670,8 +671,18 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 
 /* for small to medium screen sizes of 500px and up */
 @media screen and (min-width: 500px) {
+
   body {
     font-size: 20px; 
+  }
+
+  header,
+  .header-container {
+    height: clamp(150px, 20vh, 180px); 
+  }
+  
+  #header-links > li ~ li {
+    padding-top: 0; 
   }
 
   .main-content-container {
@@ -679,7 +690,8 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     width: 80%; 
   }
 
-  #question-mark {
+  #question-mark,
+  #checklist {
     height: 60vw;
     width: 60vw; 
   }
@@ -691,9 +703,12 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   .round-container {
     width: 80%; 
   }
+}
+
+/* for small to medium screen sizes of 650px and up */
+@media screen and (min-width: 650px) {
   
-  #checklist {
-    height: 60vw; 
-    width: 60vw;
+  body {
+    font-size: 22px; 
   }
 }
