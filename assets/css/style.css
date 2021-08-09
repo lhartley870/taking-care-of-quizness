@@ -189,9 +189,9 @@ page and results page */
   border-radius: 15px; 
   color: #e6feff;
   font-family: 'Slackey', cursive;
-  font-size: 1em; 
+  font-size: 1.1em; 
   font-weight: 400; 
-  padding: 10px; 
+  padding: 12px; 
 }
 
 /* rules */
@@ -266,6 +266,7 @@ th {
 footer {
   align-items: center;
   background-color: #955B92; 
+  bottom: 0; 
   display: flex; 
   /* 
   code to set a minimum, preferred and maximum footer size 
@@ -274,7 +275,9 @@ footer {
   */
   height: clamp(90px, 15vh, 110px); 
   justify-content: center;
+  position: fixed; 
   text-align: center; 
+  width: 100%; 
 }
 
 footer ul {
