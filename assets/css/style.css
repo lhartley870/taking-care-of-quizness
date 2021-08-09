@@ -19,13 +19,23 @@ body {
 header {
   background-color: #1c797d;
   display: flex; 
-  height: 20vh; 
+  /* 
+  code to set a minimum, preferred and maximum header size 
+  taken from an answer given by lawrence-witt on Stack Overflow - 
+  https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
+  */
+  height: clamp(120px, 20vh, 150px); 
 }
 
 .header-container {
   align-items: center; 
   display: flex; 
-  height: 20vh; 
+  /* 
+  code to set a minimum, preferred and maximum header size 
+  taken from an answer given by lawrence-witt on Stack Overflow - 
+  https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
+  */
+  height: clamp(120px, 20vh, 150px); 
 }
 
 /* title logo */
@@ -80,8 +90,12 @@ nav {
 #header-links a {
   color: #e6feff; 
   font-family: 'Rock Salt', cursive; 
-  font-size: 0.7em; 
+  font-size: 0.9em; 
   font-weight: 400; 
+}
+
+#header-links > li ~ li {
+  padding-top: 10%; 
 }
 
 .links a:hover, 
@@ -253,7 +267,12 @@ footer {
   align-items: center;
   background-color: #955B92; 
   display: flex; 
-  height: 15vh; 
+  /* 
+  code to set a minimum, preferred and maximum footer size 
+  taken from an answer given by lawrence-witt on Stack Overflow - 
+  https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
+  */
+  height: clamp(90px, 15vh, 110px); 
   justify-content: center;
   text-align: center; 
 }
