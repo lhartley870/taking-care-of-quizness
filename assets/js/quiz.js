@@ -565,6 +565,8 @@ const quiz5 = [
     
 const allRoundScores = []; 
 
+const chosenQuiz = []; 
+
 // Wait for the DOM to finish loading before adding quiz interactivity
 document.addEventListener('DOMContentLoaded', function() {
   populateQuizHtml();
@@ -679,6 +681,8 @@ function getQuiz() {
     alert('Oops, we have encountered an unknown quiz number, please refresh the page.')
     throw 'Unknown quiz number, aborting!';
   }; 
+
+  chosenQuiz.push(selectedQuiz);
 
   return selectedQuiz; 
 }
