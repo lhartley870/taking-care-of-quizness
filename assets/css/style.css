@@ -757,8 +757,7 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     width: 40vw; 
   }
 
-  .main-content-container,
   .round-container {
-    width: 60%; 
+    width: 50%; 
   }
 }
