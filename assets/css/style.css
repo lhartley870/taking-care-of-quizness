@@ -123,7 +123,7 @@ page and results page */
 .main-content-container {
   display: grid; 
   grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto 8% auto; 
+  margin: 0 auto 150px auto; 
   width: 90%; 
 }
 
@@ -261,18 +261,23 @@ th {
 footer {
   align-items: center;
   background-color: #955B92; 
-  bottom: 0; 
   display: flex; 
   /* 
   code to set a minimum, preferred and maximum footer size 
   taken from an answer given by lawrence-witt on Stack Overflow - 
   https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
   */
-  height: clamp(90px, 15vh, 110px); 
+  height: 100px; 
   justify-content: center;
-  position: fixed; 
   text-align: center; 
-  width: 100%; 
+  
+}
+
+#home-footer, 
+#results-footer {
+  bottom: 0;
+  position: fixed; 
+  width: 100%;
 }
 
 footer ul {
