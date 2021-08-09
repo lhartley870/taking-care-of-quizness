@@ -761,3 +761,48 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     width: 50%; 
   }
 }
+
+/* for medium to large screen sizes of 1200px and up */
+@media screen and (min-width: 1200px) {
+
+  .round-container {
+    column-gap: 40px; 
+    grid-template-rows: repeat(3, auto); 
+    width: 90%; 
+  }
+  
+  #round1-container {
+    grid-template-areas: 
+      "round1-heading round1-heading round1-heading"
+      "round1-q1 round1-q2 round1-q3"
+      "round1-submit round1-submit round1-submit";
+  }
+  
+  #round2-container {
+    grid-template-areas: 
+      "round2-heading round2-heading round2-heading"
+      "round2-q1 round2-q2 round2-q3"
+      "round2-submit round2-submit round2-submit";  
+  }
+  
+  #round3-container {
+    grid-template-areas: 
+      "round3-heading round3-heading round3-heading"
+      "round3-q1 round3-q2 round3-q3"
+      "round3-submit round3-submit round3-submit";  
+  }
+  
+  #round4-container {
+    grid-template-areas: 
+      "round4-heading round4-heading round4-heading"
+      "round4-q1 round4-q2 round4-q3"
+      "round4-submit round4-submit round4-submit";  
+  }
+  
+  #round5-container {
+    grid-template-areas: 
+      "round5-heading round5-heading round5-heading"
+      "round5-q1 round5-q2 round5-q3"
+      "round5-submit round5-submit round5-submit";  
+  }
+}
