@@ -694,7 +694,7 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 
   .main-content-container {
     margin: 0 auto 170px auto; 
-    width: 80%; 
+    width: 70%; 
   }
 
   #question-mark,
@@ -708,7 +708,11 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   }
 
   .round-container {
-    width: 80%; 
+    width: 70%; 
+  }
+
+  .quiz-photo-container { 
+    width: 70%; 
   }
 }
 
