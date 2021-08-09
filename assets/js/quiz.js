@@ -683,18 +683,23 @@ function getQuiz() {
   if (quizNumber === 1) {
     selectedQuiz = quiz1; 
     chosenQuiz.push(selectedQuiz);
+    completedQuizzes.push(1); 
   } else if (quizNumber === 2) {
     selectedQuiz = quiz2; 
     chosenQuiz.push(selectedQuiz); 
+    completedQuizzes.push(2); 
   } else if (quizNumber === 3 ) {
     selectedQuiz = quiz3; 
     chosenQuiz.push(selectedQuiz);
+    completedQuizzes.push(3); 
   } else if (quizNumber === 4) {
     selectedQuiz = quiz4; 
     chosenQuiz.push(selectedQuiz);
+    completedQuizzes.push(4); 
   } else if (quizNumber === 5) {
     selectedQuiz = quiz5; 
     chosenQuiz.push(selectedQuiz);
+    completedQuizzes.push(5); 
   } else {
     alert('Oops, we have encountered an unknown quiz number, please refresh the page.')
     throw 'Unknown quiz number, aborting!';
