@@ -505,9 +505,8 @@ footer a {
   color: #007d9e;
   font-size: 1em; 
   font-weight: 400;
-  margin: 2% auto; 
+  margin: 4% auto; 
   padding: 3%; 
-  position: relative; 
   width: 80%; 
 }
 
@@ -666,6 +665,14 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 
   body {
     font-size: 18px; 
+  }
+}
+
+/* for larger mobile screen sizes of 425px and up */
+@media screen and (min-width: 425px) {
+
+  .round-container {
+    row-gap: 40px;
   }
 }
 
