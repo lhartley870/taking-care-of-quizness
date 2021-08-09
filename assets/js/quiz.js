@@ -729,14 +729,13 @@ function disableSubmit(event) {
 
 function provideFeedback(event) { 
   let roundNumber = event.target.getElementsByClassName('round-number')[0].innerHTML[6];
-  let selectedQuiz = getQuiz(); 
   
   // feedback for question 1 answers
   let qu1AnswerLabels = event.target.getElementsByClassName('q1-answer-label'); 
   let q1Feedback = event.target.getElementsByClassName('q1-feedback'); 
 
   for (let i = 0; i < qu1AnswerLabels.length; i++) {
-    if (qu1AnswerLabels[i].innerHTML === selectedQuiz[roundNumber-1].correctAnswers[0]) {
+    if (qu1AnswerLabels[i].innerHTML === chosenQuiz[0][roundNumber-1].correctAnswers[0]) {
       q1Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
     } else {
       q1Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
@@ -748,7 +747,7 @@ function provideFeedback(event) {
   let q2Feedback = event.target.getElementsByClassName('q2-feedback'); 
  
   for (let i = 0; i < qu2AnswerLabels.length; i++) {
-    if (qu2AnswerLabels[i].innerHTML === selectedQuiz[roundNumber-1].correctAnswers[1]) {
+    if (qu2AnswerLabels[i].innerHTML === chosenQuiz[0][roundNumber-1].correctAnswers[1]) {
       q2Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
     } else {
       q2Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
@@ -760,7 +759,7 @@ function provideFeedback(event) {
   let q3Feedback = event.target.getElementsByClassName('q3-feedback'); 
 
   for (let i = 0; i < qu3AnswerLabels.length; i++) {
-    if (qu3AnswerLabels[i].innerHTML === selectedQuiz[roundNumber-1].correctAnswers[2]) {
+    if (qu3AnswerLabels[i].innerHTML === chosenQuiz[0][roundNumber-1].correctAnswers[2]) {
       q3Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
     } else {
       q3Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
@@ -802,23 +801,22 @@ function provideQuResult(event) {
 function checkUserAnswers(event) {
   let userRoundAnswers = getUserAnswers(event); 
   let roundNumber = event.target.getElementsByClassName('round-number')[0].innerHTML[6];
-  let selectedQuiz = getQuiz(); 
 
   let userQu1Score; 
   let userQu2Score; 
   let userQu3Score; 
   
-  if (userRoundAnswers[0] === selectedQuiz[roundNumber-1].correctAnswers[0]) {
+  if (userRoundAnswers[0] === chosenQuiz[0][roundNumber-1].correctAnswers[0]) {
     userQu1Score = 1;
   } else {
     userQu1Score = 0; 
   }
-  if (userRoundAnswers[1] === selectedQuiz[roundNumber-1].correctAnswers[1]) {
+  if (userRoundAnswers[1] === chosenQuiz[0][roundNumber-1].correctAnswers[1]) {
     userQu2Score = 1;
   } else {
     userQu2Score = 0; 
   }
-  if (userRoundAnswers[2] === selectedQuiz[roundNumber-1].correctAnswers[2]) {
+  if (userRoundAnswers[2] === chosenQuiz[0][roundNumber-1].correctAnswers[2]) {
     userQu3Score = 1;
   } else {
     userQu3Score = 0; 
