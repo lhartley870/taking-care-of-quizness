@@ -702,8 +702,28 @@ function getQuiz() {
 
 function selectQuizNumber() {
   let quizNumber = Math.floor(Math.random() * 5) +1; 
+  let partialQuizRun = completedQuizzes.length > 0 && completedQuizzes.length < 5; 
+  let quizAlreadyRun = completedQuizzes.includes(quizNumber); 
 
-  return quizNumber; 
+  if (partialQuizRun) {
+    if (quizAlreadyRun) {
+      if (completedQuizzes.includes(1) === false) {
+        return 1; 
+      } else if (completedQuizzes.includes(2) === false) {
+        return 2; 
+      } else if (completedQuizzes.includes(3) === false) {
+        return 3; 
+      } else if (completedQuizzes.includes(4) === false) {
+        return 4;
+      } else if (completedQuizzes.includes(5) === false) {
+        return 5;
+      } 
+    } else {
+      return quizNumber;
+    }
+  } else {
+    return quizNumber; 
+  }
 }
 
 /**
