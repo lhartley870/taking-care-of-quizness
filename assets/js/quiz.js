@@ -798,22 +798,23 @@ function provideQuResult(event) {
 function checkUserAnswers(event) {
   let userRoundAnswers = getUserAnswers(event); 
   let roundNumber = event.target.getElementsByClassName('round-number')[0].innerHTML[6];
+  let selectedQuiz = getQuiz(); 
 
   let userQu1Score; 
   let userQu2Score; 
   let userQu3Score; 
   
-  if (userRoundAnswers[0] === quiz1[roundNumber-1].correctAnswers[0]) {
+  if (userRoundAnswers[0] === selectedQuiz[roundNumber-1].correctAnswers[0]) {
     userQu1Score = 1;
   } else {
     userQu1Score = 0; 
   }
-  if (userRoundAnswers[1] === quiz1[roundNumber-1].correctAnswers[1]) {
+  if (userRoundAnswers[1] === selectedQuiz[roundNumber-1].correctAnswers[1]) {
     userQu2Score = 1;
   } else {
     userQu2Score = 0; 
   }
-  if (userRoundAnswers[2] === quiz1[roundNumber-1].correctAnswers[2]) {
+  if (userRoundAnswers[2] === selectedQuiz[roundNumber-1].correctAnswers[2]) {
     userQu3Score = 1;
   } else {
     userQu3Score = 0; 
