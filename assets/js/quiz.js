@@ -725,13 +725,14 @@ function disableSubmit(event) {
 
 function provideFeedback(event) { 
   let roundNumber = event.target.getElementsByClassName('round-number')[0].innerHTML[6];
+  let selectedQuiz = getQuiz(); 
   
   // feedback for question 1 answers
   let qu1AnswerLabels = event.target.getElementsByClassName('q1-answer-label'); 
   let q1Feedback = event.target.getElementsByClassName('q1-feedback'); 
 
   for (let i = 0; i < qu1AnswerLabels.length; i++) {
-    if (qu1AnswerLabels[i].innerHTML === quiz1[roundNumber-1].correctAnswers[0]) {
+    if (qu1AnswerLabels[i].innerHTML === selectedQuiz[roundNumber-1].correctAnswers[0]) {
       q1Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
     } else {
       q1Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
@@ -743,7 +744,7 @@ function provideFeedback(event) {
   let q2Feedback = event.target.getElementsByClassName('q2-feedback'); 
  
   for (let i = 0; i < qu2AnswerLabels.length; i++) {
-    if (qu2AnswerLabels[i].innerHTML === quiz1[roundNumber-1].correctAnswers[1]) {
+    if (qu2AnswerLabels[i].innerHTML === selectedQuiz[roundNumber-1].correctAnswers[1]) {
       q2Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
     } else {
       q2Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
@@ -755,7 +756,7 @@ function provideFeedback(event) {
   let q3Feedback = event.target.getElementsByClassName('q3-feedback'); 
 
   for (let i = 0; i < qu3AnswerLabels.length; i++) {
-    if (qu3AnswerLabels[i].innerHTML === quiz1[roundNumber-1].correctAnswers[2]) {
+    if (qu3AnswerLabels[i].innerHTML === selectedQuiz[roundNumber-1].correctAnswers[2]) {
       q3Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
     } else {
       q3Feedback[i].innerHTML += ' <i class="fas fa-times wrong-answer"></i>';
