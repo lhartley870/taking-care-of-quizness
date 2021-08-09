@@ -944,7 +944,8 @@ function handleResults(event) {
 
   sessionStorage.setItem('completedQuizzes', JSON.stringify(completedQuizzes));
   if (completedQuizzes.length === 5) {
-    alert('You have now completed all 5 quizzes!')
+    alert('You have now completed all 5 quizzes!');
+    sessionStorage.setItem('completedQuizzes', JSON.stringify([]));
   }
 
   if (allRoundScores.length === 5) {
