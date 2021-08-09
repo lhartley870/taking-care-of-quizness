@@ -683,10 +683,6 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 /* for small to medium screen sizes of 500px and up */
 @media screen and (min-width: 500px) {
 
-  body {
-    font-size: 20px; 
-  }
-
   header,
   .header-container {
     height: clamp(150px, 20vh, 180px); 
@@ -716,14 +712,6 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   }
 }
 
-/* for small to medium screen sizes of 650px and up */
-@media screen and (min-width: 650px) {
-  
-  body {
-    font-size: 22px; 
-  }
-}
-
 /* for small to medium screen sizes of 721px and up */
 @media screen and (min-width: 721px) {
 
@@ -745,14 +733,6 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   .main-content-container,
   .round-container {
     width: 70%; 
-  }
-}
-
-/* for small to medium screen sizes of 768px and up */
-@media screen and (min-width: 768px) {
-  
-  body {
-    font-size: 24px; 
   }
 }
 
