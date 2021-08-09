@@ -942,6 +942,11 @@ function getUserAnswers(event) {
 function handleResults(event) {
   event.preventDefault();
 
+  sessionStorage.setItem('completedQuizzes', JSON.stringify(completedQuizzes));
+  if (completedQuizzes.length === 5) {
+    alert('You have now completed all 5 quizzes!')
+  }
+
   if (allRoundScores.length === 5) {
     allRoundScores.sort(); 
     sessionStorage.setItem('allRoundScores', JSON.stringify(allRoundScores)); 
