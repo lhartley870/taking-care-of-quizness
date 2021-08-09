@@ -716,9 +716,9 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   }
 }
 
-/* for small to medium screen sizes of 721px and up */
-@media screen and (min-width: 721px) {
-
+/* for small to medium screen sizes of 590px and up */
+@media screen and (min-width: 590px) {
+  
   #title-container {
     justify-content: center; 
     width: 80%; 
@@ -727,6 +727,10 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   #navbar-container {
     width: 20%; 
   } 
+}
+
+/* for small to medium screen sizes of 721px and up */
+@media screen and (min-width: 721px) {
 
   #question-mark,
   #checklist {
@@ -736,7 +740,11 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 
   .main-content-container,
   .round-container {
-    width: 70%; 
+    width: 60%; 
+  }
+
+  .quiz-photo-container { 
+    width: 60%; 
   }
 }
 
