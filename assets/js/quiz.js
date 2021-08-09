@@ -682,14 +682,19 @@ function getQuiz() {
 
   if (quizNumber === 1) {
     selectedQuiz = quiz1; 
+    chosenQuiz.push(selectedQuiz);
   } else if (quizNumber === 2) {
     selectedQuiz = quiz2; 
+    chosenQuiz.push(selectedQuiz); 
   } else if (quizNumber === 3 ) {
     selectedQuiz = quiz3; 
+    chosenQuiz.push(selectedQuiz);
   } else if (quizNumber === 4) {
     selectedQuiz = quiz4; 
+    chosenQuiz.push(selectedQuiz);
   } else if (quizNumber === 5) {
     selectedQuiz = quiz5; 
+    chosenQuiz.push(selectedQuiz);
   } else {
     alert('Oops, we have encountered an unknown quiz number, please refresh the page.')
     throw 'Unknown quiz number, aborting!';
