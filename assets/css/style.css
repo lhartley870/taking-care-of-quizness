@@ -924,3 +924,15 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     height: 170px; 
   }
 }
+
+/* for extra large screen sizes of 1900px and up */
+@media screen and (min-width: 1900px) {
+
+  body {
+    font-size: 26px;
+  }
+
+  #header-links > li { 
+    padding: 0 15%; 
+  }
+}
