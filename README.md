@@ -124,12 +124,16 @@ The Results page is designed to provide the user with some more interesting user
   The 'Play Again!' button provides a call to action for the user to complete another quiz and is styled in the same way as the 'Get Quiz Results' button so the user will be familiar with this button as one that will take them to another page. Above the button is a message to remind the user that there are five quizzes to play in total. The button also provides an easy way for the user to play the quiz again without having to scroll back up to the header navigation bar. 
 
 ### Further Feature Ideas
-* 
+* Adjust the site so that only one round appears on the Quiz page at a time.
+* Store the user's best round(s) over all the quizzes they complete in a session to provide them with their overall strongest round category.
+* Add a dark mode for the site. 
     
 ## Technologies Used
 
 ### Languages 
-* 
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) programming language for the structure and content of the website.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) for styling the look of the website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for adding interactivity to the website. 
 
 ### Libraries, Resources and Programs
 * 
