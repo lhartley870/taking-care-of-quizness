@@ -809,6 +809,7 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   .round-container {
     column-gap: 40px; 
     grid-template-rows: repeat(3, auto); 
+    margin: 0 auto 5% auto;
     width: 90%; 
   }
   
@@ -845,5 +846,14 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
       "round5-heading round5-heading round5-heading"
       "round5-q1 round5-q2 round5-q3"
       "round5-submit round5-submit round5-submit";  
+  }
+
+  #results-form-container {
+    margin: 0 auto 5% auto; 
+  }
+
+  .round-number {
+    margin-bottom: -10px;
+    text-align: center; 
   }
 }
