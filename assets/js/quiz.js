@@ -749,6 +749,7 @@ function getQuiz() {
  * quiz numbers in completedQuizzes until one is found that has not yet been done by the user
  */
 function selectQuizNumber() {
+  // code to generate a random number between 1 and 5 adapted from the Code Institute Love Maths project
   let quizNumber = Math.floor(Math.random() * 5) + 1; 
   let partialQuizRun = completedQuizzes.length > 0 && completedQuizzes.length < 5; 
   let quizAlreadyRun = completedQuizzes.includes(quizNumber); 
