@@ -13,10 +13,10 @@ Users of this website are typically going to be people who are searching for an 
 * As a user of the site, I want to see what the site is all about and how the quiz works.
 * As a user of the site, I want to be able to easily navigate the site. 
 * As a user of the site, I want some interim feedback on how I'm doing before I finish all the quiz questions. 
-* As a user of the site, I want to know which round or rounds were my best round or rounds as well as my overall score.
+* AAs a user of the site, I want some interesting feedback when I complete a quiz, beyond just knowing what my total score was. 
 * As a user of the site, I want to have the opportunity to complete more than one set of quiz questions during my visit.
 * As a user of the site, I don't want to be given the same set of questions twice during my visit.
-* As a user of the site, I want some useful links to write my own quiz and improve my general knowledge. 
+* As a user of the site, I want some useful links related to quizzing to continue my quizzing experience.  
 * As a user of the site, I want a comforting familiar layout as I go through the site with an attractive colour scheme and imagery to accompany my quiz experience. 
 
 ## Wireframes
