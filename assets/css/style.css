@@ -913,15 +913,15 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 
   header,
   .header-container {
-    height: clamp(210px, 20vh, 250px); 
+    height: clamp(180px, 20vh, 210px); 
   }
 
   .main-content-container {
-    margin: 0 auto 220px auto; 
+    margin: 0 auto 180px auto; 
   }
 
   footer {
-    height: 170px; 
+    height: 130px; 
   }
 }
 
