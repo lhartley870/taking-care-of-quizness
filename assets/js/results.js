@@ -171,7 +171,6 @@ function findBestRounds() {
   ];
   let scores = roundScores.map(roundScore => roundScore.score);  
   let highestScore = Math.max(scores[0], scores[1], scores[2], scores[3], scores[4]); 
-  let highScoreRounds = roundScores.filter(roundScore => roundScore.score === highestScore); 
-  console.log(highScoreRounds); 
+  let highScoreRounds = roundScores.filter(roundScore => roundScore.score === highestScore);  
   return highScoreRounds; 
 }
