@@ -64,6 +64,28 @@ Colour Name | Hexadecimal Code
 ### Existing Features
 #### Home Page
 
+The Home page is designed to quickly give the user access to what they are likely to want to know before starting the quiz and encourage them to go on to start the quiz.
+
+* **Central Question Mark Illustration**  
+
+  The question mark illustration provides a focal point when arriving at the Home page and provides imagery synonymous with questions and quizzes, fitting in with the theme of the website. It also rotates one full turn clockwise and then counterclockwise on page load to add to the user interest but then stops to avoid distracting the user whilst they read the rules/complete the 'create username' form. 
+
+* **Navigation Bar** 
+
+  The navigation bar is simple and easy to use. It only features the Home page and Quiz page with the words 'Home' and 'Quiz' which are self-explanatory. It does not feature the Results page as the user needs to complete the quiz before going through to the results page, otherwise the user could access an unsightly page with blanks in it. It enables a user to quickly click through to start the quiz if they do not want to read the Home page and to play the quiz again if they do not want to read their results. The developer found it preferable to make the footer sticky (for reasons set out below) rather than the header given that the user is unlikely to want to get back to the Home page once they have visited it and can access the Quiz page at the bottom of the Home page (via the 'Start Quiz' button) and the Results page (via the 'Play Again!' button) without having to scroll back up to the navigation bar in any case.
+
+  An Indian Red coloured line remains under the relevant page name when the user is on that page, so that the user can tell at a glance where they are on the website. A Light Cyan coloured line appears under the relevant page name when the user hovers over it with a mouse or focusses on it with a keyboard, hightlighting an action the user can take to get to the other page.  
+
+* **Rules and Create Username Buttons**
+
+  The Home page contains toggle buttons which allow the user to show and hide the quiz rules and the create username form. The toggle buttons allow the Home page to maintain a neat appearance when they are not being used but easily hint to the user what they will reveal if clicked. The Rules button allows the user to read the rules and the score categories and provides the user with useful information such how many quizzes are available before beginning. The username form allows the user to create a username which will be used to personalise the results page for that user's session.  
+
+* **Footer**
+
+  The footer contains links to external useful websites for the user to write their own quiz or gain tips on how to improve their general knowledge. Each link has a relevant logo and wording to highlight what the links are for. As with the page navigation links in the header, a Light Cyan underline appears when the links are hovered over or focussed on. This gives the user a sense of predictable interaction. 
+
+  The footer is sticky only on the Home page and Results page. These are the pages where a user is likely to want to look to access these links e.g. before completing the quiz the user may want to improve their general knowledge and after completing the quiz, the user may be inspired to write their own quiz. As the Home and Results pages contain minimal information, the sticky footer is not a hindrance to the user. The footer is not sticky on the Quiz page because this would take up screen space whilst the user is scrolling down to complete the quiz, which could irritate the user. The Quiz page is also the page where the user is least likely to want to explore the external links as well as being the page where the developer most wants the user to remain on the site.
+
 #### Quiz Page
 
 #### Results Page
