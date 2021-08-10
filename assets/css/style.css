@@ -820,13 +820,15 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     row-gap: 50px; 
   }
   
-  #question-mark { 
+  #question-mark,
+  #checklist { 
     height: 20vw;  
     width: 20vw; 
   }
 
   #rules-container,
-  #username-container {
+  #username-container,
+  #quiz-stats {
     align-items: center;
     display: flex;
     flex-direction: column;  
@@ -844,6 +846,18 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     margin: 0 auto 5% auto;
     width: 90%; 
   }
+
+  #results-container {
+    grid-template-areas: 
+      "result-category checklist quiz-stats"
+      "results-message results-message results-message"
+      "play-again play-again play-again"; 
+    grid-template-rows: repeat(3, auto); 
+  }
+  
+  #quiz-result-category > p {
+    font-size: 1.5em;
+  } 
   
   #round1-container {
     grid-template-areas: 
