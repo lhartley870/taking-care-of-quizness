@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function showHideRules() {
   let rulesInnerContainer = document.getElementById('rules-container').children[1]; 
+  let rulesOuterContainer = document.getElementById('rules-container'); 
   let rulesHtml = `
     <ol>
       <li>Click on 'Start Quiz' to begin</li>
@@ -55,7 +56,6 @@ function showHideRules() {
       <li>There are 5 different quizzes in total, so why not try them all!</li>
     </ol>
   `; 
-  let rulesOuterContainer = document.getElementById('rules-container'); 
 
   if (rulesInnerContainer.innerHTML === '') {
     rulesInnerContainer.innerHTML = rulesHtml; 
@@ -111,20 +111,30 @@ function showHideUsernameForm() {
  * submitted
  */
 function handleSubmit(event) {
-  event.preventDefault(); 
-
   let usernameValue = document.getElementById('username').value;
-  sessionStorage.setItem("username", usernameValue);  
-
   let usernameInput = document.getElementById('username'); 
+  let submitButton = document.getElementsByClassName('username-submit-button')[0];  
+  let usernameForm = document.getElementsByTagName('form')[0];
+  
+  // prevents default submit behaviour
+  event.preventDefault(); 
+  
+  // puts the user's chosen username into session storage 
+  /* code for how to pass variables to and from sessionStorage taken from this website -
+  https://lage.us/Javascript-Pass-Variables-to-Another-Page.html */
+  sessionStorage.setItem("username", usernameValue);  
+  
+  // clears the username value from the form once submitted and disables the username input field
   usernameInput.value = ''; 
   usernameInput.disabled = true;  
-
-  let submitButton = document.getElementsByClassName('username-submit-button')[0];   
+  
+  /* disables the 'Submit Username' button once a username is submitted, changes the button text to 'Submitted!'
+  and changes the button colours by adding a 'submitted-button' class */
   submitButton.classList.add('submitted-button');  
   submitButton.innerHTML = 'Submitted!'; 
   submitButton.disabled = true; 
 
-  let usernameForm = document.getElementsByTagName('form')[0];
+  /* adds an attribute to the username form element so that the showHideUsernameForm function can identify
+  that the form has already been submitted when a user shows/hides the username form */ 
   usernameForm.setAttribute('data-submitted', '');
 }
