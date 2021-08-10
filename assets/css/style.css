@@ -358,7 +358,6 @@ footer a {
 
 #round1-heading-container {
   grid-area: round1-heading; 
-  text-align: left; 
 }
 
 #round1-q1-container {
@@ -379,7 +378,6 @@ footer a {
 
 #round2-heading-container {
   grid-area: round2-heading; 
-  text-align: left; 
 }
 
 #round2-q1-container {
@@ -400,7 +398,6 @@ footer a {
 
 #round3-heading-container {
   grid-area: round3-heading; 
-  text-align: left; 
 }
 
 #round3-q1-container {
@@ -421,7 +418,6 @@ footer a {
 
 #round4-heading-container {
   grid-area: round4-heading; 
-  text-align: left; 
 }
 
 #round4-q1-container {
@@ -442,7 +438,6 @@ footer a {
 
 #round5-heading-container {
   grid-area: round5-heading; 
-  text-align: left; 
 }
 
 #round5-q1-container {
@@ -467,6 +462,7 @@ footer a {
 
 .round-number {
   margin-bottom: -10px; 
+  text-align: left;
 }
 
 .round-question-container {
@@ -675,6 +671,10 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     row-gap: 40px;
   }
 
+  .round-number {
+    margin-bottom: -20px; 
+  }
+  
   .round-question-container {
     box-shadow: 0 0 10px 4px #b74e74;
  }
