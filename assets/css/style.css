@@ -132,7 +132,7 @@ page and results page */
     "question-mark question-mark question-mark"
     "rules rules rules"
     "username username username"
-    "quiz1 quiz1 quiz1";
+    "quiz quiz quiz";
   grid-template-rows: repeat(4, auto);
   row-gap: 20px; 
 }
@@ -149,8 +149,8 @@ page and results page */
   grid-area: username; 
 }
 
-#quiz1-button-container { 
-  grid-area: quiz1; 
+#quiz-button-container { 
+  grid-area: quiz; 
 }
 
 /* rotating question mark image */
@@ -815,7 +815,7 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   #home-content-container {
     grid-template-areas: 
       "rules question-mark username"
-      "quiz1 quiz1 quiz1";
+      "quiz quiz quiz";
     grid-template-rows: repeat(2, auto);
     row-gap: 50px; 
   }
