@@ -944,7 +944,7 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 }
 
 /* for extra extra large screen sizes of 2500px and up */
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 2500px) {
 
   body {
     font-size: 32px; 
