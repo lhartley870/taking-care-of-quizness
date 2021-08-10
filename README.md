@@ -88,6 +88,21 @@ The Home page is designed to quickly give the user access to what they are likel
 
 #### Quiz Page
 
+This page represents the main goal of the user in completing a multiple choice quiz. 
+
+* **Presentation of Quiz Questions**
+
+  Each quiz question apppears in a self-contained Dark Cyan rectangle which contains the question, answers and a photo which is either specifically relevant to the question (in which case it may help the user, for example, in the 'Fish or Not' round) or is relevant to the round theme, providing attractive imagery to accompany the user's quiz experience. The radio buttons next to the answer text indicate when an answer has been selected and the user also receives feedback on which answer they have selected as the answer font changes from Raleway to Slackey. The developer decided to keep in the radio buttons as they are something users will be familiar with and they allow the user to easily distinguish between when they are focussing on an answer with the keyboard as opposed to selecting a radio button. Removing the radio buttons and adding something like a coloured outline to the answer divs to indicate that the user is focussing on that div creates confusion as the user will not know which of the outline and answer font change represents answer selection and which represents answer focus.
+
+* **Round Submission**
+
+  The user is able to gain feedback on how they are doing during the quiz by submitting each round, maintaining the user's interest. If the user tries to submit a round without answering all the questions they will be prompted to do so. Once a user submits a round, the submit button and radio buttons are disabled so that the user cannot re-submit. The submit button changes to grey colours and the radio buttons are also greyed out. The user is provided with a 'Correct!' or 'Incorrect!' message underneath the question photo so they can instantly tell if they got the question right or wrong. Ticks and crosses also appear next to each answer in case the user got it wrong and wants to see what the correct answer was. The ticks and 'Correct!' message are all in Green, a colour synonymous with something being correct and the crosses and 'Incorrect!' message are all in Red, again a colour synonymous with something being incorrect. 
+
+* **Getting the Quiz Results**
+
+  At the bottom of the Quiz page is the 'Get Quiz Results' button which is a different colour to and larger than the round submit buttons. If the user tries to get their Quiz Results before they have submitted all 5 rounds they will be prompted to submit all 5 rounds and can only progress to getting their Results when they do. The Quiz also keeps a record of which quizzes the user has completed in the same session so the user will not get the same quiz twice. Once the user clicks on 'Get Quiz Results' after completing their fifth quiz, they will receive an alert to tell them that they have completed all 5 quizzes. The record of quizzes completed then resets to none to allow the user to do the quizzes all over again, if they so choose, without receiving an alert each time. 
+
+
 #### Results Page
 
 ### Further Feature Ideas
