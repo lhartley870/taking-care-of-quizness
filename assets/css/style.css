@@ -803,7 +803,7 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   }
 }
 
-/* for medium to large screen sizes of 1200px and up */
+/* for large screen sizes of 1200px and up */
 @media screen and (min-width: 1200px) {
 
   .main-content-container {
@@ -901,5 +901,26 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   .round-number {
     margin-bottom: -10px;
     text-align: center; 
+  }
+}
+
+/* for extra large screen sizes of 1600px and up */
+@media screen and (min-width: 1600px) {
+
+  body {
+    font-size: 24px;
+  }
+
+  header,
+  .header-container {
+    height: clamp(210px, 20vh, 250px); 
+  }
+
+  .main-content-container {
+    margin: 0 auto 220px auto; 
+  }
+
+  footer {
+    height: 170px; 
   }
 }
