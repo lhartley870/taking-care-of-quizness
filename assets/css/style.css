@@ -923,6 +923,12 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   footer {
     height: 130px; 
   }
+
+  /* code for increasing size of radio buttons taken from an answer given by 
+  Manish Patel on this Stack Overflow post - https://stackoverflow.com/questions/4516217/make-radio-button-bigger */
+  input[type='radio'] {
+    transform: scale(1.5); 
+  } 
 }
 
 /* for extra large screen sizes of 1900px and up */
