@@ -806,6 +806,38 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 /* for medium to large screen sizes of 1200px and up */
 @media screen and (min-width: 1200px) {
 
+  .main-content-container {
+    column-gap: 20px;
+    grid-template-columns: 1fr 25% 1fr;
+    width: 90%; 
+  }
+  
+  #home-content-container {
+    grid-template-areas: 
+      "rules question-mark username"
+      "quiz1 quiz1 quiz1";
+    grid-template-rows: repeat(2, auto);
+    row-gap: 50px; 
+  }
+  
+  #question-mark { 
+    height: 20vw;  
+    width: 20vw; 
+  }
+
+  #rules-container,
+  #username-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+  } 
+  
+  .home-page-button {
+    font-size: 1.3em; 
+    padding: 20px; 
+  }
+
   .round-container {
     column-gap: 40px; 
     grid-template-rows: repeat(3, auto); 
