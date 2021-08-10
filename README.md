@@ -105,6 +105,24 @@ This page represents the main goal of the user in completing a multiple choice q
 
 #### Results Page
 
+The Results page is designed to provide the user with some more interesting user results than just the user's total score and encourage the user to play another quiz.
+
+* **Central Image**
+
+  As with the Home page, the Results page has a central illustration image with pastel colouring. Only the Home page and Results page have illustrations with the Quiz page having photos. This links the Home and Results pages and brings the user's experience full circle, as does the similar layout for these two pages mentioned in the 'Page Designs' section above. The clipboard image with ticks fits in with the results theme of the 'Results' page. 
+
+* **Score Category and Bracket**
+
+  The user will receive a score bracket and a score name which matches the score brackets, names and colours set out in the Quiz Rules on the Home page. This provides the user with some information but they will want to know their exact score so will want to keep scrolling to find out. If the user has entered a username, their name will appear before 'You Are' in the score category and bracket area to personalise the user experience. If the user completes more than one quiz in a session and doesn't return to the Home page and set another username, the same username will appear on their Results page each time a quiz is completed, maintaining the personalisation. 
+
+* **Score and Best Round(s)**
+
+  The user will receive their total score as well as information about their best round(s). For each Round where the user had their highest score they will be given the name of the Round(s) as well as their score out of 3 in those Round(s). This provides some added interest for the user in giving them feedback about which category is or categories are their strongest. They will be able to see a pattern if they complete more than one quiz so this is designed to encourage the user to play again.  
+
+* **Playing the Quiz Again**
+
+  The 'Play Again!' button provides a call to action for the user to complete another quiz and is styled in the same way as the 'Get Quiz Results' button so the user will be familiar with this button as one that will take them to another page. Above the button is a message to remind the user that there are five quizzes to play in total. The button also provides an easy way for the user to play the quiz again without having to scroll back up to the header navigation bar. 
+
 ### Further Feature Ideas
 * 
     
