@@ -1,3 +1,6 @@
+/* constant variables quiz1 - quiz5 containing information to be displayed on quiz page depending on which 
+quiz is selected, together with correct answers */
+
 const quiz1 = [
   {
     questions: [
@@ -562,24 +565,34 @@ const quiz5 = [
     correctAnswers: ['Fish', 'Not a Fish', 'Fish']
   }
 ]; 
-    
+
+/* used to keep a record of the user's scores for all 5 rounds to be put into sessionstorage
+when the 'Get Quiz Results' button is clicked and processed on the results page to display
+the user's results */
 const allRoundScores = []; 
 
+// used to keep a record of the current quiz set so that correct answers can be checked 
 const chosenQuiz = []; 
 
+// used to keep a record of which quiz sets have been completed in a user session so the user does not get the same quiz set twice
+// length of completedQuizzes array is also used to determine when the user has completed all 5 quizzes so that they can be alerted
 const completedQuizzes = []; 
 
 // Wait for the DOM to finish loading before adding quiz interactivity
+// update completedQuizzes variable with quizzes completed in a user session
+// populate the quiz page with the applicable quiz information depending on the selected set of quiz questions  
+// add event listeners to answer buttons, round button forms and 'Get Quiz Results' button form
 document.addEventListener('DOMContentLoaded', function() {
-  updateCompletedQuizzes();
-  populateQuizHtml();
   let answerButtons = document.getElementsByClassName('quiz-answer'); 
-
+  let roundForms = document.getElementsByClassName('round-container'); 
+  
+  updateCompletedQuizzes();
+  
+  populateQuizHtml();
+  
   for (let answerButton of answerButtons) {
       answerButton.addEventListener('click', radioSelect); 
   }
-
-  let roundForms = document.getElementsByClassName('round-container'); 
 
   for (let roundForm of roundForms) {
     roundForm.addEventListener('submit', handleSubmit); 
@@ -588,9 +601,16 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('results-button').parentNode.addEventListener('submit', handleResults);
 })
 
+/** 
+ * gets the current record of completed quiz numbers from session storage and adds them back to 
+ * the completedQuizzes variable to keep a running record of which quiz sets the user has completed 
+ * in a session
+ */ 
 function updateCompletedQuizzes() {
+  /* code for how to pass variable arrays to and from sessionStorage taken from this website -
+  https://lage.us/Javascript-Pass-Variables-to-Another-Page.html */
  let finishedQuizzes = JSON.parse(sessionStorage.getItem('completedQuizzes'));
-  console.log(finishedQuizzes); 
+
   if (finishedQuizzes !== null) {
     for (let i = 0; i < finishedQuizzes.length; i++) {
       completedQuizzes.push(finishedQuizzes[i]); 
@@ -598,6 +618,10 @@ function updateCompletedQuizzes() {
   } 
 }
 
+/**
+ * populates the quiz questions, quotes, answers, images and image alt and src attributes on the quiz page
+ * depending on which set of quiz questions is chosen
+ */
 function populateQuizHtml() {
   let quizHtmlLocations = getQuizHtmlLocations(); 
   let selectedQuiz = getQuiz();
@@ -631,6 +655,10 @@ function populateQuizHtml() {
   }
 }
 
+/**
+ * gets all the locations in the quiz html page where the quiz questions, answers, images
+ * and image src and alt attributes will need to go for the selected quiz set 
+ */
 function getQuizHtmlLocations() {
   let quizQuestions = document.getElementsByClassName('question'); 
   let quizQuotes = document.getElementsByClassName('quiz-quote'); 
@@ -675,9 +703,13 @@ function getQuizHtmlLocations() {
   return quizHtmlLocations;
 }
 
+/**
+ * takes the quiz number chosen (1, 2, 3, 4 or 5) and pushes it to the completedQuizzes variable to keep a record
+ * of which quizzes the user has completed in a session to prevent the user getting the same quiz twice and pushes the 
+ * corresponding quiz set to the chosenQuiz variable so that it can be called upon to check correct answers
+ */
 function getQuiz() {
   let quizNumber = selectQuizNumber();
-
   let selectedQuiz;
 
   if (quizNumber === 1) {
@@ -705,13 +737,19 @@ function getQuiz() {
     throw 'Unknown quiz number, aborting!';
   }; 
 
-  chosenQuiz.push(selectedQuiz);
-
   return selectedQuiz; 
 }
 
+/**
+ * selects a quiz number at random between 1 and 5,
+ * if there are no completedQuizzes or 5 completed quizzes, run
+ * the quiz number selected at random but if the completedQuizzes length is 
+ * between 1 and 4 quizzes (inclusive) check whether the randomly selected
+ * quiz number has already run (if not, run it) and if so, check each of the other 
+ * quiz numbers in completedQuizzes until one is found that has not yet been done by the user
+ */
 function selectQuizNumber() {
-  let quizNumber = Math.floor(Math.random() * 5) +1; 
+  let quizNumber = Math.floor(Math.random() * 5) + 1; 
   let partialQuizRun = completedQuizzes.length > 0 && completedQuizzes.length < 5; 
   let quizAlreadyRun = completedQuizzes.includes(quizNumber); 
 
@@ -749,27 +787,47 @@ function selectQuizNumber() {
   radioButton.click(); 
 }
 
+/**
+ * function called when a user submits a quiz round
+ */
 function handleSubmit(event) {
   disableSubmit(event); 
   provideFeedback(event);
   compileUserScores(event); 
 }
 
+/**
+ * sub-function called by handleSubmit() 
+ * when a user submits a quiz round
+ * prevents default submit behaviour
+ * disables round submit button and quiz answers
+ * changes the appearance of the 'Submit Round' button
+ */
 function disableSubmit(event) {
-  event.preventDefault(); 
-
   let submitButton = event.target.getElementsByTagName('button')[0];
+  let roundAnswers =  event.target.getElementsByTagName('input');
+
+  // prevents default submit behaviour
+  event.preventDefault(); 
+  
+  // changes the appearance of the round submit button and disables it
   submitButton.classList.add('submitted-button');  
   submitButton.innerHTML = 'Submitted!'; 
   submitButton.disabled = true;    
 
-  let roundAnswers =  event.target.getElementsByTagName('input');
-
+  /* iterates through all the input elements (round answers) in the 
+  round and disables them */ 
   for (let answer in roundAnswers) {
     roundAnswers[answer].disabled = true; 
   }
 }
 
+/**
+ * finds the number of the round submitted, iterates through the answer labels for each of the
+ * 3 questions in the round and checks them against the selected quiz set correct answers for that round
+ * and displays a green tick next to the correct answer and a red cross next to the incorrect
+ * answers
+ */
 function provideFeedback(event) { 
   let roundNumber = event.target.getElementsByClassName('round-number')[0].innerHTML[6];
   
@@ -778,6 +836,10 @@ function provideFeedback(event) {
   let q1Feedback = event.target.getElementsByClassName('q1-feedback'); 
 
   for (let i = 0; i < qu1AnswerLabels.length; i++) {
+    /* chosenQuiz[0][roundNumber-1].correctAnswers[0] - takes the curren quiz set which has been pushed to 
+    chosenQuiz[0], finds the correct round information by deducting 1 from the roundNumber (as the roundNumbers start
+    at 1 but an array index starts at 0) and finds the correct set of correctAnswers for question 1 in the round (correctAnswers[0]), 
+    question 2 in the round (correctAnswers[1]) or question 3 in the round (correctAnswers[2]) */ 
     if (qu1AnswerLabels[i].innerHTML === chosenQuiz[0][roundNumber-1].correctAnswers[0]) {
       q1Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
     } else {
@@ -810,12 +872,24 @@ function provideFeedback(event) {
   }  
 } 
 
+/**
+ * pushes an array of ["Round X", Y"], X being the applicable round number and Y
+ * being the total score for that round out of 3, to the allRoundScores
+ * variable to be put into session storage and used on the results page to process the user's
+ * results 
+ */
 function compileUserScores(event) { 
   let overallRoundScore = provideQuResult(event); 
 
   allRoundScores.push(overallRoundScore);  
 }
 
+/**
+ * checks the user's round scores for each question (either 0 if wrong or 1 if right)
+ * and display a green 'Correct!' or a red 'Incorrect!' on the quiz page for each
+ * question in that round accordingly
+ * also creates the ["Round X", Y] array used in the compileUserScores function  
+ */
 function provideQuResult(event) {
   let userRoundScores = checkUserAnswers(event); 
 
@@ -841,6 +915,12 @@ function provideQuResult(event) {
   return overallRoundScore; 
 }
 
+/**
+ * checks whether the user's selected radio button answer for each question in a
+ * round matches the correct answer or not and awards the user a 0 if they are wrong
+ * and a 1 if they are right and creates an array of the "Round X" and the user's scores
+ * for each question in the round to be used by the provideQuResult function 
+ */
 function checkUserAnswers(event) {
   let userRoundAnswers = getUserAnswers(event); 
   let roundNumber = event.target.getElementsByClassName('round-number')[0].innerHTML[6];
@@ -870,12 +950,19 @@ function checkUserAnswers(event) {
   return userRoundScores;  
 }
 
+/**
+ * when a user submits a round, this finds out which answer the user selected and creates an
+ * array of the answers selected by the user (e.g. 'True', 'Not a Fish') to be used by 
+ * the checkUserAnswers function to score the user's answers with a 1 or 0
+ */
 function getUserAnswers(event) { 
   // question 1 answers
   let qu1Answers = event.target.getElementsByClassName('q1-answer');  
   let qu1AnswerLabels = event.target.getElementsByClassName('q1-answer-label'); 
 
   let userQu1Answer; 
+  let userQu1Id = userQu1Answer.id; 
+  let userQu1AnswerHtml; 
 
   for (let qu1Answer of qu1Answers) {
     if (qu1Answer.checked) {
@@ -883,9 +970,6 @@ function getUserAnswers(event) {
     }
   }
 
-  let userQu1Id = userQu1Answer.id; 
-  let userQu1AnswerHtml; 
-  
   for (let qu1AnswerLabel of qu1AnswerLabels) {
     if (qu1AnswerLabel.getAttribute('for') === userQu1Id) {
       userQu1AnswerHtml = qu1AnswerLabel.innerHTML; 
@@ -897,6 +981,8 @@ function getUserAnswers(event) {
   let qu2AnswerLabels = event.target.getElementsByClassName('q2-answer-label'); 
 
   let userQu2Answer; 
+  let userQu2Id = userQu2Answer.id; 
+  let userQu2AnswerHtml;
 
   for (let qu2Answer of qu2Answers) {
     if (qu2Answer.checked) {
@@ -904,9 +990,6 @@ function getUserAnswers(event) {
     }
   }
 
-  let userQu2Id = userQu2Answer.id; 
-  let userQu2AnswerHtml; 
-  
   for (let qu2AnswerLabel of qu2AnswerLabels) {
     if (qu2AnswerLabel.getAttribute('for') === userQu2Id) {
       userQu2AnswerHtml = qu2AnswerLabel.innerHTML; 
@@ -917,16 +1000,15 @@ function getUserAnswers(event) {
   let qu3Answers = event.target.getElementsByClassName('q3-answer');  
   let qu3AnswerLabels = event.target.getElementsByClassName('q3-answer-label'); 
 
-  let userQu3Answer; 
+  let userQu3Answer;  
+  let userQu3Id = userQu3Answer.id; 
+  let userQu3AnswerHtml; 
 
   for (let qu3Answer of qu3Answers) {
     if (qu3Answer.checked) {
       userQu3Answer = qu3Answer; 
     }
   }
-
-  let userQu3Id = userQu3Answer.id; 
-  let userQu3AnswerHtml; 
   
   for (let qu3AnswerLabel of qu3AnswerLabels) {
     if (qu3AnswerLabel.getAttribute('for') === userQu3Id) {
@@ -939,8 +1021,31 @@ function getUserAnswers(event) {
   return userRoundAnswers; 
 }
 
+/**
+ * function that runs when the user clicks the 'Get Quiz Results' button
+ * 
+ * prevents default submit behaviour
+ * 
+ * stores the completedQuizzes variable in sessionStorage to keep track of which quiz sets
+ * the user has completd in the same session
+ * 
+ * alerts the user once they have completed all 5 sets of quizzes available and then clears the sessionStorage
+ * so that if the user chooses to do the quizzes again they won't keep getting an alert every time they re-do a quiz
+ * 
+ * sorts the array of allRoundScores so that it orders the sub-arrays by Round (Round 1, Round 2, Round 3 etc) to be 
+ * processed by the results page 
+ * 
+ * if the user tries to click 'Get Quiz Results' before they have submitted all 5 rounds, they will get an alert asking them
+ * to submit all 5 rounds 
+ * 
+ * allows the submit behaviour so the user can then be taken through to the results page 
+ * 
+ */
 function handleResults(event) {
   event.preventDefault();
+
+  /* code for how to pass variable arrays to and from sessionStorage taken from this website -
+  https://lage.us/Javascript-Pass-Variables-to-Another-Page.html */
 
   sessionStorage.setItem('completedQuizzes', JSON.stringify(completedQuizzes));
   if (completedQuizzes.length === 5) {
