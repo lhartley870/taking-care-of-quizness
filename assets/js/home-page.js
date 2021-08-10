@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         showHideRules(); 
       }
-    })
+    });
   } 
 
   usernameForm.addEventListener('submit', handleSubmit); 
-})
+});
 
 /**
  * The function called when the user clicks the 'Rules' button allowing the user to 
