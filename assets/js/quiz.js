@@ -599,7 +599,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   document.getElementById('results-button').parentNode.addEventListener('submit', handleResults);
-})
+});
 
 /** 
  * gets the current record of completed quiz numbers from session storage and adds them back to 
@@ -733,9 +733,9 @@ function getQuiz() {
     chosenQuiz.push(selectedQuiz);
     completedQuizzes.push(5); 
   } else {
-    alert('Oops, we have encountered an unknown quiz number, please refresh the page.')
+    alert('Oops, we have encountered an unknown quiz number, please refresh the page.');
     throw 'Unknown quiz number, aborting!';
-  }; 
+  }
 
   return selectedQuiz; 
 }
@@ -817,9 +817,10 @@ function disableSubmit(event) {
 
   /* iterates through all the input elements (round answers) in the 
   round and disables them */ 
-  for (let answer in roundAnswers) {
-    roundAnswers[answer].disabled = true; 
-  }
+  
+  for (let i = 0; i < roundAnswers.length; i++) {
+    roundAnswers[i].disabled = true; 
+  } 
 }
 
 /**
@@ -961,15 +962,16 @@ function getUserAnswers(event) {
   let qu1AnswerLabels = event.target.getElementsByClassName('q1-answer-label'); 
 
   let userQu1Answer; 
-  let userQu1Id = userQu1Answer.id; 
-  let userQu1AnswerHtml; 
-
+   
   for (let qu1Answer of qu1Answers) {
     if (qu1Answer.checked) {
       userQu1Answer = qu1Answer; 
     }
   }
-
+  
+  let userQu1Id = userQu1Answer.id; 
+  let userQu1AnswerHtml;
+  
   for (let qu1AnswerLabel of qu1AnswerLabels) {
     if (qu1AnswerLabel.getAttribute('for') === userQu1Id) {
       userQu1AnswerHtml = qu1AnswerLabel.innerHTML; 
@@ -981,15 +983,16 @@ function getUserAnswers(event) {
   let qu2AnswerLabels = event.target.getElementsByClassName('q2-answer-label'); 
 
   let userQu2Answer; 
-  let userQu2Id = userQu2Answer.id; 
-  let userQu2AnswerHtml;
-
+  
   for (let qu2Answer of qu2Answers) {
     if (qu2Answer.checked) {
       userQu2Answer = qu2Answer; 
     }
   }
-
+  
+  let userQu2Id = userQu2Answer.id; 
+  let userQu2AnswerHtml;
+  
   for (let qu2AnswerLabel of qu2AnswerLabels) {
     if (qu2AnswerLabel.getAttribute('for') === userQu2Id) {
       userQu2AnswerHtml = qu2AnswerLabel.innerHTML; 
@@ -1001,14 +1004,15 @@ function getUserAnswers(event) {
   let qu3AnswerLabels = event.target.getElementsByClassName('q3-answer-label'); 
 
   let userQu3Answer;  
-  let userQu3Id = userQu3Answer.id; 
-  let userQu3AnswerHtml; 
 
   for (let qu3Answer of qu3Answers) {
     if (qu3Answer.checked) {
       userQu3Answer = qu3Answer; 
     }
   }
+  
+  let userQu3Id = userQu3Answer.id; 
+  let userQu3AnswerHtml; 
   
   for (let qu3AnswerLabel of qu3AnswerLabels) {
     if (qu3AnswerLabel.getAttribute('for') === userQu3Id) {
