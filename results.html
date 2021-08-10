@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Taking Care of Quizness is a multiple choice quiz website with a choice of two quizzes">
+  <meta name="description" content="Taking Care of Quizness is a multiple choice quiz website with five different quizzes to complete">
   <meta name="keywords" content="taking care of quizness, quiz, multiple choice, general knowledge">
   <meta name="author" content="Lianne Hartley">
 
@@ -33,7 +33,7 @@
       <nav>
         <ul id="header-links" class="links">
           <li>
-            <a href="index.html" aria-label="Go to the Home page">Home</a>
+            <a href="index.html" aria-label="Go to the Home page (does not open in a new tab)">Home</a>
           </li>
           <li>
             <a href="quiz.html" aria-label="Go to the Quiz page (does not open in a new tab)">Quiz</a>
@@ -42,18 +42,21 @@
       </nav>
     </div>
   </header>
-  <!-- section containing main image and interactive buttons for the home page -->
+  <!-- section containing main image and results for the results page -->
   <section>
     <h2>Results!</h2>
     <div id="results-container" class="main-content-container">
+      <!-- clipboard image for the main section of the results page -->
       <div id="checklist-container">
         <img src="assets/images/results-page/checklist.jpeg" alt="Drawing of a clipboard showing items checked off with green ticks" id="checklist">
       </div>
+      <!-- user's quiz score bracket and score name -->
       <div id="quiz-result-category">
         <h3><span id="optional-username"></span>You are:</h3>
         <p id="quiz-score-bracket"></p>
         <p id="quiz-score-name"></p> 
       </div>
+      <!-- user's score statistics breakdown -->
       <div id="quiz-stats">
         <h3>Your Stats:</h3>
         <table>
@@ -69,10 +72,12 @@
           </tr>
         </table>
       </div>
+      <!-- message that there are 5 quizzes to play -->
       <div id="results-message">
-        <p>There are [5] quizzes to play in total.</p>
+        <p>There are 5 quizzes to play in total.</p>
         <p>If you want to play again hit the button!</p>
       </div>
+      <!-- button to play the quiz again -->
       <div id="play-again-container">
         <form action="quiz.html">
           <button type="submit" class="page-link-button">Play Again!</button>
