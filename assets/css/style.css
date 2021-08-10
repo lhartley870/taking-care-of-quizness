@@ -122,17 +122,17 @@ section h2 {
 page and results page */
 .main-content-container {
   display: grid; 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 auto 150px auto; 
   width: 90%; 
 }
 
 #home-content-container {
   grid-template-areas: 
-    "question-mark question-mark question-mark question-mark"
-    "rules rules rules rules"
-    "username username username username"
-    "quiz1 quiz1 quiz1 quiz1";
+    "question-mark question-mark question-mark"
+    "rules rules rules"
+    "username username username"
+    "quiz1 quiz1 quiz1";
   grid-template-rows: repeat(4, auto);
   row-gap: 20px; 
 }
@@ -591,11 +591,11 @@ the paragraph element (one for font colour and one for background colour)
 
 #results-container {
   grid-template-areas: 
-    "checklist checklist checklist checklist"
-    "result-category result-category result-category result-category"
-    "quiz-stats quiz-stats quiz-stats quiz-stats"
-    "results-message results-message results-message results-message"
-    "play-again play-again play-again play-again"; 
+    "checklist checklist checklist"
+    "result-category result-category result-category"
+    "quiz-stats quiz-stats quiz-stats"
+    "results-message results-message results-message"
+    "play-again play-again play-again"; 
   grid-template-rows: repeat(5, auto); 
   row-gap: 40px;
 }
