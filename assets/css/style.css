@@ -760,6 +760,47 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   .round-container {
     width: 50%; 
   }
+
+  footer ul {
+    width: 90%; 
+  }
+  
+  footer li {
+    display: inline; 
+    padding: 0 5%; 
+  }
+}
+
+/* for medium to large screen sizes of 1024px and up */
+@media screen and (min-width: 1024px) {
+
+  #title-container {
+    width: 60%; 
+  }
+
+  #navbar-container {
+    justify-content: center;
+    width: 40%; 
+  }
+
+  nav { 
+    width: 90%; 
+  }
+
+  #header-links > li {
+    display: inline; 
+    padding: 0 10%; 
+  }
+
+  #header-links > li ~ li {
+    padding-top: 0; 
+  }
+  
+  #question-mark,
+  #checklist {
+    height: 30vw;
+    width: 30vw; 
+  }
 }
 
 /* for medium to large screen sizes of 1200px and up */
