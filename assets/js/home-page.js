@@ -27,11 +27,11 @@ function showHideRules() {
   let rulesInnerContainer = document.getElementById('rules-container').children[1]; 
   let rulesHtml = `
     <ol>
-      <li>Click on either 'Start Quiz 1' or 'Start Quiz 2' to begin</li>
+      <li>Click on 'Start Quiz' to begin</li>
       <li>There are 5 rounds per quiz and 3 questions in a round</li>
       <li>All questions are multiple choice with 1 correct answer per question</li>
       <li>Click the answers you want to submit for each round and then click the 'Submit Round' button to see how you did in that round</li>
-      <li>When you have submitted your Round 5 questions, click on the 'Get My Results' button to find out your overall quiz score and stats</li>
+      <li>When you have submitted your Round 5 questions, click on the 'Get Quiz Results' button to find out your overall quiz score and stats</li>
       <li>
         <table>
           <tr>
@@ -52,7 +52,7 @@ function showHideRules() {
           </tr>
         </table>
       </li>
-      <li>Once you have completed one quiz, come back and try the other one!</li>
+      <li>There are 5 different quizzes in total, so why not try them all!</li>
     </ol>
   `; 
   let rulesOuterContainer = document.getElementById('rules-container'); 
