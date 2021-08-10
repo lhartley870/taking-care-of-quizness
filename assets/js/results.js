@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   displayUsername(); 
   displayScoreCategory(); 
   displayRoundStats(); 
-})
+});
 
 // displays capitalised username to personalise the results page (if the user has submitted a username)
 function displayUsername() {
@@ -108,7 +108,7 @@ function findBestRoundScores() {
   let highScoreRounds = findBestRounds(); 
   let bestRoundScores = []; 
 
-  for (i = 0; i < highScoreRounds.length; i++) {
+  for (let i = 0; i < highScoreRounds.length; i++) {
     let highScore = highScoreRounds[i].score;
     bestRoundScores.push(highScore);  
   }
@@ -123,12 +123,12 @@ function findBestRoundNames() {
   let highestRoundNumbers = []; 
   let bestRoundNames = []; 
 
-  for (i = 0; i < highScoreRounds.length; i++) {
+  for (let i = 0; i < highScoreRounds.length; i++) {
     let highRounds = highScoreRounds[i].round;
     highestRoundNumbers.push(highRounds);  
   }
 
-  for (highestRoundNumber of highestRoundNumbers) {
+  for (let highestRoundNumber of highestRoundNumbers) {
     if (highestRoundNumber === 1) {
       bestRoundNames.push('Movie Quotes <i class="fas fa-film"></i>');
     } else if (highestRoundNumber === 2) {
@@ -168,7 +168,7 @@ function findBestRounds() {
     { round: 5, 
       score: allRoundScores[4][1]
     }
-  ]
+  ];
   let scores = roundScores.map(roundScore => roundScore.score);  
   let highestScore = Math.max(scores[0], scores[1], scores[2], scores[3], scores[4]); 
   let highScoreRounds = roundScores.filter(roundScore => roundScore.score === highestScore); 
