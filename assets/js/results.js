@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
   displayRoundStats(); 
 });
 
-// displays capitalised username to personalise the results page (if the user has submitted a username)
+/**
+ * displays capitalised username to personalise the results page (if the user has submitted a username)
+ */
 function displayUsername() {
   let username = capitaliseUsername(); 
   let usernameSpan = document.getElementById('optional-username'); 
@@ -15,7 +17,9 @@ function displayUsername() {
   } 
 }
 
-// gets the user's submitted username from session storage and capitalises the first letter
+/**
+ * gets the user's submitted username from session storage and capitalises the first letter
+ */
 function capitaliseUsername() {
   /* code for how to pass variables to and from sessionStorage taken from this website -
   https://lage.us/Javascript-Pass-Variables-to-Another-Page.html */
@@ -31,8 +35,10 @@ function capitaliseUsername() {
   }
 }
 
-/* gets the user's overall quiz score and displays their score bracket and category in
-the correct colour */
+/**
+ * gets the user's overall quiz score and displays their score bracket and category in
+ * the correct colour
+ */
 function displayScoreCategory() {
   let totalScore = calculateTotalScore(); 
   let quizScoreBracket = document.getElementById('quiz-score-bracket'); 
@@ -58,7 +64,9 @@ function displayScoreCategory() {
   }
 }
 
-// gets the user's array of round numbers and scores from session storage and calculates the user's total score 
+/**
+ * gets the user's array of round numbers and scores from session storage and calculates the user's total score 
+ */
 function calculateTotalScore() {
   /* code for how to pass variable arrays to and from sessionStorage taken from this website -
   https://lage.us/Javascript-Pass-Variables-to-Another-Page.html */
@@ -72,11 +80,11 @@ function calculateTotalScore() {
   return totalScore; 
 }
 
-/* 
-gets the user's total score and displays it in the stats table
-chooses what goes into the html to display the user's best round(s) and best round score(s)
-in the stats table depending on whether the user has just one best round or multiple best rounds 
-*/
+/**
+ * gets the user's total score and displays it in the stats table
+ * chooses what goes into the html to display the user's best round(s) and best round score(s)
+ * in the stats table depending on whether the user has just one best round or multiple best rounds 
+ */
 function displayRoundStats() {
   let totalScore = calculateTotalScore(); 
   let bestRoundNames = findBestRoundNames(); 
@@ -103,7 +111,9 @@ function displayRoundStats() {
   }  
 }
 
-// iterates through the user's round scores and creates an array of the scores
+/**
+ * iterates through the user's round scores and creates an array of the scores
+ */
 function findBestRoundScores() {
   let highScoreRounds = findBestRounds(); 
   let bestRoundScores = []; 
@@ -116,8 +126,10 @@ function findBestRoundScores() {
   return bestRoundScores; 
 }
 
-/* finds the user's best round number(s) and translates those into the round names
-to be displayed in the stats table on the results page */ 
+/**
+ * finds the user's best round number(s) and translates those into the round names
+ * to be displayed in the stats table on the results page
+ */ 
 function findBestRoundNames() {
   let highScoreRounds = findBestRounds(); 
   let highestRoundNumbers = []; 
@@ -147,7 +159,9 @@ function findBestRoundNames() {
   return bestRoundNames; 
 }
 
-// returns an array of round/score objects for the round(s) with the highest user score
+/**
+ * returns an array of round/score objects for the round(s) with the highest user score
+ */
 function findBestRounds() {
   /* code for how to pass variable arrays to and from sessionStorage taken from this website -
   https://lage.us/Javascript-Pass-Variables-to-Another-Page.html */
