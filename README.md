@@ -1,24 +1,23 @@
 # Taking Care of Quizness
+Taking Care of Quizness is a site intended to provide an exciting multiple choice quiz experience for anyone who enjoys general knowledge quizzes. Taking Care of Quizness will be useful for quiz enthusiasts as it dynamically provides 5 different sets of quiz questions to keep the user's interest, without any of the quizzes being repeated in the same user session. Each quiz is split into 5 rounds of 3 questions and the quiz allows the user to see what they got correct and incorrect on a round by round basis. The site also provides the user with statistics on which round or rounds were their best as well as the usual total score result at the end. Each question in all 5 sets of quizzes is accompanied by a unique photo to provide appealing visuals during the user's quiz experience. 
 
-The live project can be viewed [here](). 
+The live project can be viewed [here](https://lhartley870.github.io/taking-care-of-quizness/). 
 
 ![Responsive view of live website Home page]()
 
 ## UX (User Experience) 
 ### Users
-Users of this website are typically going to be people who are searching for:
-1. 
+Users of this website are typically going to be people who are searching for an exciting multiple choice quiz experience.
 
 ### User Stories
-* As a first-time user of the site, 
-* As a first-time user of the site,  
-* 
-* 
-* 
-* 
-* 
-*  
-* 
+* As a user of the site, I want to see what the site is all about and how the quiz works.
+* As a user of the site, I want to be able to easily navigate the site. 
+* As a user of the site, I want some interim feedback on how I'm doing before I finish all the quiz questions. 
+* As a user of the site, I want to know which round or rounds were my best round or rounds as well as my overall score.
+* As a user of the site, I want to have the opportunity to complete more than one set of quiz questions during my visit.
+* As a user of the site, I don't want to be given the same set of questions twice during my visit.
+* As a user of the site, I want some useful links to write my own quiz and improve my general knowledge. 
+* As a user of the site, I want a comforting familiar layout as I go through the site with an attractive colour scheme and imagery to accompany my quiz experience. 
 
 ## Wireframes
 
