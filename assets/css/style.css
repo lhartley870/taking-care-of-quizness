@@ -936,3 +936,30 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     padding: 0 15%; 
   }
 }
+
+/* for extra extra large screen sizes of 2500px and up */
+@media screen and (min-width: 1900px) {
+
+  body {
+    font-size: 32px; 
+  }
+
+  header,
+  .header-container {
+    height: clamp(250px, 20vh, 350px); 
+  }
+
+  .main-content-container {
+    margin: 0 auto 270px auto; 
+  }
+
+  footer {
+    height: 220px; 
+  }
+
+  .home-page-button,
+  .round-submit-button,
+  .page-link-button {
+    padding: 30px; 
+  }
+}
