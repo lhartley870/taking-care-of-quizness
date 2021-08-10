@@ -51,7 +51,7 @@ const quiz1 = [
       'A chimpanzee surrounded by leaves looking into the camera', 
       'A blue ringed octopus against a black backdrop'
     ], 
-    correctAnswers: ['A murder', '98%', '3'] 
+    correctAnswers: ['A herd', '98%', '3'] 
   }, 
   {
     questions: [
@@ -122,7 +122,7 @@ const quiz2 = [
       'Which movie is this quote from?'
     ],
     quotes: [
-      '"Exercise gives you endorphins. Endorphins make you happy. Happy people just don\'t shoot their husbands, they just don\t."',
+      '"Exercise gives you endorphins. Endorphins make you happy. Happy people just don\'t shoot their husbands, they just don\'t."',
       '"Hope is a good thing, maybe the best of things, and no good thing ever dies."', 
       '"She doesn\'t even go here."'
     ],
