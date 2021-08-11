@@ -1031,19 +1031,20 @@ function getUserAnswers(event) {
  * 
  * prevents default submit behaviour
  * 
- * stores the completedQuizzes variable in sessionStorage to keep track of which quiz sets
- * the user has completd in the same session
- * 
- * alerts the user once they have completed all 5 sets of quizzes available and then clears the sessionStorage
- * so that if the user chooses to do the quizzes again they won't keep getting an alert every time they re-do a quiz
- * 
- * sorts the array of allRoundScores so that it orders the sub-arrays by Round (Round 1, Round 2, Round 3 etc) to be 
- * processed by the results page 
- * 
  * if the user tries to click 'Get Quiz Results' before they have submitted all 5 rounds, they will get an alert asking them
  * to submit all 5 rounds 
  * 
- * allows the submit behaviour so the user can then be taken through to the results page 
+ * once the user has submitted all 5 rounds:
+ * 1. sorts the array of allRoundScores so that it orders the sub-arrays by Round (Round 1, Round 2, Round 3 etc) and puts it in 
+ * session storage to be processed by the results page  
+ * 
+ * 2. stores the completedQuizzes variable in sessionStorage to keep track of which quiz sets
+ * the user has completd in the same session
+ * 
+ * 3. alerts the user once they have completed all 5 sets of quizzes available and then clears the sessionStorage
+ * so that if the user chooses to do the quizzes again they won't keep getting an alert every time they re-do a quiz
+ * 
+ * 4. allows the submit behaviour so the user can then be taken through to the results page 
  * 
  */
 function handleResults(event) {
