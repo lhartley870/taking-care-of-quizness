@@ -928,7 +928,11 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   Manish Patel on this Stack Overflow post - https://stackoverflow.com/questions/4516217/make-radio-button-bigger */
   input[type='radio'] {
     transform: scale(1.5); 
-  } 
+  }
+
+  .round-container {
+    width: 70%; 
+  }
 }
 
 /* for extra large screen sizes of 1900px and up */
@@ -936,6 +940,10 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 
   #header-links > li { 
     padding: 0 15%; 
+  }
+
+  .round-container {
+    width: 60%; 
   }
 }
 
