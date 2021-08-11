@@ -193,6 +193,16 @@ For more information on forking and cloning repositories, see [GitHub Docs](http
 
 ### Code
 
+* Code for styling an active page with a coloured underline on the Home and Quiz pages was taken from Code Institute's Love Running project as well as the html structure for the footer external links.
+* Link tag code for the favicon to display in the deployed project in the html pages taken from the Code Institute Love Maths project.
+* The CSS code to set a minimum, preferred and maximum header size was adapted from an answer given by lawrence-witt on [this Stack Overflow post](https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002).
+* The CSS code for the question mark rotation animation was adapted from [this Flavioscopes website](https://flaviocopes.com/rotate-image/) using [a W3 Schools CSS Animation tutorial](https://www.w3schools.com/css/css3_animations.asp). 
+* The CSS code to change the label styling for checked radio button was taken from an answer given by Gerben Versluis on [this Stack Overflow post](https://stackoverflow.com/questions/18078871/hide-check-radio-button-with-css). 
+* The solution in the CSS file for creating space between table columns found at [this W3 Docs website](https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-table.html). 
+* The CSS Code for code for increasing the size of the radio buttons was taken from an answer given by Manish Patel on [this Stack Overflow post](https://stackoverflow.com/questions/4516217/make-radio-button-bigger). 
+* The first function in each of the JavaScript files was largely adapted from Code Institute's Love Maths project.
+* Code for how to pass variables (including array variables) to and from session storage in the JavaScript files was taken from [this website](https://lage.us/Javascript-Pass-Variables-to-Another-Page.html).
+* The code for generating a random quiz set between 1 and 5 appearing in the selectQuizNumber function in the JavaScript file for the Quiz page was adapted from the Code Institute Love Maths project.
 * 
 
 ### Media
