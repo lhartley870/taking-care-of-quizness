@@ -931,7 +931,7 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   }
 
   .round-container {
-    width: 70%; 
+    width: 80%; 
   }
 }
 
@@ -943,7 +943,7 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   }
 
   .round-container {
-    width: 60%; 
+    width: 65%; 
   }
 }
 
@@ -971,5 +971,9 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
   .round-submit-button,
   .page-link-button {
     padding: 30px; 
+  }
+
+  .round-container {
+    width: 70%; 
   }
 }
