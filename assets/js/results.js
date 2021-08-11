@@ -1,4 +1,5 @@
 // Wait for the DOM to finish loading before running functions to display results information on results page
+// Structure for this first event listener function adapted from Code Institute Love Maths project
 document.addEventListener('DOMContentLoaded', function() {
   displayUsername(); 
   displayScoreCategory(); 
@@ -112,7 +113,8 @@ function displayRoundStats() {
 }
 
 /**
- * iterates through the user's round scores and creates an array of the scores
+ * iterates through the array of round/score objects for the round(s) 
+ * with the highest user score and creates an array of the scores
  */
 function findBestRoundScores() {
   let highScoreRounds = findBestRounds(); 
@@ -127,8 +129,10 @@ function findBestRoundScores() {
 }
 
 /**
- * finds the user's best round number(s) and translates those into the round names
- * to be displayed in the stats table on the results page
+ * iterates through the array of round/score objects for the round(s) with
+ * the highest user score to get the user's best round number(s) and translates 
+ * those round numbers into the round names to be displayed in the stats table 
+ * on the results page
  */ 
 function findBestRoundNames() {
   let highScoreRounds = findBestRounds(); 
@@ -148,9 +152,9 @@ function findBestRoundNames() {
     } else if (highestRoundNumber === 3) {
       bestRoundNames.push('Music <i class="fas fa-music"></i>'); 
     } else if (highestRoundNumber === 4) {
-      bestRoundNames.push('True or False <i class="fas fa-check-circle"></i><i class="fas fa-times-circle"></i>'); 
+      bestRoundNames.push('True/False <i class="fas fa-check-circle"></i><i class="fas fa-times-circle"></i>'); 
     } else if (highestRoundNumber === 5) {
-      bestRoundNames.push('Fish or Not a Fish <i class="fas fa-fish"></i>');
+      bestRoundNames.push('Fish or Not <i class="fas fa-fish"></i>');
     } else {
       alert('Sorry, we cannot calculate your best Round(s) at this time'); 
     }
@@ -186,5 +190,6 @@ function findBestRounds() {
   let scores = roundScores.map(roundScore => roundScore.score);  
   let highestScore = Math.max(scores[0], scores[1], scores[2], scores[3], scores[4]); 
   let highScoreRounds = roundScores.filter(roundScore => roundScore.score === highestScore);  
+  
   return highScoreRounds; 
 }
