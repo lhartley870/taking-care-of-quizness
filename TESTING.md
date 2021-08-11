@@ -50,8 +50,8 @@ Initially when the project was run through the validators there were some errors
 
 2. As a user of the site, I want to be able to easily navigate the site. 
 
-    ![View of header bar on larger screens](/readme-documents/screenshots/)
-    ![View of header bar on smaller screens](/readme-documents/screenshots/)
+    ![View of header bar on larger screens](/readme-documents/screenshots/large-screen-header.png)
+    ![View of header bar on smaller screens](/readme-documents/screenshots/small-screen-header.png)
 
     * The navigation links to the Home and Quiz pages are clearly set out in the header bar and the names of the pages clearly indicate what they are about. Having the site navigation at the top of the page is a common website convention that the user will be familiar with. 
     * When landing on the Home page, the user can, at a glance, see that the word 'Home' in the header is underlined in a dark pink colour whereas the Quiz page name is not. This intuitively tells the user that a dark pink underline indicates the page that the user is currently on. 
@@ -62,7 +62,7 @@ Initially when the project was run through the validators there were some errors
 
 3. As a user of the site, I want some interim feedback on how I'm doing before I finish all the quiz questions. 
 
-    ![Responsive view of live website](/readme-documents/screenshots/)
+    ![Responsive view of live website Quiz page with submitted round feedback](/readme-documents/screenshots/quiz-feedback-screenshot.png)
     
     * The user is informed in the quiz rules on the Home page that they can submit each round of questions to see how they did in that round. 
     * Even if the user has skipped reading the rules, each quiz round is followed by a 'Submit Round' button prompting the user to click it. If the user tries to submit a round without answering all the questions in the round, they will be prompted to answer all the questions until they do. 
@@ -72,7 +72,8 @@ Initially when the project was run through the validators there were some errors
 
 4. As a user of the site, I want some interesting feedback when I complete a quiz, beyond just knowing what my total score was. 
 
-    ![Responsive view of live website](/readme-documents/screenshots/)
+    ![Responsive view of live website Results page](/readme-documents/screenshots/results-page-screenshot.png)
+    ![View of example results generated on the live website Results page](/readme-documents/screenshots/results-feedback-screenshot.png)
 
     * When the user completes a quiz they can click on the 'Get Quiz Results' button to be taken through to the Results page.  
     * The user is firstly presented with their score bracket and their score comedic category; either Les Quizerables in red for a score of 0-5, Risky Quizness in blue for a score of 6-10 or The Quizard of Oz in green for a score of 11-15. This provides an element of fun and hinting as the user will know the bracket they scored but not their specific score, encouraging the user to move on to the quiz stats table to find out more information about how they did.
@@ -80,7 +81,7 @@ Initially when the project was run through the validators there were some errors
 
 5. As a user of the site, I want to have the opportunity to complete more than one set of quiz questions during my visit.
 
-    ![Responsive view of live website ](/readme-documents/screenshots/)
+    ![Responsive view of live website Quiz page showing different quizzes](/readme-documents/screenshots/quiz-page-screenshot.png)
 
     * The user is told in the Rules on the Home page that there are 5 quizzes available for the user to complete. 
     * When a user completes their first quiz they are also presented with a message on the Results page reminding them that there are 5 quizzes to play in total and encouraging the user to click the 'Play Again!' button to play another quiz. 
@@ -89,15 +90,14 @@ Initially when the project was run through the validators there were some errors
 
 6. As a user of the site, I don't want to be given the same set of questions twice during my visit.
 
-    ![Responsive view of live website ](/readme-documents/screenshots/)
-
     * The site has been specifically designed so that the user will not receive the same set of questions in the same user session until after they have completed all 5 available quizzes. 
     * Although the order in which the user receives the sets of quiz questions is randomly generated, the quiz sets do go through a filtering process so that the user does not receive the same question set twice until after they have completed all 5 quizzes. 
     * This maintains user interest and avoids the user having to refresh the Quiz page multiple times until by chance they get a quiz they haven't already done, thus minimising user frustration.
 
 7. As a user of the site, I want some useful links related to quizzing to continue my quizzing experience. 
 
-    ![View of page on larger screens](/readme-documents/screenshots/) 
+    ![View of footer on larger screens](/readme-documents/screenshots/footer-large-screen.png) 
+    ![View of footer on smaller screens](/readme-documents/screenshots/footer-small-screen.png) 
  
     * The footer contains two links described with icons and words. 
     * The first link has a pen icon accompanied by the wording 'Write a Quiz' and the second link has a book icon accompanied by the wording 'Improve Your Knowledge', clearly explaining what the links are. The user can therefore be inspired to write their own quiz or gain tips to improve their general knowledge. 
@@ -106,8 +106,6 @@ Initially when the project was run through the validators there were some errors
     * Each external footer link opens up in a new tab so that the user can easily get back to the website. 
 
 8. As a user of the site, I want a comforting familiar layout as I go through the site with an attractive colour scheme and imagery to accompany my quiz experience. 
-
-    ![View of site footer](/readme-documents/screenshots/)
     
     * Once the user has visited the Home page, the same header and footer appear on each page, providing familiarity to the user. 
     * The Home page and Results page have a similar layout with a central pastel illustration with either stacked buttons/information underneath on smaller screens, or the buttons/information sitting either side of and below the illustration for larger screens. 
