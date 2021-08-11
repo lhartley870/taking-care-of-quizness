@@ -2,29 +2,40 @@
 
 ## Validators
 [The W3C Markup Validation Service](https://validator.w3.org/) was used for testing the html code for the site. The following results show that no errors have been found: 
-* [Home page html](/readme-documents/validation-results/)
-* [Before You Go page html](/readme-documents/validation-results/)
-* [When in Oz page html](/readme-documents/validation-results/)
-* [Gallery page html](/readme-documents/validation-results/)
-* [Contact page html](/readme-documents/validation-results/)
+* [Home page html when Rules and username form are not displaying](/readme-documents/validation-results/home-pg-html-clear-result-no-js.png)
+* [Home page html when Rules and unsubmitted username form are displaying](/readme-documents/validation-results/home-pg-html-pre-submit-username.png)
+* [Home page html when Rules and submitted username form are displayed](/readme-documents/validation-results/home-pg-html-post-submit-username.png)
+* [Quiz page html without dynamic html inputted by javascript](/readme-documents/validation-results/quiz-pg-html-no-js.png)
+* [Quiz page html with dynamic html inputted by javascript for quiz1 when all rounds have been submitted]()
+* [Results page html without dynamic html inputed by javascript](/readme-documents/validation-results/results-pg-html-no-js.png)
+* [Results page html with dynamic html inputed by javascript for a high score of 11-15 with the same score in each round](/readme-documents/validation-results/)
 
-[The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used for testing the css code for the site. With the style.css file, validation was run using direct copying and pasting of the css code which gave [this result](/readme-documents/validation-results/) with [this warning](/readme-documents/validation-results/) saying *'Imported style sheets are not checked in direct input and file upload modes'*. I therefore ran the style.css file validation using the URI which gave the following clear results:
-* [style.css file](/readme-documents/validation-results/) 
-and the warning had disappeared (see [here](/readme-documents/validation-results/)).
+[The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used for testing the css code for the site. With the style.css file, validation was run using direct copying and pasting of the css code which gave [this result](/readme-documents/validation-results/css-validator-warnings.png). The error was cleared by amending the grid-template-row value for #results-form-container (see the amended validator result [here](/readme-documents/validation-results/css-validator-clear.png)). However, in terms of the warning saying *'Imported style sheets are not checked in direct input and file upload modes'* this still remained upon doing the css direct input validation so I ran the style.css file validation using the URI as well which gave the following clear results:
+* [style.css file](/readme-documents/validation-results/css-validator-uri.png) 
+and the warning had disappeared. 
 
 [The JSHint Validator](https://jshint.com/) was used for testing the javascript code for the site. The following results show that no errors have been found:
-* 
-* 
-* 
+* [Home page javascript](/readme-documents/validation-results/home-pg-js-clear-result.png)
+* [Quiz page javascript](/readme-documents/validation-results/quiz-pg-js-clear-result.png)
+* [Results page javascript](/readme-documents/validation-results/results-pg-js-clear-result.png)
 
 Initially when the project was run through the validators there were some errors and warnings which were addressed as follows:
-* 
-* 
+* HTML Validator:
+    * The initial HTML validator results for all pages returned the same warning that *'The type attribute is unnecessary for JavaScript resources'*. To resolve this, the type attribute in the script tag for linking the html file to the applicable JavaScript file was deleted.  
+* CSS Validator:
+    * The only error that initially appeared was addressed as mentioned above. The warning was also addressed as mentioned above.  
+* Javascript Validator:
+    * Home Page:
+        * The initial JSHint Validator results for the Home page are [here](/readme-documents/validation-results/home-pg-js-intial-result.png). In order to remove the three warnings, the misisng semicolons were added and, in relation to the *'functions declared within loops referencing an outer scoped variable may lead to confusing semantics (showHideUsernameForm, showHideRules)'* warning, the initial function running on the inital html document load was split up so that it did not contain the function that would run when either the Rules or Create Username buttons were clicked that would determine which button was clicked and call the showHideUsernameForm or showHideRules function accordingly. Instead a separate checkButtonClicked function was created to check which button was clicked and call the showHideUsernameForm or showHideRules function accordingly.  
+    * Quiz Page: 
+        * The initial JSHint Validator results for the Quiz page are [here](/readme-documents/validation-results/quiz-pg-js-intial-result.png). In order to remove the 4 warning, the missing semicolons were added and the unnecessary semicolon was removed. In relation to the the *'The body of a for in should be wrapped in an if statement to filter unwanted properties from the prototype'* warning, the 'for in' loop concerned was replaced with a normal for loop instead. 
+    * Results Page: 
+        * The initial JSHint Validator results for the Results page are [here](/readme-documents/validation-results/results-pg-js-intial-result.png). In order to remove the undefined variables, these were variables declared in loops that were missing the 'let' keyword, which was added. In order to remove the missing semicolon warnings, the missing semicolons were added. Adding the missing 'let' keyword to the loop variables removed the *'Creating global 'for' variable. Should be 'for(var highestRoundNumber)...'* warning.    
 
 ## UX (User Experience) Stories Testing
 1. As a user of the site, I want to see what the site is all about and how the quiz works.
 
-    ![Responsive view of live website Home page](/readme-documents/screenshots/)
+    ![Responsive view of live website Home page](/readme-documents/screenshots/home-page-screenshot.png)
 
     * Upon visiting the Home page the user is greeted with an eye catching question mark central illustration which rotates once clockwise and then once counterclockwise, highlighting the theme of questions and quizzing. The page title of 'Taking Care of Quizness' is a play on words, drawing the user's interest. It has the appearance of being written with a marker pen reminiscent of a quiz team captain jotting a quiz team name down on an answer sheet. The site name is displayed clearly in the header, immediately telling the user that this is a quiz website. 
     * The user is greeted with a 'Rules' button, prompting the user to click on it. This button can be toggled to open and close a list of rules for the quiz. The rules provide the user with useful information such as:
