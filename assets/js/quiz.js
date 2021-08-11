@@ -1052,15 +1052,14 @@ function handleResults(event) {
   /* code for how to pass variable arrays to and from sessionStorage taken from this website -
   https://lage.us/Javascript-Pass-Variables-to-Another-Page.html */
 
-  sessionStorage.setItem('completedQuizzes', JSON.stringify(completedQuizzes));
-  if (completedQuizzes.length === 5) {
-    alert('You have now completed all 5 quizzes!');
-    sessionStorage.setItem('completedQuizzes', JSON.stringify([]));
-  }
-
   if (allRoundScores.length === 5) {
     allRoundScores.sort(); 
     sessionStorage.setItem('allRoundScores', JSON.stringify(allRoundScores)); 
+    sessionStorage.setItem('completedQuizzes', JSON.stringify(completedQuizzes));
+    if (completedQuizzes.length === 5) {
+      alert('You have now completed all 5 quizzes!');
+      sessionStorage.setItem('completedQuizzes', JSON.stringify([]));
+    }
     event.target.submit();  
   } else {
     alert('Please submit all 5 rounds to get your results'); 
