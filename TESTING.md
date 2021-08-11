@@ -140,8 +140,41 @@ The site was created using the Chrome browser and Chrome DevTools and was fully 
 12. The Home page appears as expected on all browsers on the laptop and monitor screens. The full screen was exited on the laptop and monitor and the window was made the smallest it could be and was then expanded until it took up the full screen again. The Home page was fully responsive at all points and displayed as expected as the screen window size was changed in all browsers tested. 
     
 ### Quiz Page
+13. Items 2-5 tested for the Home page were repeated for the Quiz page and work as expected. For Item 3 the dark pink (Indian Red) coloured line appears instead under the Quiz page navigation link. Item 4 was tested by clicking on the Home page link in the header which takes the user through to the Home page as expected on all devices. 
+14. Item 6 was tested for the Quiz page by clicking or tapping on the Taking Care of Quizness title logo which takes the user back to the Home page. 
+15. Clicking on the Quiz page link in the header keeps the user on the Quiz page as expected but as the page is refreshed the set of quiz questions may change, as expected.
+16. All of the quiz questions display as expected on all devices, with no missing photos, questions or answers. The photos are appropriately sized for the different screen sizes and orientations. 
+16. In terms of quiz answer functionality, the user can only select one answer per question. The answer is shown as having been selected on all devices with a light grey circle appearing in the radio button on the mobile devices and tablet device tested (a blue circle on the laptop device apart from on the Edge browser where it is a dark grey circle) and the font of the chosen answer changing from Raleway to Slackey, all as expected. 
+17. In terms of the 'Submit Round' button functionality, if the user tries to click the button without having answered all the questions in the round, the user is prompted to answer the missing question(s). Once the user has answered all questions in a round and clicks the 'Submit Round' button the text of the 'Submit Round' button changes to 'Submitted!' and the colour scheme changes to grey. The 'Submit Round' button for the round submitted is then disabled as are the radio buttons so the user is not able to change their answers and re-submit the round. The user receives immediate feedback when the 'Submit Round' button is clicked once a round is completed. A green tick appears underneath each correct answer in the round and a red cross appears underneath each incorrect answer. Depending on whether the user got the question right or wrong, a green 'Correct!' message appears underneath the applicable question photo or alternatively a red 'Incorrect!' message. The 'Correct' and 'Incorrect' messages do not overflow the space underneath the photo. This behaviour across all devices is as expected. 
+18. In terms of the 'Get Quiz Results' button, if the user tries to click this before submitting all five quiz rounds, they are given an alert message asking them to 'Please submit all 5 rounds to get your results', as expected. If the user clicks the 'Get Quiz Results' button when they have completed all the rounds in their fifth quiz, they are given an alert message informing them that they have now completed all 5 quizzes. When the user has submitted all 5 rounds and clicks on the 'Get Quiz Results' button, they are then taken to the Results page. 
+19. To methodically test all the answers:
+    * on the iPhone 11 device:
+        * on the Chrome browser, all the 1st answers for each question were chosen for all 5 quizzes;
+        * on the Firefox browser, all the 2nd answers;
+        * on the Edge browser, all the 3rd answers for questions 1-3 (and a mixed selection for the True/False and Fish or Not rounds which only have 2 answers per question); and 
+        * on the Safari browser all the 4th answers for questions 1-3 (again with a mixed selection for the True/False and Fish or Not rounds). 
+    * on the iPad mini device:
+        * on the Chrome browser, all the 3rd answers for questions 1-3 (and a mixed selection for the True/False and Fish or Not rounds which only have 2 answers per question);
+        * on the Firefox browser, all the 4th answers for questions 1-3 (again with a mixed selection for the True/False and Fish or Not rounds); 
+        * on the Edge browser, all the 1st answers; and
+        * on the Safari browser, all the 2nd answers. 
+    * on the Macbook Pro laptop:
+        * on the Chrome browser, all the 2nd answers; 
+        * on the Firefox browser, all the 3rd answers for questions 1-3 (and a mixed selection for the True/False and Fish or Not rounds which only have 2 answers per question);
+        * on the Edge browser, all the 4th answers for questions 1-3 (again with a mixed selection for the True/False and Fish or Not rounds); and
+        * on the Safari browser, all the 1st answers. 
+    * on the iPhone 5S device:
+        * on the Chrome browser, all the 4th answers for questions 1-3 (and a mixed selection for the True/False and Fish or Not rounds which only have 2 answers per question);
+        * on the Firefox browser, all the 1st answers; 
+        * on the Edge browser, all the 2nd answers; and
+        * on the Safari browser, all the 3rd answers for questions 1-3 (again with a mixed selection for the True/False and Fish or Not rounds). 
+    The developer checked to make sure that the user received the correct 'Correct!' or 'Incorrect!' message depending on whether the user was wrong or right for each question and that the ticks appeared underneath the correct answers and the crosses underneath the incorrect ones. All functionality behaved as expected. 
+20. To make sure that the user did not receive the same set of questions twice in a session and that the question sets appeared in a random order, the developer made a note of the question sets appearing on each device on each browser and the question sets appeared in a random order. The user did not receive the same question set twice in a session until they had completed all 5 available quizzes. If the user clicked refresh on the Quiz page part way through a session or returned to the Home page and then back to the Quiz page, for example, this did not affect the user receiving the 5 different quizzes in a session. If the user clicked the back button on the Results page to return to their submitted results on the Quiz page and then clicked 'Get Quiz Results' again, this did not affect the user receiving the 5 different quizzes in a session and being told when they had completed all 5. 
+21. The developer further tested the user receiving 5 different quizzes in a session on a selection of browsers on the tested devices by completing some of the quiz sets and then refreshing the Quiz page multiple times to ensure that the user is only ever offered the quiz sets not already completed in that session. For example, once the user had submitted 3 sets of quiz questions, leaving only 2 sets remaining available, if the user clicked refresh on the Quiz page, they would only ever be offered the 2 remaining quizzes not yet completed until the user had completed all 5.
+22. The Quiz page appears as expected on all mobile devices and on the tablet device tested on all browsers in both portrait and landscape view. 
+23. The Quiz page appears as expected on all browsers on the laptop and monitor screens. The full screen was exited on the laptop and monitor and the window was made the smallest it could be and was then expanded until it took up the full screen again. The Quiz page was fully responsive at all points and displayed as expected as the screen window size was changed in all browsers tested. 
 
-### Results Page
+### Results Page 
 
 ## Further Testing
 
