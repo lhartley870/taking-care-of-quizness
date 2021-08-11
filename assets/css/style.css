@@ -19,22 +19,12 @@ body {
 header {
   background-color: #1c797d;
   display: flex; 
-  /* 
-  code to set a minimum, preferred and maximum header size 
-  taken from an answer given by lawrence-witt on Stack Overflow - 
-  https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
-  */
   height: 120px; 
 }
 
 .header-container {
   align-items: center; 
   display: flex; 
-  /* 
-  code to set a minimum, preferred and maximum header size 
-  taken from an answer given by lawrence-witt on Stack Overflow - 
-  https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
-  */
   height: 120px;
 }
 
@@ -264,11 +254,6 @@ footer {
   align-items: center;
   background-color: #955B92; 
   display: flex; 
-  /* 
-  code to set a minimum, preferred and maximum footer size 
-  taken from an answer given by lawrence-witt on Stack Overflow - 
-  https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
-  */
   height: 80px; 
   justify-content: center;
   text-align: center; 
@@ -665,6 +650,11 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
     font-size: 18px; 
   }
 
+  /* 
+  code to set a minimum, preferred and maximum header size 
+  taken from an answer given by lawrence-witt on Stack Overflow - 
+  https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
+  */
   header, 
   .header-container {
     height: clamp(120px, 20vh, 150px);
