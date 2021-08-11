@@ -24,7 +24,7 @@ header {
   taken from an answer given by lawrence-witt on Stack Overflow - 
   https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
   */
-  height: clamp(120px, 20vh, 150px); 
+  height: 120px; 
 }
 
 .header-container {
@@ -35,7 +35,7 @@ header {
   taken from an answer given by lawrence-witt on Stack Overflow - 
   https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
   */
-  height: clamp(120px, 20vh, 150px); 
+  height: 120px;
 }
 
 /* title logo */
@@ -123,7 +123,7 @@ page and results page */
 .main-content-container {
   display: grid; 
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto 150px auto; 
+  margin: 0 auto 130px auto; 
   width: 90%; 
 }
 
@@ -269,7 +269,7 @@ footer {
   taken from an answer given by lawrence-witt on Stack Overflow - 
   https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css/38079002
   */
-  height: 100px; 
+  height: 80px; 
   justify-content: center;
   text-align: center; 
   
@@ -663,6 +663,19 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 
   body {
     font-size: 18px; 
+  }
+
+  header, 
+  .header-container {
+    height: clamp(120px, 20vh, 150px);
+  }
+
+  .main-content-container {
+    margin: 0 auto 150px auto; 
+  }  
+
+  footer {
+    height: 100px;  
   }
 }
 
