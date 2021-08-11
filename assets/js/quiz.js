@@ -1,5 +1,5 @@
-/* constant variables quiz1 - quiz5 containing information to be displayed on quiz page depending on which 
-quiz is selected, together with correct answers */
+/* constant variables quiz1 - quiz5 contain information to be displayed on quiz page depending on which 
+quiz is selected, together with correct answers to be used within this javascript file */
 
 const quiz1 = [
   {
@@ -571,7 +571,7 @@ when the 'Get Quiz Results' button is clicked and processed on the results page 
 the user's results */
 const allRoundScores = []; 
 
-// used to keep a record of the current quiz set so that correct answers can be checked 
+// used to keep a record of the current quiz set so that correct answers can be checked against the correct quiz set
 const chosenQuiz = []; 
 
 // used to keep a record of which quiz sets have been completed in a user session so the user does not get the same quiz set twice
@@ -580,8 +580,9 @@ const completedQuizzes = [];
 
 // Wait for the DOM to finish loading before adding quiz interactivity
 // update completedQuizzes variable with quizzes completed in a user session
-// populate the quiz page with the applicable quiz information depending on the selected set of quiz questions  
-// add event listeners to answer buttons, round button forms and 'Get Quiz Results' button form
+// populate the quiz page with the applicable quiz questions, photos and answers depending on the selected quiz set  
+// add event listeners to answer buttons, quiz round forms and 'Get Quiz Results' button form
+// structure for this first event listener function largely adapted from Code Institute Love Maths project
 document.addEventListener('DOMContentLoaded', function() {
   let answerButtons = document.getElementsByClassName('quiz-answer'); 
   let roundForms = document.getElementsByClassName('round-container'); 
@@ -591,7 +592,9 @@ document.addEventListener('DOMContentLoaded', function() {
   populateQuizHtml();
   
   for (let answerButton of answerButtons) {
+    answerButton.addEventListener('click', radioSelect); 
       answerButton.addEventListener('click', radioSelect); 
+    answerButton.addEventListener('click', radioSelect); 
   }
 
   for (let roundForm of roundForms) {
@@ -609,7 +612,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function updateCompletedQuizzes() {
   /* code for how to pass variable arrays to and from sessionStorage taken from this website -
   https://lage.us/Javascript-Pass-Variables-to-Another-Page.html */
- let finishedQuizzes = JSON.parse(sessionStorage.getItem('completedQuizzes'));
+  let finishedQuizzes = JSON.parse(sessionStorage.getItem('completedQuizzes'));
 
   if (finishedQuizzes !== null) {
     for (let i = 0; i < finishedQuizzes.length; i++) {
@@ -619,8 +622,8 @@ function updateCompletedQuizzes() {
 }
 
 /**
- * populates the quiz questions, quotes, answers, images and image alt and src attributes on the quiz page
- * depending on which set of quiz questions is chosen
+ * populates the quiz questions, quotes and answers on the quiz page and adds the image tags and populates 
+ * the image alt and src attributes depending on which set of quiz questions is chosen
  */
 function populateQuizHtml() {
   let quizHtmlLocations = getQuizHtmlLocations(); 
@@ -673,8 +676,8 @@ function populateQuizHtml() {
 }
 
 /**
- * gets all the locations in the quiz html page where the quiz questions, answers, images
- * and image src and alt attributes will need to go for the selected quiz set 
+ * gets all the locations in the quiz html page where the quiz questions, quotes, answers, 
+ * and photo image tags will need to go for the selected quiz set 
  */
 function getQuizHtmlLocations() {
   let quizQuestions = document.getElementsByClassName('question'); 
@@ -689,7 +692,7 @@ function getQuizHtmlLocations() {
       [quizQuestions[6], quizQuestions[7], quizQuestions[8]],
       [quizQuestions[9], quizQuestions[10], quizQuestions[11]],
       [quizQuestions[12], quizQuestions[13], quizQuestions[14]]
-      ],
+    ],
     quotes: [quizQuotes[0], quizQuotes[1], quizQuotes[2]],
     answers: [
       [
@@ -707,14 +710,14 @@ function getQuizHtmlLocations() {
         quizAnswers[28], quizAnswers[29], quizAnswers[30], quizAnswers[31],
         quizAnswers[32], quizAnswers[33], quizAnswers[34], quizAnswers[35]
       ], 
-      ],
-      photoContainers: [
-        quizPhotoContainers[0], quizPhotoContainers[1], quizPhotoContainers[2],
-        quizPhotoContainers[3], quizPhotoContainers[4], quizPhotoContainers[5],
-        quizPhotoContainers[6], quizPhotoContainers[7], quizPhotoContainers[8],
-        quizPhotoContainers[9], quizPhotoContainers[10], quizPhotoContainers[11],
-        quizPhotoContainers[12],quizPhotoContainers[13], quizPhotoContainers[14],
-      ],
+    ],
+    photoContainers: [
+      quizPhotoContainers[0], quizPhotoContainers[1], quizPhotoContainers[2],
+      quizPhotoContainers[3], quizPhotoContainers[4], quizPhotoContainers[5],
+      quizPhotoContainers[6], quizPhotoContainers[7], quizPhotoContainers[8],
+      quizPhotoContainers[9], quizPhotoContainers[10], quizPhotoContainers[11],
+      quizPhotoContainers[12],quizPhotoContainers[13], quizPhotoContainers[14],
+    ],
   };  
 
   return quizHtmlLocations;
@@ -759,10 +762,10 @@ function getQuiz() {
 
 /**
  * selects a quiz number at random between 1 and 5,
- * if there are no completedQuizzes or 5 completed quizzes, run
+ * if there are no completed quizzes or 5 completed quizzes, run
  * the quiz number selected at random but if the completedQuizzes length is 
  * between 1 and 4 quizzes (inclusive) check whether the randomly selected
- * quiz number has already run (if not, run it) and if so, check each of the other 
+ * quiz number has already run (if not, run it) and if it has already run, check each of the other 
  * quiz numbers in completedQuizzes until one is found that has not yet been done by the user
  */
 function selectQuizNumber() {
@@ -793,7 +796,7 @@ function selectQuizNumber() {
 }
 
 /**
- * The function called when the user clicks an answer 'button' 
+ * the function called when the user clicks an answer 'button' 
  * (div containing input and label elements) so that clicking 
  * anywhere in the div selects the radio button rather than the 
  * user having to specifically click the radio button or the label 
@@ -815,7 +818,7 @@ function handleSubmit(event) {
 }
 
 /**
- * sub-function called by handleSubmit() 
+ * sub-function called by handleSubmit function 
  * when a user submits a quiz round
  * prevents default submit behaviour
  * disables round submit button and quiz answers
@@ -835,16 +838,16 @@ function disableSubmit(event) {
 
   /* iterates through all the input elements (round answers) in the 
   round and disables them */ 
-  
   for (let i = 0; i < roundAnswers.length; i++) {
     roundAnswers[i].disabled = true; 
   } 
 }
 
 /**
+ * sub-function called by handleSubmit function
  * finds the number of the round submitted, iterates through the answer labels for each of the
  * 3 questions in the round and checks them against the selected quiz set correct answers for that round
- * and displays a green tick next to the correct answer and a red cross next to the incorrect
+ * and displays a green tick underneath the correct answer and a red cross underneath the incorrect
  * answers
  */
 function provideFeedback(event) { 
@@ -855,10 +858,12 @@ function provideFeedback(event) {
   let q1Feedback = event.target.getElementsByClassName('q1-feedback'); 
 
   for (let i = 0; i < qu1AnswerLabels.length; i++) {
-    /* chosenQuiz[0][roundNumber-1].correctAnswers[0] - takes the curren quiz set which has been pushed to 
+    /* 
+    chosenQuiz[0][roundNumber-1].correctAnswers[0] - takes the current quiz set which has been pushed to 
     chosenQuiz[0], finds the correct round information by deducting 1 from the roundNumber (as the roundNumbers start
     at 1 but an array index starts at 0) and finds the correct set of correctAnswers for question 1 in the round (correctAnswers[0]), 
-    question 2 in the round (correctAnswers[1]) or question 3 in the round (correctAnswers[2]) */ 
+    (or below) question 2 in the round (correctAnswers[1]) or question 3 in the round (correctAnswers[2]) 
+    */ 
     if (qu1AnswerLabels[i].innerHTML === chosenQuiz[0][roundNumber-1].correctAnswers[0]) {
       q1Feedback[i].innerHTML = ' <i class="fas fa-check right-answer"></i>';
     } else {
@@ -892,7 +897,8 @@ function provideFeedback(event) {
 } 
 
 /**
- * pushes an array of ["Round X", Y"], X being the applicable round number and Y
+ * sub-function called by handleSubmit function
+ * pushes an array of ["Round X", Y], X being the applicable round number and Y
  * being the total score for that round out of 3, to the allRoundScores
  * variable to be put into session storage and used on the results page to process the user's
  * results 
@@ -905,7 +911,7 @@ function compileUserScores(event) {
 
 /**
  * checks the user's round scores for each question (either 0 if wrong or 1 if right)
- * and display a green 'Correct!' or a red 'Incorrect!' on the quiz page for each
+ * and displays a green 'Correct!' or a red 'Incorrect!' on the quiz page for each
  * question in that round accordingly
  * also creates the ["Round X", Y] array used in the compileUserScores function  
  */
@@ -953,11 +959,13 @@ function checkUserAnswers(event) {
   } else {
     userQu1Score = 0; 
   }
+
   if (userRoundAnswers[1] === chosenQuiz[0][roundNumber-1].correctAnswers[1]) {
     userQu2Score = 1;
   } else {
     userQu2Score = 0; 
   }
+  
   if (userRoundAnswers[2] === chosenQuiz[0][roundNumber-1].correctAnswers[2]) {
     userQu3Score = 1;
   } else {
