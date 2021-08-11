@@ -642,17 +642,34 @@ function populateQuizHtml() {
     }
   }
 
+  for (let i = 0; i < 15; i++) {
+    let photo = document.createElement('img');
+    let photoDiv = quizHtmlLocations.photoContainers[i];
+    photoDiv.insertBefore(photo, photoDiv.childNodes[0]);
+  }
+  
+  let quizPhotos = document.getElementsByTagName('img');  
+  let photoLocations = {
+    photos: [
+      [quizPhotos[0], quizPhotos[1], quizPhotos[2]],
+      [quizPhotos[3], quizPhotos[4], quizPhotos[5]],
+      [quizPhotos[6], quizPhotos[7], quizPhotos[8]],
+      [quizPhotos[9], quizPhotos[10], quizPhotos[11]],
+      [quizPhotos[12], quizPhotos[13], quizPhotos[14]],
+    ]
+  };
+
   for (let i = 0; i < 5; i++) {
     for (let j = 0; j < 3; j++) {
-      quizHtmlLocations.photos[i][j].setAttribute('src', selectedQuiz[i].images[j]); 
+      photoLocations.photos[i][j].setAttribute('src', selectedQuiz[i].images[j]); 
     }
   }
 
   for (let i = 0; i < 5; i++) {
     for (let j = 0; j < 3; j++) {
-      quizHtmlLocations.photos[i][j].setAttribute('alt', selectedQuiz[i].imageAlts[j]); 
+      photoLocations.photos[i][j].setAttribute('alt', selectedQuiz[i].imageAlts[j]); 
     }
-  }
+  } 
 }
 
 /**
@@ -663,7 +680,7 @@ function getQuizHtmlLocations() {
   let quizQuestions = document.getElementsByClassName('question'); 
   let quizQuotes = document.getElementsByClassName('quiz-quote'); 
   let quizAnswers = document.getElementsByTagName('label'); 
-  let quizPhotos = document.getElementsByTagName('img');  
+  let quizPhotoContainers = document.getElementsByClassName('quiz-photo-container'); 
 
   let quizHtmlLocations = {
     questions: [
@@ -690,14 +707,14 @@ function getQuizHtmlLocations() {
         quizAnswers[28], quizAnswers[29], quizAnswers[30], quizAnswers[31],
         quizAnswers[32], quizAnswers[33], quizAnswers[34], quizAnswers[35]
       ], 
-    ],
-    photos: [
-      [quizPhotos[0], quizPhotos[1], quizPhotos[2]],
-      [quizPhotos[3], quizPhotos[4], quizPhotos[5]],
-      [quizPhotos[6], quizPhotos[7], quizPhotos[8]],
-      [quizPhotos[9], quizPhotos[10], quizPhotos[11]],
-      [quizPhotos[12], quizPhotos[13], quizPhotos[14]],
-    ],
+      ],
+      photoContainers: [
+        quizPhotoContainers[0], quizPhotoContainers[1], quizPhotoContainers[2],
+        quizPhotoContainers[3], quizPhotoContainers[4], quizPhotoContainers[5],
+        quizPhotoContainers[6], quizPhotoContainers[7], quizPhotoContainers[8],
+        quizPhotoContainers[9], quizPhotoContainers[10], quizPhotoContainers[11],
+        quizPhotoContainers[12],quizPhotoContainers[13], quizPhotoContainers[14],
+      ],
   };  
 
   return quizHtmlLocations;
