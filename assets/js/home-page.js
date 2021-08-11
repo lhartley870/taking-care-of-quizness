@@ -7,17 +7,24 @@ document.addEventListener('DOMContentLoaded', function() {
   let usernameForm = document.getElementsByTagName('form')[0]; 
 
   for (let button of buttons) {
-    button.addEventListener('click', function() {
-      if (this.parentNode.getAttribute('id') === 'username-container') {
-        showHideUsernameForm();
-      } else {
-        showHideRules(); 
-      }
-    });
+    button.addEventListener('click', checkButtonClicked); 
   } 
 
   usernameForm.addEventListener('submit', handleSubmit); 
 });
+
+/**
+ * The function called when either the Rules or Create Username button is clicked to determine
+ * which of those two buttons has been clicked and run either the showHideUsernameForm() function if it
+ * was the Create Username button or the showHideRules() function if it was the Rules button  
+ */
+function checkButtonClicked(event) {
+  if (event.target.parentNode.getAttribute('id') === 'username-container') {
+    showHideUsernameForm();
+  } else {
+    showHideRules();
+  }
+}
 
 /**
  * The function called when the user clicks the 'Rules' button allowing the user to 
