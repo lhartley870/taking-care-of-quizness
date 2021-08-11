@@ -175,6 +175,16 @@ The site was created using the Chrome browser and Chrome DevTools and was fully 
 23. The Quiz page appears as expected on all browsers on the laptop and monitor screens. The full screen was exited on the laptop and monitor and the window was made the smallest it could be and was then expanded until it took up the full screen again. The Quiz page was fully responsive at all points and displayed as expected as the screen window size was changed in all browsers tested. 
 
 ### Results Page 
+24. Items 2 and 5 tested for the Home page were repeated for the Results page and work as expected. 
+25. Item 3 tested for the Home page was not applicable for the Results page as there is no header navigation link to the Results page.
+26. Item 4 was tested by clicking on both the Home page and Quiz page links in the header which took the user through to the Home page and Quiz page respectively, as expected, on all devices. 
+27. Item 6 was tested for the Results page by clicking or tapping on the Taking Care of Quizness title logo which takes the user back to the Home page. 
+28. All of the quiz results display as expected on all devices, with no missing results information. 
+29. If the user enters a username on the Home page, this is displayed in front of 'You Are' as expected for the whole user session. If the user changes their username part way through a session, the updated username displays for the rest of the user's session. If the user chooses not to create a username, the Results page just displays 'You Are' without anything looking out of place. 
+30. Whilst testing the quiz page, the developer kept a record of the scores for each quiz played and checked these against the Results page. The score category, total score, best round(s) and best round score(s) were as expected each time the quiz was played. 
+31. The 'Play Again!' button navigated back to the Quiz page on all browser and devices tested. Whether the user gets back to the Quiz page via the 'Play Again!' button or the Quiz page navigation link in the header or via the Home page made no difference to functionality. 
+32. The Results page appears as expected on all mobile devices and on the tablet device tested on all browsers in both portrait and landscape view. 
+33. The Results page appears as expected on all browsers on the laptop and monitor screens. The full screen was exited on the laptop and monitor and the window was made the smallest it could be and was then expanded until it took up the full screen again. The Results page was fully responsive at all points and displayed as expected as the screen window size was changed in all browsers tested. 
 
 ## Further Testing
 
