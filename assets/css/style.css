@@ -240,9 +240,11 @@ th {
   background-color: #007d9e; 
   border-radius: 15px; 
   color: #e6feff;
+  display: block; 
   font-family: 'Raleway', sans-serif;
   font-size: 1em; 
-  font-weight: 400; 
+  font-weight: 400;
+  margin: 0 auto;  
   padding: 5px; 
 }
 
