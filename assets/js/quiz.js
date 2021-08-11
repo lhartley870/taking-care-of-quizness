@@ -235,7 +235,7 @@ const quiz3 = [
       'Which movie is this quote from?'
     ],
     quotes: [
-      '"Hey has anyone seen the captain\'s balls? Let me know. They\'re about this big. They\'re like really, really tiny little girl balls, if little girls had balls"',
+      '"Hey has anyone seen the captain\'s balls? Let me know. They\'re about this big. They\'re like really, really tiny little girl balls, if little girls had balls."',
       '"Stove, what kind of name is that? That\'s not my name, my name is Steve. Are you an appliance? No I\'m a man."',
       '"Hello Katerina. Make anyone cry today? Sadly no, but it\'s only 4:30."'
     ],
@@ -281,7 +281,7 @@ const quiz3 = [
   }, 
   {
     questions: [
-      'The song "Heathens" by Twenty One Pilots features in which of hte following films?',
+      'The song "Heathens" by Twenty One Pilots features in which of the following films?',
       'Who does Guinness World Records rank as the best-selling female recording artist of all time?',
       'The 2001 debut album of Alicia Keys was called "Songs in..." what?'
     ],
@@ -417,9 +417,9 @@ const quiz4 = [
   }, 
   {
     questions: [
-      'True or False: you sleep deeper on a hammock than on a bed.',
-      'True or False: Pablo Escobar, the notorious drug lord, spent roughly $2,500 a month on plastic bands for his money.',
-      'True or False: meditation does not alter the brain\'s structure.'
+      'True or False: you sleep deeper on a hammock than on a bed',
+      'True or False: Pablo Escobar, the notorious drug lord, spent roughly $2,500 a month on plastic bands for his money',
+      'True or False: meditation does not alter the brain\'s structure'
     ],
     images: [
       'assets/images/quiz-page/round-four-images/hammock.jpeg',
@@ -486,7 +486,7 @@ const quiz5 = [
     questions: [
       'Research has shown that dogs have individual music preferences. Which music genre is a firm favourite in the canine world?',
       'What is a group of lemurs called?',
-      'What percentage of lightning stike victims survive?'
+      'What percentage of lightning strike victims survive?'
     ],
     answers: [
       'Pop', 'Reggae', 'Rock', 'Country',
@@ -530,8 +530,8 @@ const quiz5 = [
   }, 
   {
     questions: [
-      'True or False: spicy is a taste.',
-      'True or False: rabbits can smell their dead relatives in the faeces of predators.',
+      'True or False: spicy is a taste',
+      'True or False: rabbits can smell their dead relatives in the faeces of predators',
       'True or False: sharks are older than trees'
     ],
     images: [
