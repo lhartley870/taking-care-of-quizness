@@ -126,8 +126,19 @@ The site was created using the Chrome browser and Chrome DevTools and was fully 
 
 ### Home Page
 
-1. re is expected. As mentioned in point 11 above, please refer to the Unfixed Bugs section for further discussion of this.    
-
+1. The question mark illustration rotation animation works as expected on page load, rotating once clockwise and once counterclockwise with a slight delay in the rotation starting. 
+2. A light blue (Light Cyan) coloured line appears under each of the page navigation links in the header and the footer links when hovering over them or focussing on them on the laptop and large monitor and when tapping on them on the touch screen devices. 
+3. A dark pink (Indian Red) coloured line appears under the Home page navigation link as expected to indicate that the user is on the Home page.  
+4. Clicking on the Quiz page link in the header takes the user through to the Quiz page as expected on all devices. 
+5. Clicking on all of the footer links takes the user through to the expected external sites, with each external site opening up in a new tab. 
+6. Clicking on the Taking Care of Quizness title logo or on the Home page navigation link in the header keeps the user on the Home page. Whether the link works on the laptop and monitor was tested by clicking on the title logo and the Home page navigation link which both kept the user on the Home page and re-started the question mark rotation animation which is triggered by the page loading, indicating that the links worked. On the tablet and mobile devices tested, tapping the title logo or Home page navigation link also triggered the question mark rotation animation indicating that the links work. 
+7. The Rules button shows the quiz rules when clicked and hides them when clicked again. The rules display as expected and are contained in a box with a Dark Cyan shadow as expected.
+8. The Create Username button shows the 'create username' form when clicked and hides it when clicked again. The username form displays as expected and is contained in a box with a Dark Cyan shadow as expected. 
+9. The 'create username' form works as expected when the user submits a username. If the user clicks on the 'Submit Username' button without typing in a username, the user is prompted to fill in the username field. Text can be typed in the text box for the username and a blue line appears around the text box when selected by the user (or a black line in the Edge browser on the laptop device) as well as a cursor appearing in the text box. When the user fills in a username and clicks on the 'Submit Username' button, the button and text field are disabled, the 'Submit Username' button colour scheme changes to grey and the button reads 'Submitted!'. If the user clicks the 'Create Username' button again to close the form and clicks again to re-open the form, the form remains disabled and the button keeps its 'Submitted!' text and grey colour scheme. 
+10. Clicking on the 'Start Quiz' button takes the user through to the Quiz page as expected on all devices.   
+11. The Home page appears as expected on all mobile devices and on the tablet device tested on all browsers in both portrait and landscape view. 
+12. The Home page appears as expected on all browsers on the laptop and monitor screens. The full screen was exited on the laptop and monitor and the window was made the smallest it could be and was then expanded until it took up the full screen again. The Home page was fully responsive at all points and displayed as expected as the screen window size was changed in all browsers tested. 
+    
 ### Quiz Page
 
 ### Results Page
