@@ -191,12 +191,12 @@ The site was created using the Chrome browser and Chrome DevTools and was fully 
 ### Friends and Family
 
 Friends and family were sent a link to the site to highlight any user experience or appearance issues. The following devices and browsers were tested without any issues being flagged:
-* iPhone XS - Safari browser
 * iPhone 12 - Safari browser
 * Moto G9 Plus - Chrome browser
-* Amazon Fire HD 10 - Chrome browser 
-* Windows 10 LG 24UD58 24 inch 4K UHD monitor - Microsoft Edge browser
-* Samsung A21 - Chrome browser
+* Samsung S10 - Chrome browser
+* Samsung A21 - Samsung Internet browser
+* iPad Pro 2020 - Safari browser
+* Dell XPS 15 9560 laptop with a 4K Acer Monitor  - Microsoft Edge (Chromium) browser
 
 ### Contrast Checker
 
