@@ -843,7 +843,8 @@ https://www.w3docs.com/snippets/css/how-to-create-space-between-rows-in-the-tabl
 
   #rules-container,
   #username-container,
-  #quiz-stats {
+  #quiz-stats,
+  #quiz-result-category {
     align-items: center;
     display: flex;
     flex-direction: column;  
