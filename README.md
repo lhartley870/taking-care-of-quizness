@@ -22,13 +22,20 @@ Users of this website are typically going to be people who are searching for an 
 ## Wireframes
 
 I used [Balsamiq](https://www.balsamiq.com) to create Wireframe mock-ups for laptop/large monitor, tablet and mobile devices which can be found here: 
-* [Home Page]() 
-* [Quiz Page]() 
-* [Results Page]()  
+* [Home Page](/readme-documents/wireframes/home-pg-wireframe.png) 
+* [Quiz Page](/readme-documents/wireframes/quiz-pg-wireframe.png) 
+* [Results Page](/readme-documents/wireframes/results-pg-wireframe.png) 
 
 The Wireframes were a useful aid prior to starting to build the site but the design did evolve in the following respects and for the following reasons:
 
-### 
+### Home Page
+* The Home Page was largely implemented as designed except that the original intention was to have two static quizzes named Quiz 1 and Quiz 2. In the end the website was made more complex by including JavaScript that dynamically selects 5 sets of quiz questions. The Quiz 2 page was therefore dropped and Quiz 1 just became the Quiz page. The Home page largely appears as originally designed for large and mobile screens. For the tablet screen the original design idea was not practical in reality as there was not enough room to have the original design on a portrait oriented tablet. The mobile design was therefore used for tablet. 
+
+### Quiz Page
+* The Quiz Page was largely implemented as designed for mobile nad tablet. The original idea with larger screens was to have the question boxes stacked over the edge of the one below as shown in the wireframe. The original design also anticipated doing away with the crosses and ticks underneath the quiz answers and instead having a tick and messag of 'Correct' or 'Incorrect' appear in the space next to each box. In the end this design was not practical as the question boxes were longer in height and width which did not lend itself to the design which anticipated the question boxes being longer in width than height. The design was instead adapted so that all 3 questions in a round would be side by side on larger screens. Again, this did not lend itself to having the 'Correct'/'Incorrect' message anywhere other than within the question box itself. The message and ticks and crosses were all incorporated for mobile and larger and so the same feedback structure was kept for larger screens as well. 
+
+### Results Page
+* This Page was largely implemented as designed but with the addition of a 'Play Again' button and a clipboard illustration. After playing around with putting the different elements of the results pages in boxes, it was decided to remove the box concept and just use a table for the result stats. 
 
 ## Design
 
