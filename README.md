@@ -136,7 +136,28 @@ The Results page is designed to provide the user with some more interesting user
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for adding interactivity to the website. 
 
 ### Libraries, Resources and Programs
-* 
+* [Git](https://git-scm.com/) was the version control system used via the Gitpod terminal to commit and push code to GitHub.
+* [GitHub](https://github.com/) was the git repository hosting service used to store code pushed from Git and to deploy the website live on the internet.
+* [Gitpod](https://www.gitpod.io/) was the online IDE (Integrated Development Environment)/editor used to create, modify and preview the project code. 
+* [Google Fonts](https://fonts.google.com/) was used to import all of the fonts used on the website into the style.css file. 
+* [Font Awesome](https://fontawesome.com/) was used to provide all the icons throughout the site.  
+* [Balsamiq](https://www.balsamiq.com) was used to prepare all of the Wireframes for the site. 
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to inspect the project code throughout creation of the site. 
+* [ColorSpace](https://mycolor.space/) was used to generate the colour palettes from which most of the colours for the website were taken. 
+* [Eye Dropper](https://eyedropper.org/) was used to find out the names of the hex code colours used on the site and to find the hex code of the Teal colour used for the header (which was picked using the dropper on a website). 
+* [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/), a colour blindness simulator, was used to test the website colour palette to make sure that the choice of colours and contrasts would still be visually appealing to people with different types of colour blindness. 
+* [Favicon Generator](https://favicon.io/favicon-generator/) was used to create the favicon for the site. 
+* [This article](https://www.shiftelearning.com/blog/how-do-colors-influence-learning) about how colours influence learning was used to pick an initial colour scheme for the site. 
+* [Am I Responsive?](http://ami.responsivedesign.is/) was used to create the screenshots showing how the website looks on different device types. 
+* [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), [Pixabay](https://pixabay.com/) and [Rawpixel](https://www.rawpixel.com/?sort=shuffle&page=1&feed=creative-feed) provided free photos and images used throughout the site.
+* [W3 Schools](https://www.w3schools.com/), [Stack Overflow](https://stackoverflow.com/), [CSS-Tricks](https://css-tricks.com/) and [MDN Web Docs](https://developer.mozilla.org/en-US/) were used for general guidance and learning.  
+* [YesViz](https://yesviz.com/viewport/) and [Screen Size Map](https://screensizemap.com/) were used for awareness of the viewport sizes of different device screens for responsive design purposes and [What is my Viewport?](https://whatismyviewport.com/) was used to confirm the viewport screen sizes of my devices for testing the project. 
+* [Can I Use?](https://caniuse.com/) was used for checking browser compatibility.
+* [Compressor](https://compressor.io/) and [TinyPNG](https://tinypng.com/) were used for compressing photos used on the site. 
+* [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) was used to check the contrast of foreground text colours against their background colours.
+* [Lighthouse reports](https://developers.google.com/web/tools/lighthouse) were run on all the pages of the live site within the Chrome browser.   
+* [The W3C Markup Validation Service](https://validator.w3.org/), [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and [JSHint](https://jshint.com/) were used for testing the html, css and javascript code for the site.
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) were used for preparing the README.md and TESTING.md files.
 
 ## Testing
 
