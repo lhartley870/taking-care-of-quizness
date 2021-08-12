@@ -236,7 +236,13 @@ The foreground text colours and their background colours were tested using the [
 
 ### Lighthouse Reports
 
-[Lighthouse reports](https://developers.google.com/web/tools/lighthouse) were run on all the pages of the live site within the Chrome browser. 
+[Lighthouse reports](https://developers.google.com/web/tools/lighthouse) were run on all the pages of the live site within the Chrome browser. Initial reports highlighted some issues that were subsequently rectified. These were an SEO warning when a report was run for mobile that the header navigation link 'tap targets' were not sized appropriately (88% appropriately sized). The font size was subsequently increased and the links were spaced out more. The Lighthouse report run on the Quiz page for both mobile and desktop highlighted an Accessibility issue that one of the input elements on the Quiz page (for the quiz answers) did not have an associated label and that the requirement for no form fields to have multiple labels had also failed. This turned out to be that the for attribute value was accidentally duplicated for 2 questions in different rounds leading to the failures that one input had two labels and one input element had no label. This was rectified by correcting the for attribute to match the id of the correct input element. The Lighthouse reports run on the final live site are as follows: 
+* [Home page mobile results](/readme-documents/lighthouse-results/home-pg-mobile-lighthouse.png)
+* [Home page desktop results](/readme-documents/lighthouse-results/home-pg-desktop-lighthouse.png)
+* [Quiz page mobile results](/readme-documents/lighthouse-results/quiz-pg-mobile-lighthouse.png)
+* [Quiz page desktop results](/readme-documents/lighthouse-results/quiz-pg-desktop-lighthouse.png)
+* [Results page mobile results](/readme-documents/lighthouse-results/results-pg-mobile-lighthouse.png)
+* [Results page desktop results](/readme-documents/lighthouse-results/results-pg-desktop-lighthouse.png)
 
 ## Fixed Bugs
 
