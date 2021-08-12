@@ -211,6 +211,29 @@ Friends and family were sent a link to the site to highlight any user experience
 
 The foreground text colours and their background colours were tested using the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/). The following combinations were tested and all received at least a WCAG AA pass. The results are as follows: 
 
+* The Taking Care of Quizness logo and header page navigation link colour of Light Cyan (#e6feff) was tested against the header colour of Teal (#1c797d) (the same colour contrast also appears on the Submit Round buttons on the Quiz page):
+    * [results](/readme-documents/contrast-checker-results/header-contrast.png)
+* The footer link colour of Light Cyan (#e6feff) was tested against the Purple colour (#955b92) of the footer background:
+    * [results](/readme-documents/contrast-checker-results/footer-contrast.png) 
+* The page heading on all pages in the colour of Indian Red (#b74e74) was tested against the page background colour of Light Cyan (#e6feff):
+    * [results](/readme-documents/contrast-checker-results/page-heading-contrast.png) 
+* The text colour on the Home Page buttons of Light Cyan (#e6feff) was tested against the background button colour of Indian Red (#b74e74) (this colour contrast also appears on the Get Quiz Results and Play Again buttons on the Quiz and Results pages):
+    * [results](/readme-documents/contrast-checker-results/home-pg-button-contrast.png)
+* The text colour of the Round headings on the Quiz page of Purple (#955b92) was tested against the page background colour of Light Cyan (#e6feff):
+    * [results](/readme-documents/contrast-checker-results/round-heading-contrast.png)
+* The text colour of the Light Cyan (#e6feff) questions on the Quiz page was tested against the Dark Cyan (#007d9e) background (the same colour contrast also appears on the Submit Username button on the Home page):
+    * [results](/readme-documents/contrast-checker-results/quiz-question-contrast.png) 
+* The text colour of the answer buttons on the Quiz page in Dark Cyan (#007d9e) was tested against the Light Cyan (#e6feff) background:
+    * [results](/readme-documents/contrast-checker-results/quiz-answer-contrast.png) 
+* The text colour of the Incorrect feedback message, the crosses underneath the quiz answers, and the red colour used in the Home page rules and on the Results page quiz results category (Red (#e00000)) was tested against the Light Cyan (#e6feff) background:
+    * [results](/readme-documents/contrast-checker-results/red-text-contrast.png) 
+* The text colour of the Correct feedback message, the ticks underneath the quiz answers, and the green colour used in the Home page rules and on the Results page quiz results category (Green (#008500)) was tested against the Light Cyan (#e6feff) background:
+    * [results](/readme-documents/contrast-checker-results/green-text-contrast.png) 
+* The text colour of the blue colour used in the Home page rules and on the Results page quiz results category (Blue (#0000ff)) was tested against the Light Cyan (#e6feff) background:
+    * [results](/readme-documents/contrast-checker-results/blue-text-contrast.png) 
+* The text colour of submitted buttons (Dark Slate Gray (#283d3e)) was tested against the Dark Gray (#95b0b1) colour: 
+    * [results](/readme-documents/contrast-checker-results/submitted-button-contrast.png) 
+
 ### Lighthouse Reports
 
 [Lighthouse reports](https://developers.google.com/web/tools/lighthouse) were run on all the pages of the live site within the Chrome browser. 
