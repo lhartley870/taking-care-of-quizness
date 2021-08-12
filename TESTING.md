@@ -13,13 +13,13 @@ and when the Rules and submitted username form are displayed:
 
 * [Home page html when Rules and submitted username form are displayed](/readme-documents/validation-results/home-pg-html-js-post-submit-username.png)
 
-There are obviously lots of combinations of html that can be inputted by javascript on the Quiz Page. I therefore just added the javascript that would appear for one question in the quiz and ran that through the validator for the Quiz page:
+There are obviously lots of combinations of html that can be inputted by javascript on the Quiz Page. I therefore just added the html that would appear for one question in the quiz and ran that through the validator for the Quiz page:
 
 * [Quiz page html with dynamic html inputted by javascript for a quiz question 1](/readme-documents/validation-results/quiz-pg-html-one-qu-js.png)
 
 I added some potential html that could be added by javascript on the results page for a user with a low score:
 
-* [Results page html with dynamic html inputed by javascript for a low score of 0-5](/readme-documents/validation-results/results-pg-html-js.png)
+* [Results page html with dynamic html inputted by javascript for a low score of 0-5](/readme-documents/validation-results/results-pg-html-js.png)
 
 [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used for testing the css code for the site. With the style.css file, validation was run using direct copying and pasting of the css code which gave [this result](/readme-documents/validation-results/css-validator-warnings.png). The error was cleared by amending the grid-template-row value for #results-form-container (see the amended validator result [here](/readme-documents/validation-results/css-validator-clear.png)). However, in terms of the warning saying *'Imported style sheets are not checked in direct input and file upload modes'* this still remained upon doing the css direct input validation so I ran the style.css file validation using the URI as well which gave the following clear results:
 * [style.css file](/readme-documents/validation-results/css-validator-uri.png) 
