@@ -158,7 +158,7 @@ This project was deployed to GitHub Pages according to the following steps:
 7. GitHub will then tell you that the site is ready to be published. 
 8. Refresh the site and GitHub will tell you that your site is published and provide a link to the live site. It will look like this:
 
-![View of GitHub Pages when site deployed]()
+![View of GitHub Pages when site deployed](/readme-documents/screenshots/github-pages-screenshot.png)
 
 ### Forking the GitHub Repository
 
@@ -177,13 +177,13 @@ In order to work on a repository you have forked, you will need to clone it to y
 2. Underneath the Settings button at the top of the repository there is a button with a dropdown arrow that says 'Code'. Click on it.  
 3. To clone the repository using HTTPS, undeneath 'Clone' select 'HTTPS' so that there is an orange line underneath 'HTTPS'. Click on this button:
 
-![View of local clone button]()
+![View of local clone button](/readme-documents/screenshots/local-clone-button.png)
 
 4. Open the Terminal in your IDE/editor. 
 5. Change the current working directory to the one where you want the cloned directory to be located.  
 6. Type 'git clone' and then paste the URL you copied earlier. It will look like this with your username instead of 'YOUR-USERNAME' and the name of the forked repository you are cloning instead of 'NAME OF REPOSITORY YOU ARE CLONING': 
 
-![View of terminal command to clone fork]()
+![View of terminal command to clone fork](/readme-documents/screenshots/clone-command.png)
 
 7. Press enter and your local clone will be created. 
 
