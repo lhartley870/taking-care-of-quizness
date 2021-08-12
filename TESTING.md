@@ -2,17 +2,23 @@
 
 ## Validators
 [The W3C Markup Validation Service](https://validator.w3.org/) was used for testing the html code for the site. The following results show that no errors have been found: 
-* [Home page html when Rules and username form are not displaying](/readme-documents/validation-results/home-pg-html-clear-result-no-js.png)
-* [Quiz page html without dynamic html inputted by javascript](/readme-documents/validation-results/quiz-pg-html-no-js.png)
-* [Results page html without dynamic html inputed by javascript](/readme-documents/validation-results/results-pg-html-no-js.png)
+* [Home page html](/readme-documents/validation-results/home-pg-html-clear-result-no-js.png)
+* [Quiz page html](/readme-documents/validation-results/quiz-pg-html-no-js.png)
+* [Results page html](/readme-documents/validation-results/results-pg-html-no-js.png)
 
 Being as the javascript files add some html to the html files, I also ran the home page through the validator with the html added by the javascript for the Home page when the Rules and unsubmitted username form are displayed:
 * [Home page html when Rules and unsubmitted username form are displaying](/readme-documents/validation-results/home-pg-html-js-pre-submit-username.png)
+
 and when the Rules and submitted username form are displayed:
+
 * [Home page html when Rules and submitted username form are displayed](/readme-documents/validation-results/home-pg-html-js-post-submit-username.png)
+
 There are obviously lots of combinations of html that can be inputted by javascript on the Quiz Page. I therefore just added the javascript that would appear for one question in the quiz and ran that through the validator for the Quiz page:
+
 * [Quiz page html with dynamic html inputted by javascript for a quiz question 1](/readme-documents/validation-results/quiz-pg-html-one-qu-js.png)
+
 I added some potential html that could be added by javascript on the results page for a user with a low score:
+
 * [Results page html with dynamic html inputed by javascript for a low score of 0-5](/readme-documents/validation-results/results-pg-html-js.png)
 
 [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used for testing the css code for the site. With the style.css file, validation was run using direct copying and pasting of the css code which gave [this result](/readme-documents/validation-results/css-validator-warnings.png). The error was cleared by amending the grid-template-row value for #results-form-container (see the amended validator result [here](/readme-documents/validation-results/css-validator-clear.png)). However, in terms of the warning saying *'Imported style sheets are not checked in direct input and file upload modes'* this still remained upon doing the css direct input validation so I ran the style.css file validation using the URI as well which gave the following clear results:
