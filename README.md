@@ -3,7 +3,7 @@ Taking Care of Quizness is a site intended to provide an exciting multiple choic
 
 The live project can be viewed [here](https://lhartley870.github.io/taking-care-of-quizness/). 
 
-![Responsive view of live website Home page]()
+![Responsive view of live website Home page](/readme-documents/screenshots/home-page-screenshot.png)
 
 ## UX (User Experience) 
 ### Users
@@ -13,7 +13,7 @@ Users of this website are typically going to be people who are searching for an 
 * As a user of the site, I want to see what the site is all about and how the quiz works.
 * As a user of the site, I want to be able to easily navigate the site. 
 * As a user of the site, I want some interim feedback on how I'm doing before I finish all the quiz questions. 
-* AAs a user of the site, I want some interesting feedback when I complete a quiz, beyond just knowing what my total score was. 
+* As a user of the site, I want some interesting feedback when I complete a quiz, beyond just knowing what my total score was. 
 * As a user of the site, I want to have the opportunity to complete more than one set of quiz questions during my visit.
 * As a user of the site, I don't want to be given the same set of questions twice during my visit.
 * As a user of the site, I want some useful links related to quizzing to continue my quizzing experience.  
@@ -203,7 +203,6 @@ For more information on forking and cloning repositories, see [GitHub Docs](http
 * The first function in each of the JavaScript files was largely adapted from Code Institute's Love Maths project.
 * Code for how to pass variables (including array variables) to and from session storage in the JavaScript files was taken from [this website](https://lage.us/Javascript-Pass-Variables-to-Another-Page.html).
 * The code for generating a random quiz set between 1 and 5 appearing in the selectQuizNumber function in the JavaScript file for the Quiz page was adapted from the Code Institute Love Maths project.
-* 
 
 ### Media
 
