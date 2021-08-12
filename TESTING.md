@@ -3,8 +3,8 @@
 ## Validators
 [The W3C Markup Validation Service](https://validator.w3.org/) was used for testing the html code for the site. The following results show that no errors have been found: 
 * [Home page html when Rules and username form are not displaying](/readme-documents/validation-results/home-pg-html-clear-result-no-js.png)
-* [Home page html when Rules and unsubmitted username form are displaying](/readme-documents/validation-results/home-pg-html-pre-submit-username.png)
-* [Home page html when Rules and submitted username form are displayed](/readme-documents/validation-results/home-pg-html-post-submit-username.png)
+* [Home page html when Rules and unsubmitted username form are displaying](/readme-documents/validation-results/home-pg-html-js-pre-submit-username.png)
+* [Home page html when Rules and submitted username form are displayed](/readme-documents/validation-results/home-pg-html-js-post-submit-username.png)
 * [Quiz page html without dynamic html inputted by javascript](/readme-documents/validation-results/quiz-pg-html-no-js.png)
 * [Quiz page html with dynamic html inputted by javascript for quiz1 when all rounds have been submitted]()
 * [Results page html without dynamic html inputed by javascript](/readme-documents/validation-results/results-pg-html-no-js.png)
