@@ -343,6 +343,7 @@ With thanks, the photos appearing on the Quiz page were taken by the following p
 * Some of the questions were taken from the [Cambridge News website](https://www.cambridge-news.co.uk/news/uk-world-news/20-science-nature-quiz-questions-18142780), the [Aha Slides website](https://ahaslides.com/blog/125-questions-and-answers-pop-music-quiz-premade-free-software/) and the [My London News website](https://www.mylondon.news/whats-on/20-animal-quiz-questions-answers-18155363). 
 * Some of the questions were created from facts on the [Nectar Sleep website](https://www.nectarsleep.com/posts/fun-facts-about-the-human-body/), the [Best Life Online website](https://bestlifeonline.com/facts-about-natures-wonders/), the [Fun Kids Live website](https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-volcanoes/), the [Conserve Energy Future website](https://www.conserve-energy-future.com/weather-facts.php) and the [Pubity Facts Instagram page](https://www.instagram.com/pubityfacts/?hl=en). 
 * The round theme of 'Fish or Not' and the questions in that round were taken from [this Jet Punk website](https://www.jetpunk.com/user-quizzes/154362/fish-or-not-a-fish). 
+* This [Code Institute sample README file](https://github.com/Code-Institute-Solutions/SampleREADME) was used for guidance in preparing this README file and for the Deployment section along with this [GitHub Docs guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and this [GitHub Guide](https://guides.github.com/activities/forking/). 
 
 ### Acknowledgments
 
